@@ -1,0 +1,99 @@
+{
+  "basicInfo": {
+    "name": "Jeferson Leite Borges",
+    "nascimento": { "d": 14, "m": 4, "a": 1987 },
+    "estadoCivil": "soltiero",
+    "cpf": "058.787.189.01"
+  },
+  "otherInfo": {
+    "filiacao": {
+      "pai": "Antenor Borges",
+      "mae": "Maria José Leite"
+    },
+    "portfolio": {
+      "behance": "https://www.behance.net/jefersonleite",
+      "tumble": "https://jefersonleite.tumblr.com ",
+      "github": "https://github.com/shinspiegel"
+    },
+    "endereco": {
+      "rua": "Rua Vereador Claudino José Pacheco",
+      "numero": "173",
+      "adicional": "Apto 101",
+      "bairro": "São João",
+      "cidade": "Itajaí",
+      "estado": "Santa Catarina",
+      "pais": "Brazil"
+    }
+  },
+  "conhecimentos": {
+    "0": { "conhecimento": "Português", "Rank": "7" },
+    "1": { "conhecimento": "Inglês", "Rank": "6" },
+    "2": { "conhecimento": "Informática Básica", "Rank": "9" },
+    "3": { "conhecimento": "Windows OS", "Rank": "9" },
+    "4": { "conhecimento": "mac OS", "Rank": "8" },
+    "5": { "conhecimento": "Linux Os", "Rank": "7" },
+    "6": { "conhecimento": "AutoCad", "Rank": "8" },
+    "7": { "conhecimento": "Solid Works", "Rank": "6" },
+    "8": { "conhecimento": "Fusion 360", "Rank": "7" },
+    "9": { "conhecimento": "Adobe Illustrator", "Rank": "9" },
+    "10": { "conhecimento": "Adobe Photoshop", "Rank": "10" },
+    "11": { "conhecimento": "Adobe Premiere", "Rank": "5" },
+    "12": { "conhecimento": "Adobe After Effects", "Rank": "4" },
+    "13": { "conhecimento": "InDesign", "Rank": "7" },
+    "14": { "conhecimento": "Corel Draw", "Rank": "7" },
+    "15": { "conhecimento": "HTML 5", "Rank": "6" },
+    "16": { "conhecimento": "CSS 3", "Rank": "6" },
+    "17": { "conhecimento": "JavaScript", "Rank": "3" }
+  },
+  "experiencia": {
+    "1": {
+      "local": "To10 Propaganda Itajaí",
+      "Cargo": "Diretor de Criação, Designer Gráfico, Editor Visual, Web Designer",
+      "Local": "Itajaí/SC",
+      "Entrada": { "m": 11, "a": 2016 },
+      "Saída": { "m": 11, "a": 2017 }
+    },
+    "2": {
+      "local": "Rockfeller Brasil",
+      "Cargo": "Diagramador e Designer Gráfico",
+      "Local": "Baln. Camboriú/SC",
+      "Entrada": { "m": 4, "a": 2015 },
+      "Saída": { "m": 11, "a": 2016 }
+    },
+    "3": {
+      "local": "Copia e Cia",
+      "Cargo": "Arte Finalista, Diagramador e Editor, Designer Gráfico",
+      "Local": "Itajaí/SC",
+      "Entrada": { "m": 4, "a": 2015 },
+      "Saída": { "m": 11, "a": 2016 }
+    },
+    "4": {
+      "local": "PJ Laser",
+      "Cargo": "Designer Industrial, Web Designer, Designer Gráfico",
+      "Local": "Itajaí/SC",
+      "Entrada": { "m": 3, "a": 2013 },
+      "Saída": { "m": 10, "a": 2013 }
+    },
+    "5": {
+      "local": "Detroit",
+      "Cargo": "Projetista e Desenhista",
+      "Local": "Itajaí/SC",
+      "Entrada": { "m": 2, "a": 2012 },
+      "Saída": { "m": 2, "a": 2013 }
+    },
+    "6": {
+      "local": "Cajomar",
+      "Cargo": "Arte Finalista, Diagramador e Editor, Designer Gráfico",
+      "Local": "Itajaí/SC",
+      "Entrada": { "m": 4, "a": 2006 },
+      "Saída": { "m": 2, "a": 2008 }
+    },
+    "7": {
+      "local": "Infocenter",
+      "Cargo": "nstrutor de Informática",
+      "Local": "Itajaí/SC",
+      "Entrada": { "m": 6, "a": 2005 },
+      "Saída": { "m": 4, "a": 2006 }
+    }
+  }
+}
