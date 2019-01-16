@@ -37,9 +37,50 @@ sass/
 |   |– _bootstrap.scss    # Bootstrap
 |   |– _jquery-ui.scss    # jQuery UI
 */
+*:root {
+  --corPrimaria: #28CAFB;
+  --corPrimariaClaro: #75e7f7;
+  --corPrimariaEscuro: #3aafd3;
+  --corContraste: #4F4A44;
+  --cinza1: #f9f9f9;
+  --cinza2: #f1f1f1;
+  --cinza3: #d5d5d5;
+  --cinza4: #ddd;
+  --cinza5: #ccc;
+  --cinza6: #aaa;
+  --cinza7: #999;
+  --cinza8: #777;
+  --cinza9: #333; }
+
 * {
   margin: 0;
   padding: 0; }
 
+*,
+*::after,
+*::before {
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; }
+
 body {
-  font-family: sans-serif; }
+  font-family: sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.6;
+  background-image: linear-gradient(to bottom right, var(--colorPrimaryLigh), var(--colorPrimaryDark));
+  color: var(--greyDark1);
+  min-height: 100vh; }
+
+body {
+  background-color: var(--corPrimaria);
+  background-image: linear-gradient(to right bottom, var(--corPrimariaClaro), var(--corPrimariaEscuro)); }
+
+.conteudo {
+  display: flex;
+  margin: 8rem auto;
+  max-width: 70rem;
+  min-height: 20rem;
+  background-color: var(--cinza1); }
