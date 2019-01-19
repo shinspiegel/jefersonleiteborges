@@ -37,6 +37,10 @@ sass/
 |   |– _jquery-ui.scss    # jQuery UI
 */
 
+* {
+    border: 1px red solid;
+}
+
 @import "abstracts";
 @import "base";
 @import "components";

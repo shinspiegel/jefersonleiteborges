@@ -37,6 +37,9 @@ sass/
 |   |– _bootstrap.scss    # Bootstrap
 |   |– _jquery-ui.scss    # jQuery UI
 */
+* {
+  border: 1px red solid; }
+
 *:root {
   --corPrimaria: #28CAFB;
   --corPrimariaClaro: #75e7f7;
@@ -74,6 +77,27 @@ body {
   color: var(--greyDark1);
   min-height: 100vh; }
 
+.infoBasico {
+  padding: 4rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end; }
+  .infoBasico__titulo {
+    font-size: 8rem;
+    text-align: right;
+    line-height: 1; }
+  .infoBasico__caixaFoto {
+    margin-top: 2rem;
+    height: 25rem;
+    width: 25rem;
+    overflow: hidden;
+    border-radius: 50%; }
+  .infoBasico__foto {
+    display: block;
+    margin-left: auto;
+    width: 100%;
+    object-fit: cover; }
+
 body {
   background-color: var(--corPrimaria);
   background-image: linear-gradient(to right bottom, var(--corPrimariaClaro), var(--corPrimariaEscuro)); }
@@ -84,3 +108,9 @@ body {
   max-width: 70rem;
   min-height: 20rem;
   background-color: var(--cinza1); }
+
+.infoBasico {
+  flex: 0 0 50%; }
+
+.conhecimentos {
+  flex: 0 0 50%; }
