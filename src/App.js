@@ -6,6 +6,7 @@ import Name from './components/Name';
 import Foto from './components/Foto';
 import InfoBasico from './components/InfoBasico';
 import Formacao from './components/FormacaoAcademica';
+import Conhecimentos from './components/Conhecimentos';
 
 
 
@@ -19,7 +20,7 @@ class App extends Component {
         <Foto foto={jeferson.basicInfo.foto} />
         <InfoBasico info={jeferson.basicInfo} />
         <Formacao academica={jeferson.formacao} />
-        <div className='conhecimentos'>lista conhecimentos</div>
+        <Conhecimentos conhecimentos={jeferson.conhecimentos} />
         <div className='contato'>lista de contato</div>
         <div className='portfolio'>lista portfolio</div>
       </div>
