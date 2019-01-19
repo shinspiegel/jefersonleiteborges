@@ -5,7 +5,7 @@ const formacaoAcademica = (props) => {
     const listaCursos = props.academica.map(curso => (
         <div key={curso.id} className="academica__caixaItem">
             <p className="academica__instituicao">{curso.instituicao}</p>
-            <p className="academica__curso">Curso: <span className='negrito'>{curso.curso}</span></p>
+            <p className="academica__curso">Curso: <span className='semiNegrito'>{curso.curso}</span></p>
             <p className="academica__anoConclusao">{curso.anoConclusao}</p>
         </div>
     ));

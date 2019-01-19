@@ -71,6 +71,9 @@ body {
 .negrito {
   font-weight: 700; }
 
+.semiNegrito {
+  font-weight: 400; }
+
 .foto__imagem {
   object-fit: cover;
   height: 100%;
@@ -106,6 +109,22 @@ body {
     visibility: visible;
     opacity: 1;
     transform: translate(-50%, -50%); }
+
+.academica__caixaItem {
+  line-height: 1.2; }
+  .academica__caixaItem:not(:last-child) {
+    margin-bottom: 2rem; }
+
+.academica__instituicao {
+  font-weight: 400;
+  font-size: 2rem; }
+
+.academica__curso {
+  font-size: 1.6rem; }
+
+.academica__anoConclusao {
+  font-weight: 400;
+  font-size: 1.4rem; }
 
 body {
   background-image: linear-gradient(to bottom right, #f56e30, #ca1717); }

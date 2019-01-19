@@ -50,15 +50,24 @@
 .academica {
 
   &__caixaItem {
+    line-height: 1.2;
+
+    &:not(:last-child) {
+      margin-bottom: 2rem;
+    }
   }
 
   &__instituicao {
-    
+    font-weight: 400;
+    font-size: 2rem;
   }
 
   &__curso {
+    font-size: 1.6rem;
   }
-
+  
   &__anoConclusao {
+    font-weight: 400;
+    font-size: 1.4rem;
   }
 }
