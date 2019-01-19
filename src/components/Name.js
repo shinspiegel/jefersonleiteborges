@@ -2,9 +2,9 @@ import React from 'react';
 
 const name = (props) => {
     return (
-        <div className='titulo'>
+        <section className='titulo'>
             {props.nome}
-        </div>
+        </section>
     );
 }
 
