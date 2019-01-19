@@ -2,27 +2,27 @@ import React, { Component } from 'react';
 
 import jeferson from './json/jeferson.json';
 
-import Name from './components/Name';
+import Nome from './components/Nome';
 import Foto from './components/Foto';
 import InfoBasico from './components/InfoBasico';
 import Formacao from './components/FormacaoAcademica';
 import Conhecimentos from './components/Conhecimentos';
+import Contato from './components/Contato';
+import Portfolio from './components/Portfolio';
 
 
 
 class App extends Component {
   render() {
-    console.log(jeferson)
-
     return (
       <div className='conteudo'>
-        <Name nome={jeferson.basicInfo.name} />
+        <Nome nome={jeferson.basicInfo.name} />
         <Foto foto={jeferson.basicInfo.foto} />
         <InfoBasico info={jeferson.basicInfo} />
         <Formacao academica={jeferson.formacao} />
         <Conhecimentos conhecimentos={jeferson.conhecimentos} />
-        <div className='contato'>lista de contato</div>
-        <div className='portfolio'>lista portfolio</div>
+        <Contato contato={jeferson.otherInfo.contato} endereco={jeferson.otherInfo.endereco} />
+        <Portfolio portfolio={jeferson.otherInfo.portfolio} />
       </div>
     );
   }

@@ -1,18 +1,12 @@
 ///////////////////////////////
 //RESET
-* {
-    margin: 0;
-    padding: 0;
-}
 
 *, 
 *::after,
 *::before {
     box-sizing: inherit;
-}
-
-html,body, #root {
-    min-height: 100vh;
+    margin: 0;
+    padding: 0;
 }
 
 html {
@@ -21,12 +15,11 @@ html {
 }
 
 body {
-    font-family: sans-serif;
-    font-size: 1.6rem;
+    font-family: 'Barlow', sans-serif;
+    font-size: 1.8rem;
     font-weight: 400;
     line-height: 1.6;
-    background-image: linear-gradient(to bottom right, var(--colorPrimaryLigh), var(--colorPrimaryDark));
-    color: var(--greyDark1);
-
+    color: $cinza9;
+    letter-spacing: 0.8px;
     min-height: 100vh;
 }

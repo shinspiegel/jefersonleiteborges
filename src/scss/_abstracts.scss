@@ -1,24 +1,23 @@
 ///////////////////////////////
 //VARIAVEIS
 
-*:root {
-  --corPrimaria: #28CAFB;
-  --corPrimariaClaro: #75e7f7;
-  --corPrimariaEscuro: #3aafd3;
+$corPrimaria: #fa3714;
+$corPrimariaClaro: #f56e30;
+$corPrimariaEscuro: #ca1717;
 
-  --corContraste: #4F4A44;
+$corContraste: #4f4a44;
 
-  --cinza1: #f9f9f9;
-  --cinza2: #f1f1f1;
-  --cinza3: #d5d5d5;
-  --cinza4: #ddd;
-  --cinza5: #ccc;
-  --cinza6: #aaa;
-  --cinza7: #999;
-  --cinza8: #777;
-  --cinza9: #333;
-}
+$cinza1: #f9f9f9;
+$cinza2: #f1f1f1;
+$cinza3: #d5d5d5;
+$cinza4: #ddd;
+$cinza5: #ccc;
+$cinza6: #aaa;
+$cinza7: #999;
+$cinza8: #777;
+$cinza9: #333;
 
+$sombra: 0 2rem 3rem (0, 0, 0, 1);
 
 ///////////////////////////////
 //MIXINS
