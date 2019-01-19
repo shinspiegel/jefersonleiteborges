@@ -34,7 +34,7 @@
     }
   },
   "formacao": [
-    { "id": 0, "instituicao": "UNIVALI - Universidade do Vale do Itajaí", "curso": "Design Industrial", "anoConclusao": "2013" },
+    { "id": 0, "instituicao": "Universidade do Vale do Itajaí", "curso": "Design Industrial", "anoConclusao": "2013" },
     { "id": 1, "instituicao": "Colégio e Curso Radical", "curso": "Ensino Médio", "anoConclusao": "2007" },
     { "id": 2, "instituicao": "Escola Básica João Duarte", "curso": "Ensino Fundamental", "anoConclusao": "2003" }
   ],

@@ -1,9 +1,20 @@
+%fonteBasico {
+  font-family: "Unica One", cursive;
+  text-transform: uppercase;
+}
+
 .titulo {
   &--1 {
-    font-family: "Unica One", cursive;
+    @extend %fonteBasico;
     font-size: 7rem;
     line-height: 0.9;
   }
+  
+  &--2 {
+    @extend %fonteBasico;
+    font-size: 3rem;
+  }
+
 }
 
 .negrito {
