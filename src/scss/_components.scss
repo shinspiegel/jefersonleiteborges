@@ -1,27 +1,7 @@
-.infoBasico {
-    padding: 4rem 1.5rem;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-
-  &__titulo {
-    font-size: 8rem;
-    text-align: right;
-    line-height: 1;
-  }
-
-  &__caixaFoto {
-      margin-top: 2rem;
-    height: 25rem;
-    width: 25rem;
-    overflow: hidden;
-    border-radius: 50%;
-  }
-
-  &__foto {
-    display: block;
-    margin-left: auto;
-    width: 100%;
-    object-fit: cover;
+.foto {
+  &__imagem{
+    height: 10rem;
+    width: 10rem;
+    background-color: grey;
   }
 }

@@ -11,6 +11,10 @@
     box-sizing: inherit;
 }
 
+html,body, #root {
+    min-height: 100vh;
+}
+
 html {
     box-sizing: border-box;
     font-size: 62.5% //1 rem = 10px => 10/16 = 62,5%

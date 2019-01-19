@@ -64,6 +64,9 @@ sass/
 *::before {
   box-sizing: inherit; }
 
+html, body, #root {
+  min-height: 100vh; }
+
 html {
   box-sizing: border-box;
   font-size: 62.5%; }
@@ -77,40 +80,41 @@ body {
   color: var(--greyDark1);
   min-height: 100vh; }
 
-.infoBasico {
-  padding: 4rem 1.5rem;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end; }
-  .infoBasico__titulo {
-    font-size: 8rem;
-    text-align: right;
-    line-height: 1; }
-  .infoBasico__caixaFoto {
-    margin-top: 2rem;
-    height: 25rem;
-    width: 25rem;
-    overflow: hidden;
-    border-radius: 50%; }
-  .infoBasico__foto {
-    display: block;
-    margin-left: auto;
-    width: 100%;
-    object-fit: cover; }
-
-body {
-  background-color: var(--corPrimaria);
-  background-image: linear-gradient(to right bottom, var(--corPrimariaClaro), var(--corPrimariaEscuro)); }
+.foto__imagem {
+  height: 10rem;
+  width: 10rem;
+  background-color: grey; }
 
 .conteudo {
-  display: flex;
-  margin: 8rem auto;
-  max-width: 70rem;
-  min-height: 20rem;
-  background-color: var(--cinza1); }
+  max-width: 90rem;
+  margin: 2rem auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: repeat(5, 1fr); }
+  .conteudo > * {
+    min-height: 10rem;
+    padding: 1rem; }
+
+.titulo {
+  background-color: red; }
+
+.foto {
+  background-color: orange; }
 
 .infoBasico {
-  flex: 0 0 50%; }
+  background-color: blue; }
+
+.academica {
+  background-color: yellow; }
 
 .conhecimentos {
-  flex: 0 0 50%; }
+  background-color: brown;
+  grid-column: 2/span 1;
+  grid-row: 1 / span 5; }
+
+.contato {
+  background-color: purple; }
+
+.portfolio {
+  background-color: teal;
+  grid-column: 1/ span 2; }
