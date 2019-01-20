@@ -66,6 +66,7 @@ body {
   line-height: 0.9; }
 
 .titulo--2 {
+  color: #fa3714;
   font-size: 3rem; }
 
 .negrito {
@@ -135,8 +136,13 @@ body {
 
 .conhecimento__estrela {
   height: 2rem;
-  width: 2rem;
-  fill: #ccc; }
+  width: 2rem; }
+  .conhecimento__estrela--starFull {
+    fill: #fa3714; }
+  .conhecimento__estrela--starHalf {
+    fill: #fa3714; }
+  .conhecimento__estrela--starEmpty {
+    fill: #ccc; }
 
 body {
   background-image: linear-gradient(to bottom right, #f56e30, #ca1717); }

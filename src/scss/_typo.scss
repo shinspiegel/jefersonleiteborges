@@ -12,9 +12,9 @@
   
   &--2 {
     @extend %fonteBasico;
+    color: $corPrimaria;
     font-size: 3rem;
   }
-
 }
 
 .negrito {

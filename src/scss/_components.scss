@@ -86,6 +86,9 @@
   &__estrela {
     height: 2rem;
     width: 2rem;
-    fill: #ccc;
+
+    &--starFull {fill: $corPrimaria;}
+    &--starHalf {fill: $corPrimaria;}
+    &--starEmpty {fill: $cinza5;}
   }
 }
