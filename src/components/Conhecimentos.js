@@ -2,6 +2,7 @@ import React from 'react';
 import estCheia from '../img/icons.svg';
 
 const conhecimentos = (props) => {
+    
     function loopEstrelas(x, type) {
         let estrelas = []
         for (let i = 0; i < x; i++) {

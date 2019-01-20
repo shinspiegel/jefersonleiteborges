@@ -23,7 +23,8 @@
       "bairro": "São João",
       "cidade": "Itajaí",
       "estado": "Santa Catarina",
-      "pais": "Brazil"
+      "pais": "Brazil",
+      "gmaps": "https://goo.gl/maps/8r4trcLZy6u"
     },
     "contato": {
       "telefone": "991511061",

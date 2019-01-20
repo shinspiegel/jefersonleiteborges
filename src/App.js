@@ -10,8 +10,6 @@ import Conhecimentos from './components/Conhecimentos';
 import Contato from './components/Contato';
 import Portfolio from './components/Portfolio';
 
-
-
 class App extends Component {
   render() {
     return (

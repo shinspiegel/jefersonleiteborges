@@ -144,6 +144,10 @@ body {
   .conhecimento__estrela--starEmpty {
     fill: #ccc; }
 
+.iconeSVG {
+  height: 3rem;
+  width: 3rem; }
+
 body {
   background-image: linear-gradient(to bottom right, #f56e30, #ca1717); }
 
@@ -178,7 +182,7 @@ body {
   grid-row: 1 / span 5; }
 
 .contato {
-  background-color: purple; }
+  text-align: right; }
 
 .portfolio {
   background-color: teal;
