@@ -17,7 +17,8 @@ $cinza7: #999;
 $cinza8: #777;
 $cinza9: #333;
 
-$sombra: 0 2rem 3rem (0, 0, 0, 1);
+$sombra: 0 2rem 3rem rgba(0, 0, 0, 0.25);
+$sombraLeve: 0 1rem 2rem rgba(0, 0, 0, 0.25);
 
 ///////////////////////////////
 //MIXINS

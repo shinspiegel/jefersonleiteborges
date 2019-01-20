@@ -64,18 +64,16 @@
   &__curso {
     font-size: 1.6rem;
   }
-  
+
   &__anoConclusao {
     font-weight: 400;
     font-size: 1.4rem;
   }
 }
 
-
 .conhecimento {
-  
   &:not(:last-child) {
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.6rem;
   }
 
   &__nome {
@@ -87,13 +85,70 @@
     height: 2rem;
     width: 2rem;
 
-    &--starFull {fill: $corPrimaria;}
-    &--starHalf {fill: $corPrimaria;}
-    &--starEmpty {fill: $cinza5;}
+    &--starFull {
+      fill: $corPrimaria;
+    }
+    &--starHalf {
+      fill: $corPrimaria;
+    }
+    &--starEmpty {
+      fill: $cinza5;
+    }
   }
 }
 
 .iconeSVG {
-  height: 3rem;
-  width: 3rem;
+  margin: 0.5rem;
+  height: 2.5rem;
+  width: 2.5rem;
+  fill: currentColor;
+  transition: all ease 0.3s;
+
+  &:hover {
+    color: $corPrimaria;
+    transform: scale(1.1) translateY(0.3rem);
+  }
+
+  &--grande {
+    width: 7rem;
+    height: 7rem;
+  }
+}
+
+.contato {
+  &__listaSVG {
+    color: $cinza8;
+  }
+}
+
+.portfolio {
+  color: $cinza8;
+  transition: all ease 0.2s;
+
+  &__item {
+    display: grid;
+    grid-template-columns: min-content 1fr;
+    grid-template-rows: repeat(2, 1fr);
+
+    &:hover {
+      color: $corPrimaria;
+    }
+  }
+
+  &__svg {
+    align-self: center;
+    grid-row: 1 / span 2;
+  }
+
+  &__texto {
+    font-size: 3rem;
+    font-weight: 700;
+    align-self: end;
+  }
+
+  &__link {
+    font-size: 2rem;
+    line-height: 1;
+    align-self: start;
+  }
 }
