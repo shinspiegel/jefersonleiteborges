@@ -144,18 +144,21 @@ body {
   .conhecimento__estrela--starEmpty {
     fill: #ccc; }
 
-.iconeSVG {
+.svg__contato {
   margin: 0.5rem;
   height: 2.5rem;
   width: 2.5rem;
   fill: currentColor;
   transition: all ease 0.3s; }
-  .iconeSVG:hover {
+  .svg__contato:hover {
     color: #fa3714;
     transform: scale(1.1) translateY(0.3rem); }
-  .iconeSVG--grande {
-    width: 7rem;
-    height: 7rem; }
+
+.svg__portfolio {
+  margin: 1rem;
+  height: 7rem;
+  width: 7rem;
+  fill: currentColor; }
 
 .contato__listaSVG {
   color: #777; }
@@ -164,19 +167,46 @@ body {
   color: #777;
   transition: all ease 0.2s; }
   .portfolio__item {
+    position: relative;
+    text-decoration: none;
+    color: inherit;
+    padding-left: 2rem;
     display: grid;
-    grid-template-columns: min-content 1fr;
+    grid-template-columns: 1fr min-content;
     grid-template-rows: repeat(2, 1fr); }
+    .portfolio__item:not(:last-child) {
+      margin-bottom: 0.5rem; }
     .portfolio__item:hover {
-      color: #fa3714; }
+      color: #f9f9f9; }
+      .portfolio__item:hover::before {
+        height: 100%;
+        width: 100%;
+        opacity: 1;
+        visibility: visible; }
+    .portfolio__item::before {
+      content: "";
+      visibility: hidden;
+      opacity: 1;
+      position: absolute;
+      height: 100%;
+      width: 2px;
+      background-color: #fa3714;
+      transition: all ease 0.2s; }
   .portfolio__svg {
+    position: relative;
+    z-index: 10;
     align-self: center;
+    grid-column: 2 / -1;
     grid-row: 1 / span 2; }
   .portfolio__texto {
+    position: relative;
+    z-index: 10;
     font-size: 3rem;
     font-weight: 700;
     align-self: end; }
   .portfolio__link {
+    position: relative;
+    z-index: 10;
     font-size: 2rem;
     line-height: 1;
     align-self: start; }

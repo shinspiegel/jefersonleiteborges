@@ -9,7 +9,7 @@ const icone = (props) => {
 
     return (
         <a style={estilo} href={props.link}>
-            <svg className={'iconeSVG iconeSVG--' + props.estiloExtra}>
+            <svg className={props.estilo}>
                 <use href={iconeSVG + '#' + props.id}></use>
             </svg>
         </a>

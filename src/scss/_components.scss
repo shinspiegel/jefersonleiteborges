@@ -97,21 +97,25 @@
   }
 }
 
-.iconeSVG {
-  margin: 0.5rem;
-  height: 2.5rem;
-  width: 2.5rem;
-  fill: currentColor;
-  transition: all ease 0.3s;
+.svg {
+  &__contato {
+    margin: 0.5rem;
+    height: 2.5rem;
+    width: 2.5rem;
+    fill: currentColor;
+    transition: all ease 0.3s;
 
-  &:hover {
-    color: $corPrimaria;
-    transform: scale(1.1) translateY(0.3rem);
+    &:hover {
+      color: $corPrimaria;
+      transform: scale(1.1) translateY(0.3rem);
+    }
   }
 
-  &--grande {
-    width: 7rem;
+  &__portfolio {
+    margin: 1rem;
     height: 7rem;
+    width: 7rem;
+    fill: currentColor;
   }
 }
 
@@ -126,27 +130,61 @@
   transition: all ease 0.2s;
 
   &__item {
+    position: relative;
+    text-decoration: none;
+    color: inherit;
+
+    padding-left: 2rem;
     display: grid;
-    grid-template-columns: min-content 1fr;
+    grid-template-columns: 1fr min-content;
     grid-template-rows: repeat(2, 1fr);
 
+    &:not(:last-child) {
+      margin-bottom: 0.5rem;
+    }
+
     &:hover {
-      color: $corPrimaria;
+      color: $cinza1;
+
+      &::before {
+        height: 100%;
+        width: 100%;
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+
+    &::before {
+      content: "";
+      visibility: hidden;
+      opacity: 1;
+      position: absolute;
+      height: 100%;
+      width: 2px;
+      background-color: $corPrimaria;
+      transition: all ease 0.2s;
     }
   }
 
   &__svg {
+    position: relative;
+    z-index: 10;
     align-self: center;
+    grid-column: 2 / -1;
     grid-row: 1 / span 2;
   }
 
   &__texto {
+    position: relative;
+    z-index: 10;
     font-size: 3rem;
     font-weight: 700;
     align-self: end;
   }
 
   &__link {
+    position: relative;
+    z-index: 10;
     font-size: 2rem;
     line-height: 1;
     align-self: start;

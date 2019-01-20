@@ -6,12 +6,12 @@ const contato = (props) => {
         <div className='contato'>
             <h2 className='titulo--2'>Contato</h2>
             <div className='contato__listaSVG'>
-                <Icone id='facebook' link={props.contato.facebook} />
-                <Icone id='instagram' link={props.contato.instagram} />
-                <Icone id='twitter' link={props.contato.twitter} />
-                <Icone id='email' link={'mailto:' + props.contato.email} />
-                <Icone id='pin' link={props.endereco.gmaps} />
-                <Icone id='telefone' link={'tel:' + props.contato.telefone} />
+                <Icone estilo='svg__contato' id='facebook' link={props.contato.facebook} />
+                <Icone estilo='svg__contato' id='instagram' link={props.contato.instagram} />
+                <Icone estilo='svg__contato' id='twitter' link={props.contato.twitter} />
+                <Icone estilo='svg__contato' id='email' link={'mailto:' + props.contato.email} />
+                <Icone estilo='svg__contato' id='pin' link={props.endereco.gmaps} />
+                <Icone estilo='svg__contato' id='telefone' link={'tel:' + props.contato.telefone} />
             </div>
             <div className='contato__listaTexto'>
                 <p className='contato__item'>
