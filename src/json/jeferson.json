@@ -29,9 +29,9 @@
     "contato": {
       "telefone": "991.511.061",
       "email": "shin.jef@gmail.com",
-      "facebook": "https://www.facebook.com/jeferson.leiteborges",
-      "instagram": "https://www.instagram.com/shinspiegel",
-      "twitter": "https://twitter.com/Shinspiegel"
+      "facebook": "jeferson.leiteborges",
+      "instagram": "shinspiegel",
+      "twitter": "shinspiegel"
     }
   },
   "formacao": [
@@ -44,8 +44,8 @@
     { "id": "1", "conhecimento": "Língua inglesa", "rank": "6", "icone": "" },
     { "id": "2", "conhecimento": "Informática básica", "rank": "9", "icone": "" },
     { "id": "3", "conhecimento": "Windows", "rank": "9", "icone": "" },
-    { "id": "4", "conhecimento": "macOS", "rank": "8", "icone": "" },
-    { "id": "5", "conhecimento": "Linux", "rank": "7", "icone": "" },
+    { "id": "4", "conhecimento": "macOS", "rank": "9", "icone": "" },
+    { "id": "5", "conhecimento": "Linux", "rank": "5", "icone": "" },
     { "id": "6", "conhecimento": "AutoCad", "rank": "8", "icone": "" },
     { "id": "7", "conhecimento": "Solid Works", "rank": "6", "icone": "" },
     { "id": "8", "conhecimento": "Fusion 360", "rank": "7", "icone": "" },

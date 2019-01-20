@@ -15,6 +15,7 @@
 }
 
 .toolTip {
+  display: inline-block;
   position: relative;
 
   &__item {
@@ -45,6 +46,25 @@
     opacity: 1;
     transform: translate(-50%, -50%);
   }
+
+  &__interno {
+    visibility: hidden;
+    padding: 0.5rem;
+    color: $cinza1;
+    position: absolute;
+    background-color: $corPrimaria;
+    top: -100%;
+    left: 0;
+    transform: translate(-50%, -3rem) scaleX(0);
+    transition: transform ease .2s;
+  }
+  
+  &:hover &__interno {
+    visibility: visible;
+    transform: translate(-50%, 0) scaleX(1);
+    box-shadow: $sombraLeve;
+  }
+
 }
 
 .academica {
@@ -72,8 +92,27 @@
 }
 
 .conhecimento {
+  position: relative;
+  padding-left: 0.5rem;
+
   &:not(:last-child) {
     margin-bottom: 1.6rem;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    background-color: $corPrimaria;
+    height: 0;
+    width: 2px;
+    transform: translate(-50%, -50%);
+    transition: height ease 0.1s, left ease 0.2s 0.1s;
+  }
+
+  &:hover::before {
+    height: 100%;
   }
 
   &__nome {

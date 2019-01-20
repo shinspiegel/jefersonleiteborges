@@ -1,4 +1,5 @@
 import React from 'react';
+import ToolTip from '../components/smallComps/ToolTip';
 
 const infoBasico = (props) => {
     const idadeAtual = ((new Date()).getFullYear()) - props.info.nascimento.a;
@@ -8,22 +9,24 @@ const infoBasico = (props) => {
         <section className='infoBasico'>
             <p className='paragrafo'>
                 Nascimento:&nbsp;
-                <span className='negrito toolTip'>{props.info.nascimento.d}/{props.info.nascimento.m}/{props.info.nascimento.a} <span className='toolTip__item'> Idade Atual {idadeAtual} </span></span>
+                <ToolTip textoInterno={'Idade:' + idadeAtual}>
+                    <span className='negrito'>{props.info.nascimento.d}/{props.info.nascimento.m}/{props.info.nascimento.a}</span>
+                </ToolTip>
             </p>
-            <p className='paragrafo'>
-                Sexo:&nbsp;
+                <p className='paragrafo'>
+                    Sexo:&nbsp;
                 <span className='negrito'>{props.info.sexo}</span>
-            </p>
-            <p className='paragrafo'>
-                CPF:&nbsp;
+                </p>
+                <p className='paragrafo'>
+                    CPF:&nbsp;
                 <span className='negrito'>{props.info.cpf}</span>
-            </p>
-            <p className='paragrafo'>
-                Estado Civil:&nbsp;
+                </p>
+                <p className='paragrafo'>
+                    Estado Civil:&nbsp;
                 <span className='negrito'>{props.info.estadoCivil}</span>
-            </p>
+                </p>
         </section>
-    );
-}
-
+            );
+        }
+        
 export default infoBasico;

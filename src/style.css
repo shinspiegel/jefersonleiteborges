@@ -88,6 +88,7 @@ body {
   width: 25rem; }
 
 .toolTip {
+  display: inline-block;
   position: relative; }
   .toolTip__item {
     visibility: hidden;
@@ -110,6 +111,20 @@ body {
     visibility: visible;
     opacity: 1;
     transform: translate(-50%, -50%); }
+  .toolTip__interno {
+    visibility: hidden;
+    padding: 0.5rem;
+    color: #f9f9f9;
+    position: absolute;
+    background-color: #fa3714;
+    top: -100%;
+    left: 0;
+    transform: translate(-50%, -3rem) scaleX(0);
+    transition: transform ease .2s; }
+  .toolTip:hover .toolTip__interno {
+    visibility: visible;
+    transform: translate(-50%, 0) scaleX(1);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.25); }
 
 .academica__caixaItem {
   line-height: 1.2; }
@@ -127,22 +142,35 @@ body {
   font-weight: 400;
   font-size: 1.4rem; }
 
-.conhecimento:not(:last-child) {
-  margin-bottom: 1.6rem; }
-
-.conhecimento__nome {
-  font-weight: 400;
-  line-height: 1; }
-
-.conhecimento__estrela {
-  height: 2rem;
-  width: 2rem; }
-  .conhecimento__estrela--starFull {
-    fill: #fa3714; }
-  .conhecimento__estrela--starHalf {
-    fill: #fa3714; }
-  .conhecimento__estrela--starEmpty {
-    fill: #ccc; }
+.conhecimento {
+  position: relative;
+  padding-left: 0.5rem; }
+  .conhecimento:not(:last-child) {
+    margin-bottom: 1.6rem; }
+  .conhecimento::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    background-color: #fa3714;
+    height: 0;
+    width: 2px;
+    transform: translate(-50%, -50%);
+    transition: height ease 0.1s, left ease 0.2s 0.1s; }
+  .conhecimento:hover::before {
+    height: 100%; }
+  .conhecimento__nome {
+    font-weight: 400;
+    line-height: 1; }
+  .conhecimento__estrela {
+    height: 2rem;
+    width: 2rem; }
+    .conhecimento__estrela--starFull {
+      fill: #fa3714; }
+    .conhecimento__estrela--starHalf {
+      fill: #fa3714; }
+    .conhecimento__estrela--starEmpty {
+      fill: #ccc; }
 
 .svg__contato {
   margin: 0.5rem;
