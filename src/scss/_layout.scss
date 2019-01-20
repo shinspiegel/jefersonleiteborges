@@ -3,19 +3,22 @@ body {
 }
 
 .conteudo {
-  max-width: 70rem;
+  max-width: 80rem;
   margin: 7rem auto;
   background-color: $cinza1;
-  padding: 3rem;
+  padding: 5rem;
 
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-auto-rows: repeat(5, 1fr);
-  grid-gap: 2rem;
+  grid-gap: 5rem;
 
   box-shadow: $sombra;
   border-radius: 2px;
 
+  justify-content: start;
+
+  //& > * {background-color: #ccc}
 }
 
 .cabecalho {
@@ -36,9 +39,8 @@ body {
 }
 
 .conhecimentos {
-  background-color: brown;
   grid-column: 2 / span 1;
-  grid-row: 1 / span 3;
+  grid-row: 1 / span 5;
 }
 
 .contato {

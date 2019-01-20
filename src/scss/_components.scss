@@ -48,7 +48,6 @@
 }
 
 .academica {
-
   &__caixaItem {
     line-height: 1.2;
 
@@ -69,5 +68,24 @@
   &__anoConclusao {
     font-weight: 400;
     font-size: 1.4rem;
+  }
+}
+
+
+.conhecimento {
+  
+  &:not(:last-child) {
+    margin-bottom: 1.5rem;
+  }
+
+  &__nome {
+    font-weight: 400;
+    line-height: 1;
+  }
+
+  &__estrela {
+    height: 2rem;
+    width: 2rem;
+    fill: #ccc;
   }
 }

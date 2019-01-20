@@ -126,20 +126,33 @@ body {
   font-weight: 400;
   font-size: 1.4rem; }
 
+.conhecimento:not(:last-child) {
+  margin-bottom: 1.5rem; }
+
+.conhecimento__nome {
+  font-weight: 400;
+  line-height: 1; }
+
+.conhecimento__estrela {
+  height: 2rem;
+  width: 2rem;
+  fill: #ccc; }
+
 body {
   background-image: linear-gradient(to bottom right, #f56e30, #ca1717); }
 
 .conteudo {
-  max-width: 70rem;
+  max-width: 80rem;
   margin: 7rem auto;
   background-color: #f9f9f9;
-  padding: 3rem;
+  padding: 5rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-auto-rows: repeat(5, 1fr);
-  grid-gap: 2rem;
+  grid-gap: 5rem;
   box-shadow: 0 2rem 3rem 0, 0, 0, 1;
-  border-radius: 2px; }
+  border-radius: 2px;
+  justify-content: start; }
 
 .cabecalho {
   text-align: right; }
@@ -155,9 +168,8 @@ body {
   text-align: right; }
 
 .conhecimentos {
-  background-color: brown;
   grid-column: 2 / span 1;
-  grid-row: 1 / span 3; }
+  grid-row: 1 / span 5; }
 
 .contato {
   background-color: purple; }
