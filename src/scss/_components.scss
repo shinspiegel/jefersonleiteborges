@@ -143,6 +143,18 @@
       color: $corPrimaria;
       transform: scale(1.1) translateY(0.3rem);
     }
+
+    @media only screen and (max-width: 700px) {
+      height: 4rem;
+      width: 4rem;
+      margin: 1rem;
+    }
+
+    @media only screen and (max-width: 500px) {
+      height: 4.5rem;
+      width: 4.5rem;
+      margin: 1rem;
+    }
   }
 
   &__portfolio {

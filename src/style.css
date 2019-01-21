@@ -47,15 +47,21 @@ sass/
 html {
   box-sizing: border-box;
   font-size: 62.5%; }
+  @media only screen and (max-width: 500px) {
+    html {
+      font-size: 50%; } }
 
 body {
-  font-family: 'Barlow', sans-serif;
+  font-family: "Barlow", sans-serif;
   font-size: 1.8rem;
   font-weight: 200;
   line-height: 1.6;
   color: #333;
   letter-spacing: 0.8px;
   min-height: 100vh; }
+  @media only screen and (max-width: 500px) {
+    body {
+      font-size: 2.5rem; } }
 
 .titulo--1, .titulo--2 {
   font-family: "Unica One", cursive;
@@ -178,6 +184,16 @@ body {
   .svg__contato:hover {
     color: #fa3714;
     transform: scale(1.1) translateY(0.3rem); }
+  @media only screen and (max-width: 700px) {
+    .svg__contato {
+      height: 4rem;
+      width: 4rem;
+      margin: 1rem; } }
+  @media only screen and (max-width: 500px) {
+    .svg__contato {
+      height: 4.5rem;
+      width: 4.5rem;
+      margin: 1rem; } }
 
 .svg__portfolio {
   margin: 1rem;
@@ -246,38 +262,108 @@ body {
   padding: 5rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-auto-rows: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr);
   grid-gap: 5rem;
   box-shadow: 0 2rem 3rem rgba(0, 0, 0, 0.25);
   border-radius: 2px;
-  justify-content: start; }
+  justify-content: start;
+  align-items: start; }
+  @media only screen and (max-width: 850px) {
+    .conteudo {
+      margin: 0;
+      padding: 3rem;
+      max-width: 100%; } }
+  @media only screen and (max-width: 700px) {
+    .conteudo {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center; } }
+  @media only screen and (max-width: 500px) {
+    .conteudo {
+      margin: 0;
+      padding: 0; } }
 
 .cabecalho {
   text-align: right;
   justify-self: end; }
+  @media only screen and (max-width: 700px) {
+    .cabecalho {
+      text-align: inherit;
+      justify-self: inherit;
+      margin-bottom: 3rem;
+      margin-top: 3rem;
+      width: 80%; } }
 
 .foto {
-  justify-self: end;
   justify-self: end; }
+  @media only screen and (max-width: 700px) {
+    .foto {
+      text-align: inherit;
+      justify-self: inherit;
+      align-self: inherit;
+      margin-bottom: 3rem; } }
 
 .infoBasico {
   line-height: 1.3;
   text-align: right;
   justify-self: end; }
+  @media only screen and (max-width: 700px) {
+    .infoBasico {
+      text-align: inherit;
+      justify-self: inherit;
+      align-self: inherit;
+      margin-bottom: 3rem; } }
 
 .academica {
   text-align: right;
   justify-self: end; }
+  @media only screen and (max-width: 700px) {
+    .academica {
+      text-align: inherit;
+      justify-self: inherit;
+      align-self: inherit;
+      margin-bottom: 3rem; } }
 
 .conhecimentos {
-  grid-column: 2 / span 1;
+  grid-column: 2 / -1;
   grid-row: 1 / span 5;
   justify-self: stretch; }
+  @media only screen and (max-width: 700px) {
+    .conhecimentos {
+      width: 90%;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 1rem;
+      justify-content: start;
+      text-align: left;
+      margin-bottom: 3rem; } }
+  @media only screen and (max-width: 500px) {
+    .conhecimentos {
+      display: flex;
+      text-align: center;
+      flex-direction: column;
+      width: 100%; } }
+  @media only screen and (max-width: 700px) {
+    .conhecimentos > h2 {
+      text-align: center;
+      grid-column: 1/-1; } }
 
 .contato {
   text-align: right;
   justify-self: end; }
+  @media only screen and (max-width: 700px) {
+    .contato {
+      text-align: inherit;
+      justify-self: inherit;
+      align-self: inherit;
+      margin-bottom: 3rem; } }
 
 .portfolio {
-  grid-column: 1 / span 2;
+  grid-column: 1 / -1;
   justify-self: stretch; }
+  @media only screen and (max-width: 700px) {
+    .portfolio {
+      text-align: left;
+      align-self: stretch; } }
