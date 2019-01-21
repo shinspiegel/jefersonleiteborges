@@ -19,6 +19,7 @@ const conhecimentos = (props) => {
 
     let listaConhecimento = props.conhecimentos.map(item => (
         <div key={item.id} className='conhecimento'>
+            <div className='conhecimento__detalhe'>{item.mensagemToolTip}</div>
             <p className='conhecimento__nome'>{item.conhecimento}</p>
             {loopEstrelas(Math.floor(item.rank / 2), 'starFull')}
             {loopEstrelas((item.rank % 2), 'starHalf')}

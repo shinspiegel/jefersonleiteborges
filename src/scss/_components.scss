@@ -15,56 +15,29 @@
 }
 
 .toolTip {
+  font-weight: 400;
   display: inline-block;
   position: relative;
 
-  &__item {
-    visibility: hidden;
-    display: block;
-
-    position: absolute;
-    top: -100%;
-    left: 50%;
-    z-index: 100;
-    transform: translate(-50%, -100%);
-    opacity: 0;
-
-    background-color: $corPrimaria;
-    color: $cinza1;
-    font-size: 1.4rem;
-    text-align: center;
-
-    border-radius: 2px;
-    min-width: 11rem;
-    padding: 1rem;
-
-    transition: all ease 0.3s;
-  }
-
-  &:hover &__item {
-    visibility: visible;
-    opacity: 1;
-    transform: translate(-50%, -50%);
-  }
-
   &__interno {
     visibility: hidden;
+    position: absolute;
+    top: -50%;
+    right: 50%;
+    transform: translate(50%, 0) scaleX(0);
+
     padding: 0.5rem;
     color: $cinza1;
-    position: absolute;
     background-color: $corPrimaria;
-    top: -100%;
-    left: 0;
-    transform: translate(-50%, -3rem) scaleX(0);
-    transition: transform ease .2s;
-  }
-  
-  &:hover &__interno {
-    visibility: visible;
-    transform: translate(-50%, 0) scaleX(1);
-    box-shadow: $sombraLeve;
+
+    transition: transform ease 0.2s;
   }
 
+  &:hover &__interno {
+    visibility: visible;
+    transform: translate(50%, -3rem) scaleX(1);
+    box-shadow: $sombraLeve;
+  }
 }
 
 .academica {
@@ -108,11 +81,33 @@
     height: 0;
     width: 2px;
     transform: translate(-50%, -50%);
-    transition: height ease 0.1s, left ease 0.2s 0.1s;
+    transition: height ease-out 0.1s, left ease-in 0.2s 0.1s;
   }
 
   &:hover::before {
+    left: 100%;
     height: 100%;
+  }
+
+  &__detalhe {
+    visibility: hidden;
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    background-color: $corPrimaria;
+    color: $cinza1;
+    font-weight: 400;
+    height: 100%;
+    padding: 0.4rem;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: all ease-out 0.1s 0.3s;
+  }
+
+  &:hover &__detalhe {
+    visibility: visible;
+    transform: scaleX(1);
   }
 
   &__nome {

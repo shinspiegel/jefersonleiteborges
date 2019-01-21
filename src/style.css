@@ -88,42 +88,22 @@ body {
   width: 25rem; }
 
 .toolTip {
+  font-weight: 400;
   display: inline-block;
   position: relative; }
-  .toolTip__item {
-    visibility: hidden;
-    display: block;
-    position: absolute;
-    top: -100%;
-    left: 50%;
-    z-index: 100;
-    transform: translate(-50%, -100%);
-    opacity: 0;
-    background-color: #fa3714;
-    color: #f9f9f9;
-    font-size: 1.4rem;
-    text-align: center;
-    border-radius: 2px;
-    min-width: 11rem;
-    padding: 1rem;
-    transition: all ease 0.3s; }
-  .toolTip:hover .toolTip__item {
-    visibility: visible;
-    opacity: 1;
-    transform: translate(-50%, -50%); }
   .toolTip__interno {
     visibility: hidden;
+    position: absolute;
+    top: -50%;
+    right: 50%;
+    transform: translate(50%, 0) scaleX(0);
     padding: 0.5rem;
     color: #f9f9f9;
-    position: absolute;
     background-color: #fa3714;
-    top: -100%;
-    left: 0;
-    transform: translate(-50%, -3rem) scaleX(0);
-    transition: transform ease .2s; }
+    transition: transform ease 0.2s; }
   .toolTip:hover .toolTip__interno {
     visibility: visible;
-    transform: translate(-50%, 0) scaleX(1);
+    transform: translate(50%, -3rem) scaleX(1);
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.25); }
 
 .academica__caixaItem {
@@ -156,9 +136,26 @@ body {
     height: 0;
     width: 2px;
     transform: translate(-50%, -50%);
-    transition: height ease 0.1s, left ease 0.2s 0.1s; }
+    transition: height ease-out 0.1s, left ease-in 0.2s 0.1s; }
   .conhecimento:hover::before {
+    left: 100%;
     height: 100%; }
+  .conhecimento__detalhe {
+    visibility: hidden;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #fa3714;
+    color: #f9f9f9;
+    font-weight: 400;
+    height: 100%;
+    padding: 0.4rem;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: all ease-out 0.1s 0.3s; }
+  .conhecimento:hover .conhecimento__detalhe {
+    visibility: visible;
+    transform: scaleX(1); }
   .conhecimento__nome {
     font-weight: 400;
     line-height: 1; }
@@ -256,24 +253,31 @@ body {
   justify-content: start; }
 
 .cabecalho {
-  text-align: right; }
+  text-align: right;
+  justify-self: end; }
 
 .foto {
+  justify-self: end;
   justify-self: end; }
 
 .infoBasico {
   line-height: 1.3;
-  text-align: right; }
+  text-align: right;
+  justify-self: end; }
 
 .academica {
-  text-align: right; }
+  text-align: right;
+  justify-self: end; }
 
 .conhecimentos {
   grid-column: 2 / span 1;
-  grid-row: 1 / span 5; }
+  grid-row: 1 / span 5;
+  justify-self: stretch; }
 
 .contato {
-  text-align: right; }
+  text-align: right;
+  justify-self: end; }
 
 .portfolio {
-  grid-column: 1 / span 2; }
+  grid-column: 1 / span 2;
+  justify-self: stretch; }
