@@ -32,11 +32,12 @@
 
     transition: transform ease 0.2s;
   }
-
-  &:hover &__interno {
-    visibility: visible;
-    transform: translate(50%, -3rem) scaleX(1);
-    box-shadow: $sombraLeve;
+  @media (any-hover) {
+    &:hover &__interno {
+      visibility: visible;
+      transform: translate(50%, -3rem) scaleX(1);
+      box-shadow: $sombraLeve;
+    }
   }
 }
 
@@ -84,8 +85,10 @@
     transition: height ease-out 0.1s, left ease-in 0.2s 0.1s;
   }
 
-  &:hover::before {
-    height: 100%;
+  @media (any-hover: hover) {
+    &:hover::before {
+      height: 100%;
+    }
   }
 
   &__detalhe {
@@ -104,9 +107,11 @@
     transition: all ease-out 0.1s 0.3s;
   }
 
-  &:hover &__detalhe {
-    visibility: visible;
-    transform: scaleX(1);
+  @media (any-hover: hover) {
+    &:hover &__detalhe {
+      visibility: visible;
+      transform: scaleX(1);
+    }
   }
 
   &__nome {
@@ -138,9 +143,11 @@
     fill: currentColor;
     transition: all ease 0.3s;
 
-    &:hover {
-      color: $corPrimaria;
-      transform: scale(1.1) translateY(0.3rem);
+    @media(any-hover: hover) {
+      &:hover {
+        color: $corPrimaria;
+        transform: scale(1.1) translateY(0.3rem);
+      }
     }
 
     @media only screen and (max-width: 700px) {
@@ -188,14 +195,16 @@
       margin-bottom: 0.5rem;
     }
 
-    &:hover {
-      color: $cinza1;
-
-      &::before {
-        height: 100%;
-        width: 100%;
-        opacity: 1;
-        visibility: visible;
+    @media (any-hover: hover) {
+      &:hover {
+        color: $cinza1;
+  
+        &::before {
+          height: 100%;
+          width: 100%;
+          opacity: 1;
+          visibility: visible;
+        }
       }
     }
 
