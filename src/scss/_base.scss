@@ -31,3 +31,7 @@ body {
     font-size: 2.5rem;
   }
 }
+
+::selection {
+  user-select: none;
+}
