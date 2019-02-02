@@ -13,7 +13,7 @@ html {
   box-sizing: border-box;
   font-size: 62.5%; //1 rem = 10px => 10/16 = 62,5%
 
-  @media only screen and (max-width: 500px) {
+  @include responsivo(sm) {
     font-size: 50%
   }
 }
@@ -27,7 +27,7 @@ body {
   letter-spacing: 0.8px;
   min-height: 100vh;
 
-  @media only screen and (max-width: 500px) {
+  @include responsivo(sm) {
     font-size: 2.5rem;
   }
 }

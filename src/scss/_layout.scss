@@ -1,9 +1,5 @@
 body {
-  background-image: linear-gradient(
-    to bottom right,
-    $corPrimariaClaro,
-    $corPrimariaEscuro
-  );
+  background-image: linear-gradient(to bottom right, $corPrimariaClaro, $corPrimariaEscuro);
 }
 
 .conteudo {
@@ -14,7 +10,7 @@ body {
 
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: repeat(5, 1fr);
+  grid-template-rows: repeat(6, min-content);
   grid-gap: 5rem;
 
   box-shadow: $sombra;
@@ -23,13 +19,13 @@ body {
   justify-content: start;
   align-items: start;
 
-  @media only screen and (max-width: 850px) {
+  @include responsivo(lg) {
     margin: 0;
     padding: 3rem;
     max-width: 100%;
   }
 
-  @media only screen and (max-width: 700px) {
+  @include responsivo(md) {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -37,7 +33,7 @@ body {
     text-align: center;
   }
 
-  @media only screen and (max-width: 500px) {
+  @include responsivo(sm) {
     margin: 0;
     padding: 0;
   }
@@ -47,7 +43,7 @@ body {
   text-align: right;
   justify-self: end;
 
-  @media only screen and (max-width: 700px) {
+  @include responsivo(md) {
     text-align: inherit;
     justify-self: inherit;
     margin-bottom: 3rem;
@@ -59,7 +55,7 @@ body {
 .foto {
   justify-self: end;
 
-  @media only screen and (max-width: 700px) {
+  @include responsivo(md) {
     text-align: inherit;
     justify-self: inherit;
     align-self: inherit;
@@ -72,7 +68,7 @@ body {
   text-align: right;
   justify-self: end;
 
-  @media only screen and (max-width: 700px) {
+  @include responsivo(md) {
     text-align: inherit;
     justify-self: inherit;
     align-self: inherit;
@@ -84,7 +80,7 @@ body {
   text-align: right;
   justify-self: end;
 
-  @media only screen and (max-width: 700px) {
+  @include responsivo(md) {
     text-align: inherit;
     justify-self: inherit;
     align-self: inherit;
@@ -97,7 +93,7 @@ body {
   grid-row: 1 / span 5;
   justify-self: stretch;
 
-  @media only screen and (max-width: 700px) {
+  @include responsivo(md) {
     width: 90%;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -107,7 +103,7 @@ body {
     margin-bottom: 3rem;
   }
 
-  @media only screen and (max-width: 500px) {
+  @include responsivo(sm) {
     display: flex;
     text-align: center;
     flex-direction: column;
@@ -115,7 +111,7 @@ body {
   }
 
   & > h2 {
-    @media only screen and (max-width: 700px) {
+    @include responsivo(md) {
       text-align: center;
       grid-column: 1/-1;
     }
@@ -126,7 +122,7 @@ body {
   text-align: right;
   justify-self: end;
 
-  @media only screen and (max-width: 700px) {
+  @include responsivo(md) {
     text-align: inherit;
     justify-self: inherit;
     align-self: inherit;
@@ -138,8 +134,13 @@ body {
   grid-column: 1 / -1;
   justify-self: stretch;
 
-  @media only screen and (max-width: 700px) {
+  @include responsivo(md) {
     text-align: left;
     align-self: stretch;
   }
+}
+
+.listaExperiencia {
+  grid-column: 1 / span 2;
+  justify-self: center;
 }

@@ -9,6 +9,7 @@ import Formacao from './components/FormacaoAcademica';
 import Conhecimentos from './components/Conhecimentos';
 import Contato from './components/Contato';
 import Portfolio from './components/Portfolio';
+import Experiencia from './components/Experiencia';
 
 class App extends Component {
   render() {
@@ -20,6 +21,7 @@ class App extends Component {
         <Formacao academica={jeferson.formacao} />
         <Conhecimentos conhecimentos={jeferson.conhecimentos} />
         <Contato contato={jeferson.otherInfo.contato} endereco={jeferson.otherInfo.endereco} />
+        <Experiencia experiencia={jeferson.experiencia} />
         <Portfolio portfolio={jeferson.otherInfo.portfolio} />
       </div>
     );
