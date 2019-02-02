@@ -253,13 +253,18 @@
   padding: 1.5rem 1rem;
   transition: all ease 0.25s;
 
+  @include responsivo(md) {
+    flex-direction: column;
+  }
 
   &:not(:last-child) {
     margin-bottom: 2rem;
   }
 
-  &:hover {
-    transform: translatey(-1rem);
+  @media (any-hover) {
+    &:hover {
+      transform: translatey(-1rem);
+    }
   }
 
   &::after {
@@ -274,8 +279,10 @@
     transition: inherit;
   }
 
-  &:hover::after {
-    width: 100%;
+  @media (any-hover) {
+    &:hover::after {
+      width: 100%;
+    }
   }
 
   &__tempoAtuacao {
@@ -285,12 +292,22 @@
     font-size: 1.4rem;
     color: $cinza6;
     flex-basis: 20%;
+
+    @include responsivo(md) {
+      display: flex;
+
+      & * {
+        margin-right: 1rem;
+      }
+    }
   }
 
-  &:hover &__tempoAtuacao {
-    color: $cinza4;
-    font-weight: 400;
-    transform: translateY(-0.5rem);
+  @media (any-hover) {
+    &:hover &__tempoAtuacao {
+      color: $cinza4;
+      font-weight: 400;
+      transform: translateY(-0.5rem);
+    }
   }
 
   &__cargo {
@@ -317,17 +334,21 @@
     }
   }
 
-  &:hover &__cargo {
-    color: $cinza1;
-    transform: translateY(-0.5rem);
-    font-weight: 700;
-    font-size: 1.8rem;
+  @media (any-hover) {
+    &:hover &__cargo {
+      color: $cinza1;
+      transform: translateY(-0.5rem);
+      font-weight: 700;
+      font-size: 1.8rem;
+    }
   }
 
-  &:hover &__cargo::after {
-    background-color: $cinza1;
-    width: 80%;
-    transition-delay: 0.1s;
+  @media (any-hover) {
+    &:hover &__cargo::after {
+      background-color: $cinza1;
+      width: 80%;
+      transition-delay: 0.1s;
+    }
   }
 
   &__empresa {
@@ -337,6 +358,14 @@
     font-size: 1.1rem;
     color: $cinza6;
     flex-basis: 20%;
+
+    @include responsivo(md) {
+      display: flex;
+
+      & * {
+        margin-right: 1rem;
+      }
+    }
   }
 
   &:hover &__empresa {
@@ -344,5 +373,4 @@
     font-weight: 400;
     transform: translateY(-0.5rem);
   }
-
 }

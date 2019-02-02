@@ -143,4 +143,12 @@ body {
 .listaExperiencia {
   grid-column: 1 / span 2;
   justify-self: center;
+
+  @include responsivo(md) {
+    width: 80%;
+  }
+
+  @include responsivo(sm) {
+    width: 90%;
+  }
 }
