@@ -12,6 +12,7 @@ import Conhecimentos from './components/Conhecimentos';
 import Contato from './components/Contato';
 import Portfolio from './components/Portfolio';
 import Experiencia from './components/Experiencia';
+import ChangeLanguage from './components/ChangeLanguage.js';
 
 class App extends Component {
   state = {
@@ -47,6 +48,7 @@ class App extends Component {
 
     return (
       <div className='conteudo'>
+        <ChangeLanguage lang={this.state.language}/>
         <Nome nome={jefersonPT.basicInfo.name} />
         <Foto foto={jefersonPT.basicInfo.foto} />
         <InfoBasico info={jefersonPT.basicInfo} />

@@ -376,3 +376,26 @@
     transform: translateY(-0.5rem);
   }
 }
+
+.changeLanguage {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+
+  &__icone {
+    height: 4rem;
+    width: 4rem;
+
+    transition: all ease 2s;
+  }
+
+  &.visivel {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  &.invisivel {
+    visibility: hidden;
+    opacity: 0;
+  }
+}
