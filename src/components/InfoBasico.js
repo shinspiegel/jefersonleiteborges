@@ -7,24 +7,24 @@ const infoBasico = (props) => {
 
     return (
         <section className='infoBasico'>
-            <p className='paragrafo'>
+            <div className='paragrafo'>
                 Nascimento:&nbsp;
                 <ToolTip textoInterno={'Idade:' + idadeAtual}>
                     <span className='negrito'>{props.info.nascimento.d}/{props.info.nascimento.m}/{props.info.nascimento.a}</span>
                 </ToolTip>
-            </p>
+            </div>
                 <p className='paragrafo'>
                     Sexo:&nbsp;
                 <span className='negrito'>{props.info.sexo}</span>
                 </p>
-                <p className='paragrafo'>
+                <div className='paragrafo'>
                     CPF:&nbsp;
                 <span className='negrito'>{props.info.cpf}</span>
-                </p>
-                <p className='paragrafo'>
+                </div>
+                <div className='paragrafo'>
                     Estado Civil:&nbsp;
                 <span className='negrito'>{props.info.estadoCivil}</span>
-                </p>
+                </div>
         </section>
             );
         }

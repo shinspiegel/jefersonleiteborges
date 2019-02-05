@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import jeferson from './json/jeferson.json';
+import jefersonPT from './json/jeferson.json';
 
 import Nome from './components/Nome';
 import Foto from './components/Foto';
@@ -12,17 +12,25 @@ import Portfolio from './components/Portfolio';
 import Experiencia from './components/Experiencia';
 
 class App extends Component {
+  state = {
+    language: 'pt',
+    info: {...jefersonPT}
+  }
+
+  
+
   render() {
+
     return (
       <div className='conteudo'>
-        <Nome nome={jeferson.basicInfo.name} />
-        <Foto foto={jeferson.basicInfo.foto} />
-        <InfoBasico info={jeferson.basicInfo} />
-        <Formacao academica={jeferson.formacao} />
-        <Conhecimentos conhecimentos={jeferson.conhecimentos} />
-        <Contato contato={jeferson.otherInfo.contato} endereco={jeferson.otherInfo.endereco} />
-        <Experiencia experiencia={jeferson.experiencia} />
-        <Portfolio portfolio={jeferson.otherInfo.portfolio} />
+        <Nome nome={jefersonPT.basicInfo.name} />
+        <Foto foto={jefersonPT.basicInfo.foto} />
+        <InfoBasico info={jefersonPT.basicInfo} />
+        <Formacao academica={jefersonPT.formacao} />
+        <Conhecimentos conhecimentos={jefersonPT.conhecimentos} />
+        <Contato contato={jefersonPT.otherInfo.contato} endereco={jefersonPT.otherInfo.endereco} />
+        <Experiencia experiencia={jefersonPT.experiencia} />
+        <Portfolio portfolio={jefersonPT.otherInfo.portfolio} />
       </div>
     );
   }
