@@ -2,6 +2,8 @@ import React from 'react';
 import estCheia from '../img/icons.svg';
 
 const conhecimentos = (props) => {
+    const title = props.lang === 'BR' ? 'Conhecimentos' : 'Knowledges';
+
 
     function loopEstrelas(numeroEstrelas, tipo) {
         let listaEstrelas = []
@@ -29,7 +31,7 @@ const conhecimentos = (props) => {
 
     return (
         <div className='conhecimentos'>
-            <h2 className='titulo--2'>Conhecimentos</h2>
+            <h2 className='titulo--2'>{title}</h2>
             {listaConhecimento}
         </div>
     );

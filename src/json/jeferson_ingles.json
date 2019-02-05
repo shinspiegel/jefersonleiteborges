@@ -1,0 +1,121 @@
+{
+  "basicInfo": {
+    "name": "Jeferson Leite Borges",
+    "nascimento": { "d": 14, "m": 4, "a": 1987 },
+    "estadoCivil": "single",
+    "cpf": "058.787.189.01",
+    "sexo": "male"
+  },
+  "otherInfo": {
+    "filiacao": {
+      "pai": "Antenor Borges",
+      "mae": "Maria José Leite"
+    },
+    "portfolio": {
+      "behance": "jefersonleite",
+      "tumblr": "jefersonleite",
+      "github": "shinspiegel"
+    },
+    "endereco": {
+      "rua": "Rua Vereador Claudino José Pacheco",
+      "numero": "173",
+      "adicional": "Apto 101",
+      "bairro": "São João",
+      "cidade": "Itajaí",
+      "estado": "Santa Catarina",
+      "pais": "Brazil",
+      "gmaps": "https://goo.gl/maps/8r4trcLZy6u"
+    },
+    "contato": {
+      "telefone": "+55 (47) 991.511.061",
+      "email": "shin.jef@gmail.com",
+      "facebook": "jeferson.leiteborges",
+      "instagram": "shinspiegel",
+      "twitter": "shinspiegel"
+    }
+  },
+  "formacao": [
+    { "id": 0, "instituicao": "UNIVALI", "curso": "Industrial Design", "anoConclusao": "2013" },
+    { "id": 1, "instituicao": "Colégio e Curso Radical", "curso": "High School", "anoConclusao": "2007" },
+    { "id": 2, "instituicao": "Basic School João Duarte", "curso": "Elementary and Middle School", "anoConclusao": "2003" }
+  ],
+  "conhecimentos": [
+    { "id": "18", "conhecimento": "Portuguese", "rank": "8", "icone": "", "mensagemToolTip": "Advanced" },
+    { "id": "0", "conhecimento": "English", "rank": "6", "icone": "", "mensagemToolTip": "Intermediate" },
+    { "id": "1", "conhecimento": "Informática básica", "rank": "9", "icone": "", "mensagemToolTip": "Advanced" },
+    { "id": "2", "conhecimento": "Windows", "rank": "9", "icone": "", "mensagemToolTip": "Advanced" },
+    { "id": "3", "conhecimento": "macOS", "rank": "9", "icone": "", "mensagemToolTip": "Advanced" },
+    { "id": "4", "conhecimento": "Linux", "rank": "5", "icone": "", "mensagemToolTip": "Intermediate" },
+    { "id": "5", "conhecimento": "AutoCad", "rank": "8", "icone": "", "mensagemToolTip": "Intermediate" },
+    { "id": "6", "conhecimento": "Solid Works", "rank": "6", "icone": "", "mensagemToolTip": "Intermediate" },
+    { "id": "7", "conhecimento": "Fusion 360", "rank": "7", "icone": "", "mensagemToolTip": "Intermediate" },
+    { "id": "8", "conhecimento": "Adobe Illustrator", "rank": "9", "icone": "", "mensagemToolTip": "Advanced" },
+    { "id": "9", "conhecimento": "Adobe Photoshop", "rank": "10", "icone": "", "mensagemToolTip": "Advanced" },
+    { "id": "10", "conhecimento": "Abode InDesign", "rank": "7", "icone": "", "mensagemToolTip": "Intermediate" },
+    { "id": "11", "conhecimento": "Adobe Premiere", "rank": "5", "icone": "", "mensagemToolTip": "Basic" },
+    { "id": "12", "conhecimento": "Adobe After Effects", "rank": "4", "icone": "", "mensagemToolTip": "Basic" },
+    { "id": "13", "conhecimento": "Corel Draw", "rank": "7", "icone": "", "mensagemToolTip": "Advanced" },
+    { "id": "14", "conhecimento": "HTML 5", "rank": "7", "icone": "", "mensagemToolTip": "Studying" },
+    { "id": "15", "conhecimento": "CSS 3", "rank": "5", "icone": "", "mensagemToolTip": "Studying" },
+    { "id": "16", "conhecimento": "JavaScript", "rank": "4", "icone": "", "mensagemToolTip": "Studying" },
+    { "id": "17", "conhecimento": "GIT", "rank": "5", "icone": "", "mensagemToolTip": "Studying" }
+  ],
+  "experiencia": [
+    {
+      "id": "1",
+      "empresa": "To10 Propaganda",
+      "cargo": "Art Director, Graphic Designer, Visual Editor, Web Designer",
+      "local": "Itajaí/SC",
+      "entrada": { "m": 11, "a": 2016 },
+      "saida": { "m": 11, "a": 2017 }
+    },
+    {
+      "id": "2",
+      "empresa": "Rockfeller Brasil",
+      "cargo": "Editorial and Graphic Designer",
+      "local": "Baln. Camboriú/SC",
+      "entrada": { "m": 4, "a": 2015 },
+      "saida": { "m": 11, "a": 2016 }
+    },
+    {
+      "id": "3",
+      "empresa": "Copia e Cia",
+      "cargo": "Editorial Designer, Graphic Designer, Visual Editor",
+      "local": "Itajaí/SC",
+      "entrada": { "m": 4, "a": 2015 },
+      "saida": { "m": 11, "a": 2016 }
+    },
+    {
+      "id": "4",
+      "empresa": "PJ Laser",
+      "cargo": "Industrial Desginer, Graphic Designer, Web Designer",
+      "local": "Itajaí/SC",
+      "entrada": { "m": 3, "a": 2013 },
+      "saida": { "m": 10, "a": 2013 }
+    },
+    {
+      "id": "5",
+      "empresa": "Detroit",
+      "cargo": "Draftsman",
+      "local": "Itajaí/SC",
+      "entrada": { "m": 2, "a": 2012 },
+      "saida": { "m": 2, "a": 2013 }
+    },
+    {
+      "id": "6",
+      "empresa": "Cajomar",
+      "cargo": "Editorial and Graphic Designer",
+      "local": "Itajaí/SC",
+      "entrada": { "m": 4, "a": 2006 },
+      "saida": { "m": 2, "a": 2008 }
+    },
+    {
+      "id": "7",
+      "empresa": "Infocenter",
+      "cargo": "Computing Instructor",
+      "local": "Itajaí/SC",
+      "entrada": { "m": 6, "a": 2005 },
+      "saida": { "m": 4, "a": 2006 }
+    }
+  ]
+}

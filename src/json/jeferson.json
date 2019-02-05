@@ -23,7 +23,7 @@
       "bairro": "São João",
       "cidade": "Itajaí",
       "estado": "Santa Catarina",
-      "pais": "Brazil",
+      "pais": "Brasil",
       "gmaps": "https://goo.gl/maps/8r4trcLZy6u"
     },
     "contato": {
@@ -111,7 +111,7 @@
     {
       "id": "7",
       "empresa": "Infocenter",
-      "cargo": "nstrutor de Informática",
+      "cargo": "Instrutor de Informática",
       "local": "Itajaí/SC",
       "entrada": { "m": 6, "a": 2005 },
       "saida": { "m": 4, "a": 2006 }

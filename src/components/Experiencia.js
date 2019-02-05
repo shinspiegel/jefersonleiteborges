@@ -1,6 +1,9 @@
 import React from 'react';
 
 const experiencia = props => {
+  const text1 = props.lang === 'BR' ? 'Inicio' : 'Start';
+  const text2 = props.lang === 'BR' ? 'até' : 'until';
+
   function listarExperiencia(items) {
     let lista = [];
 
@@ -9,11 +12,11 @@ const experiencia = props => {
         <div key={exp.id} className="experiencia">
           <div className="experiencia__tempoAtuacao">
             <div>
-              Inicio: {exp.entrada.m}/{exp.entrada.a}
+              {text1}: {exp.entrada.m}/{exp.entrada.a}
             </div>
             <div>
               {' '}
-              até{' '}
+              {text2}{' '}
               <span className="negrito">
                 {exp.saida.m}/{exp.saida.a}
               </span>

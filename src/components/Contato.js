@@ -3,9 +3,12 @@ import Icone from '../components/smallComps/IconeSVG';
 import ToolTip from '../components/smallComps/ToolTip';
 
 const contato = (props) => {
+    const title = props.lang === 'BR' ? 'Contato' : 'Contact';
+    const data = props.lang === 'BR' ? ['Telefone', 'Email', 'Cidade'] : ['Phone', 'Email', 'City'];
+
     return (
         <div className='contato'>
-            <h2 className='titulo--2'>Contato</h2>
+            <h2 className='titulo--2'>{title}</h2>
             <div className='contato__listaSVG'>
                 <ToolTip textoInterno={'/' + props.contato.facebook}>
                     <Icone estilo='svg__contato' id='facebook' link={'https://www.facebook.com/' + props.contato.facebook} />
@@ -26,15 +29,15 @@ const contato = (props) => {
             </div>
             <div className='contato__listaTexto'>
                 <p className='contato__item'>
-                    Telefone:&nbsp;
+                    {data[0]}:&nbsp;
                     <span className='negrito'>{props.contato.telefone}</span>
                 </p>
                 <p className='contato__item'>
-                    Email:&nbsp;
+                    {data[1]}:&nbsp;
                     <span className='negrito'>{props.contato.email}</span>
                 </p>
                 <p className='contato__item'>
-                    Cidade:&nbsp;
+                    {data[2]}:&nbsp;
                     <span className='negrito'>{props.endereco.cidade}</span>
                 </p>
             </div>
