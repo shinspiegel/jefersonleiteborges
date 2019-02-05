@@ -9,7 +9,7 @@ const changeLanguage = props => {
 
 
 
-  console.log(visivelBR)
+  console.log(visivelEN)
 
   let visivelBR = props.lang === 'BR' ? 'visivel' : 'invisivel';
   let visivelEN = props.lang === 'BR' ? 'invisivel' : 'visivel';
