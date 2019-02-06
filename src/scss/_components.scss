@@ -381,21 +381,29 @@
   position: absolute;
   top: 1rem;
   right: 1rem;
+  border: none;
+  outline: none;
+  color: $cinza9;
 
   &__icone {
     height: 4rem;
     width: 4rem;
+    fill: currentColor;
 
-    transition: all ease 2s;
+    transition: all ease 0.3s;
+
+    &.visivel {
+      visibility: visible;
+      opacity: 1;
+    }
+
+    &.invisivel {
+      visibility: hidden;
+      opacity: 0;
+    }
   }
 
-  &.visivel {
-    visibility: visible;
-    opacity: 1;
-  }
-
-  &.invisivel {
-    visibility: hidden;
-    opacity: 0;
+  &:hover {
+    color: $corPrimaria;
   }
 }

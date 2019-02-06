@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
-import axios from 'axios';
 
 import jefersonPT from './json/jeferson.json';
-import jefersonEN from './json/jeferson.json';
+import jefersonEN from './json/jeferson_ingles.json';
 
 import Nome from './components/Nome';
 import Foto from './components/Foto';
@@ -17,46 +16,32 @@ import ChangeLanguage from './components/ChangeLanguage.js';
 class App extends Component {
   state = {
     language: 'BR',
-    info: {...jefersonPT}
-  }
+    info: { ...jefersonPT },
+  };
 
-  getCountry(url) {
-    axios.get(url)
-    .then( res => {
-      this.identifyLang(res.data.country);
-    })
-    .catch(function (error) {
-      console.log(error);
-    });
-  }
-
-
-  identifyLang(country) {
-    if (country === 'BR') {
-      this.setState({info: {...jefersonPT}});
-    } else { 
-      this.setState({info: {...jefersonEN}});
+  handleLanguage() {
+    if (this.state.language === 'BR') {
+      this.setState({ language: 'EN' });
+      this.setState({ info: { ...jefersonEN } });
     }
-  } 
-
-  componentWillMount() {
-    console.log(`Selected language is: ${this.state.language}`);
-    this.getCountry('https://ipinfo.io');
+    if (this.state.language === 'EN') {
+      this.setState({ language: 'BR' });
+      this.setState({ info: { ...jefersonPT } });
+    }
   }
 
   render() {
-
     return (
-      <div className='conteudo'>
-        <ChangeLanguage lang={this.state.language}/>
-        <Nome nome={jefersonPT.basicInfo.name} />
-        <Foto foto={jefersonPT.basicInfo.foto} />
-        <InfoBasico info={jefersonPT.basicInfo} />
-        <Formacao lang={this.state.language} academica={jefersonPT.formacao} />
-        <Conhecimentos lang={this.state.language} conhecimentos={jefersonPT.conhecimentos} />
-        <Contato lang={this.state.language} contato={jefersonPT.otherInfo.contato} endereco={jefersonPT.otherInfo.endereco} />
-        <Experiencia lang={this.state.language} experiencia={jefersonPT.experiencia} />
-        <Portfolio lang={this.state.language} portfolio={jefersonPT.otherInfo.portfolio} />
+      <div className="conteudo">
+        <ChangeLanguage changelLang={() => this.handleLanguage()} lang={this.state.language} />
+        <Nome nome={this.state.info.basicInfo.name} />
+        <Foto foto={this.state.info.basicInfo.foto} />
+        <InfoBasico lang={this.state.language} info={this.state.info.basicInfo} />
+        <Formacao lang={this.state.language} academica={this.state.info.formacao} />
+        <Conhecimentos lang={this.state.language} conhecimentos={this.state.info.conhecimentos} />
+        <Contato lang={this.state.language} contato={this.state.info.otherInfo.contato} endereco={this.state.info.otherInfo.endereco} />
+        <Experiencia lang={this.state.language} experiencia={this.state.info.experiencia} />
+        <Portfolio lang={this.state.language} portfolio={this.state.info.otherInfo.portfolio} />
       </div>
     );
   }

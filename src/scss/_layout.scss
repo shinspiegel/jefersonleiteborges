@@ -3,6 +3,8 @@ body {
 }
 
 .conteudo {
+  position: relative;
+
   max-width: 80rem;
   margin: 7rem auto;
   background-color: $cinza1;

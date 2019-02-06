@@ -7,26 +7,25 @@ const changeLanguage = props => {
     textDecoration: 'none',
   };
 
-
-
-  console.log(visivelEN)
-
-  let visivelBR = props.lang === 'BR' ? 'visivel' : 'invisivel';
-  let visivelEN = props.lang === 'BR' ? 'invisivel' : 'visivel';
+  let english = '';
+  english = props.lang === 'EN' ? 'visivel' : 'invisivel';
+  
+  let portuguese = '';
+  portuguese = props.lang === 'BR' ? 'visivel' : 'invisivel';
 
   return (
-    <>
+    <button className="changeLanguage" onClick={props.changelLang}>
       <div className="changeLanguage" style={estilo}>
-        <svg className={'changeLanguage__icone ' + visivelBR}>
+        <svg className={'changeLanguage__icone ' + english}>
           <use href={iconeSVG + '#en'} />
         </svg>
       </div>
       <div className="changeLanguage" style={estilo}>
-        <svg className={'changeLanguage__icone ' + visivelEN}>
+        <svg className={'changeLanguage__icone ' + portuguese}>
           <use href={iconeSVG + '#br'} />
         </svg>
       </div>
-    </>
+    </button>
   );
 };
 
