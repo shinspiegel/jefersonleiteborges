@@ -66,11 +66,14 @@
 }
 
 .conhecimento {
+  display: flex;
+  align-items: center;
+
   position: relative;
   padding-left: 0.5rem;
 
   &:not(:last-child) {
-    margin-bottom: 1.6rem;
+    margin-bottom: 1rem;
   }
 
   &::before {
@@ -91,6 +94,25 @@
     }
   }
 
+  &__iconeSVG {
+    position: relative;
+    padding: 0.4rem;
+    height: 4.5rem;
+    width: 4.5rem;
+    margin-right: 1.5rem;
+    fill: $cinza4; 
+    transition: all ease 0.2s;
+  }
+  
+  &:hover &__iconeSVG {
+    fill: $corPrimaria;
+  }
+
+
+  &__descricao {
+    flex: 1;
+  }
+
   &__detalhe {
     visibility: hidden;
     position: absolute;
@@ -101,7 +123,7 @@
     color: $cinza1;
     font-weight: 400;
     height: 100%;
-    padding: 0.4rem;
+    padding: 0.4rem 1rem;
     transform: scaleX(0);
     transform-origin: right;
     transition: all ease-out 0.1s 0.3s;
@@ -116,7 +138,7 @@
 
   &__nome {
     font-weight: 400;
-    line-height: 1;
+    line-height: 1.2;
   }
 
   &__estrela {

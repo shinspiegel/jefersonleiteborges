@@ -1,43 +1,26 @@
 import React from 'react';
 import estCheia from '../img/icons.svg';
+import ConhecimentoItem from './ConhecimentoItem';
 
-const conhecimentos = (props) => {
-    const title = props.lang === 'BR' ? 'Conhecimentos' : 'Knowledges';
+const conhecimentos = props => {
+  const title = props.lang === 'BR' ? 'Conhecimentos' : 'Knowledges';
 
+  let listaConhecimento = props.conhecimentos.map(item => (
+    <ConhecimentoItem
+      iconeTipo={item.icone}
+      key={item.key}
+      mensagemToolTip={item.mensagemToolTip}
+      conhecimento={item.conhecimento}
+      rank={item.rank}
+    />
+  ));
 
-    function loopEstrelas(numeroEstrelas, tipo) {
-        let listaEstrelas = []
-        for (let i = 0; i < numeroEstrelas; i++) {
-            listaEstrelas.push(
-                <svg key={i} className={'conhecimento__estrela conhecimento__estrela--' + tipo}>
-                    <use href={estCheia + '#' + tipo}></use>
-                </svg>
-            );
-        }
-
-        //Valeu Adilson e Rafa pela ajuda nessa função!
-        return listaEstrelas;
-    }
-
-    let listaConhecimento = props.conhecimentos.map(item => (
-        <div key={item.id} className='conhecimento'>
-            <div className='conhecimento__detalhe'>{item.mensagemToolTip}</div>
-            <p className='conhecimento__nome'>{item.conhecimento}</p>
-            {loopEstrelas(Math.floor(item.rank / 2), 'starFull')}
-            {loopEstrelas((item.rank % 2), 'starHalf')}
-            {loopEstrelas(Math.floor((10 - item.rank) / 2), 'starEmpty')}
-        </div>
-    ));
-
-    return (
-        <div className='conhecimentos'>
-            <h2 className='titulo--2'>{title}</h2>
-            {listaConhecimento}
-        </div>
-    );
-}
+  return (
+    <div className="conhecimentos">
+      <h2 className="titulo--2">{title}</h2>
+      {listaConhecimento}
+    </div>
+  );
+};
 
 export default conhecimentos;
-
-
-

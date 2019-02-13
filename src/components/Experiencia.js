@@ -15,7 +15,6 @@ const experiencia = props => {
               {text1}: {exp.entrada.m}/{exp.entrada.a}
             </div>
             <div>
-              {' '}
               {text2}{' '}
               <span className="negrito">
                 {exp.saida.m}/{exp.saida.a}

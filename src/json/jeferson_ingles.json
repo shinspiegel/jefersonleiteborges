@@ -40,25 +40,26 @@
     { "id": 2, "instituicao": "Basic School João Duarte", "curso": "Elementary and Middle School", "anoConclusao": "2003" }
   ],
   "conhecimentos": [
-    { "id": "18", "conhecimento": "Portuguese", "rank": "8", "icone": "", "mensagemToolTip": "Advanced" },
-    { "id": "0", "conhecimento": "English", "rank": "6", "icone": "", "mensagemToolTip": "Intermediate" },
-    { "id": "1", "conhecimento": "Informática básica", "rank": "9", "icone": "", "mensagemToolTip": "Advanced" },
-    { "id": "2", "conhecimento": "Windows", "rank": "9", "icone": "", "mensagemToolTip": "Advanced" },
-    { "id": "3", "conhecimento": "macOS", "rank": "9", "icone": "", "mensagemToolTip": "Advanced" },
+    { "id": "18", "conhecimento": "Portuguese", "rank": "9", "icone": "portugues", "mensagemToolTip": "Advanced" },
+    { "id": "0", "conhecimento": "Língua inglesa", "rank": "6", "icone": "ingles", "mensagemToolTip": "Intermediate" },
+    { "id": "1", "conhecimento": "Informática básica", "rank": "9", "icone": "microsoft", "mensagemToolTip": "Advanced" },
+    { "id": "2", "conhecimento": "Windows", "rank": "9", "icone": "windows", "mensagemToolTip": "Advanced" },
+    { "id": "3", "conhecimento": "macOS", "rank": "9", "icone": "apple", "mensagemToolTip": "Advanced" },
     { "id": "4", "conhecimento": "Linux", "rank": "5", "icone": "", "mensagemToolTip": "Intermediate" },
-    { "id": "5", "conhecimento": "AutoCad", "rank": "8", "icone": "", "mensagemToolTip": "Intermediate" },
-    { "id": "6", "conhecimento": "Solid Works", "rank": "6", "icone": "", "mensagemToolTip": "Intermediate" },
+    { "id": "5", "conhecimento": "AutoCad", "rank": "8", "icone": "autocad", "mensagemToolTip": "Intermediate" },
+    { "id": "6", "conhecimento": "Solid Works", "rank": "6", "icone": "solidworks", "mensagemToolTip": "Intermediate" },
     { "id": "7", "conhecimento": "Fusion 360", "rank": "7", "icone": "", "mensagemToolTip": "Intermediate" },
-    { "id": "8", "conhecimento": "Adobe Illustrator", "rank": "9", "icone": "", "mensagemToolTip": "Advanced" },
-    { "id": "9", "conhecimento": "Adobe Photoshop", "rank": "10", "icone": "", "mensagemToolTip": "Advanced" },
-    { "id": "10", "conhecimento": "Abode InDesign", "rank": "7", "icone": "", "mensagemToolTip": "Intermediate" },
-    { "id": "11", "conhecimento": "Adobe Premiere", "rank": "5", "icone": "", "mensagemToolTip": "Basic" },
-    { "id": "12", "conhecimento": "Adobe After Effects", "rank": "4", "icone": "", "mensagemToolTip": "Basic" },
+    { "id": "8", "conhecimento": "Adobe Illustrator", "rank": "9", "icone": "illustrator", "mensagemToolTip": "Advanced" },
+    { "id": "9", "conhecimento": "Adobe Photoshop", "rank": "10", "icone": "photoshop", "mensagemToolTip": "Advanced" },
+    { "id": "10", "conhecimento": "Abode InDesign", "rank": "7", "icone": "indesign", "mensagemToolTip": "Intermediate" },
+    { "id": "11", "conhecimento": "Adobe Premiere", "rank": "5", "icone": "premiere", "mensagemToolTip": "Basic" },
+    { "id": "12", "conhecimento": "Adobe After Effects", "rank": "4", "icone": "aftereffects", "mensagemToolTip": "Basic" },
     { "id": "13", "conhecimento": "Corel Draw", "rank": "7", "icone": "", "mensagemToolTip": "Advanced" },
-    { "id": "14", "conhecimento": "HTML 5", "rank": "7", "icone": "", "mensagemToolTip": "Studying" },
-    { "id": "15", "conhecimento": "CSS 3", "rank": "5", "icone": "", "mensagemToolTip": "Studying" },
-    { "id": "16", "conhecimento": "JavaScript", "rank": "4", "icone": "", "mensagemToolTip": "Studying" },
-    { "id": "17", "conhecimento": "GIT", "rank": "5", "icone": "", "mensagemToolTip": "Studying" }
+    { "id": "14", "conhecimento": "HTML 5", "rank": "7", "icone": "html5", "mensagemToolTip": "Studying" },
+    { "id": "15", "conhecimento": "CSS 3", "rank": "5", "icone": "css3", "mensagemToolTip": "Studying" },
+    { "id": "16", "conhecimento": "JavaScript", "rank": "4", "icone": "javascript", "mensagemToolTip": "Studying" },
+    { "id": "17", "conhecimento": "GIT", "rank": "5", "icone": "github", "mensagemToolTip": "Studying" }
+
   ],
   "experiencia": [
     {
