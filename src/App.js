@@ -33,7 +33,7 @@ class App extends Component {
   render() {
     return (
       <div className="conteudo">
-        <ChangeLanguage changelLang={() => this.handleLanguage()} lang={this.state.language} />
+        <ChangeLanguage changeLang={() => this.handleLanguage()} lang={this.state.language} />
         <Nome nome={this.state.info.basicInfo.name} />
         <Foto foto={this.state.info.basicInfo.foto} />
         <InfoBasico lang={this.state.language} info={this.state.info.basicInfo} />

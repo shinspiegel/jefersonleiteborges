@@ -1,30 +1,12 @@
 import React from 'react';
-import iconeSVG from '../img/icons.svg';
+import ChangeLanguageButton from './ChangeLanguageButton';
 
-const changeLanguage = props => {
-  let estilo = {
-    color: 'inherit',
-    textDecoration: 'none',
-  };
-
-  let english = '';
-  english = props.lang === 'EN' ? 'visivel' : 'invisivel';
-  
-  let portuguese = '';
-  portuguese = props.lang === 'BR' ? 'visivel' : 'invisivel';
+const changeLanguage = ({ lang, changeLang }) => {
 
   return (
-    <button className="changeLanguage" onClick={props.changelLang}>
-      <div className="changeLanguage" style={estilo}>
-        <svg className={'changeLanguage__icone ' + english}>
-          <use href={iconeSVG + '#en'} />
-        </svg>
-      </div>
-      <div className="changeLanguage" style={estilo}>
-        <svg className={'changeLanguage__icone ' + portuguese}>
-          <use href={iconeSVG + '#br'} />
-        </svg>
-      </div>
+    <button className="changeLanguageButton" onClick={changeLang}>
+    <ChangeLanguageButton svgType={'br'} invisivel={lang=== 'BR' ? 'visivel' : 'invisivel'} />
+    <ChangeLanguageButton svgType={'en'} invisivel={lang=== 'EN' ? 'visivel' : 'invisivel'} />
     </button>
   );
 };

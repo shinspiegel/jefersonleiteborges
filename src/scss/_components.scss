@@ -72,6 +72,8 @@
   position: relative;
   padding-left: 0.5rem;
 
+  margin-right: -5rem;
+
   &:not(:last-child) {
     margin-bottom: 1rem;
   }
@@ -100,14 +102,13 @@
     height: 4.5rem;
     width: 4.5rem;
     margin-right: 1.5rem;
-    fill: $cinza4; 
+    fill: $cinza4;
     transition: all ease 0.2s;
   }
-  
+
   &:hover &__iconeSVG {
     fill: $corPrimaria;
   }
-
 
   &__descricao {
     flex: 1;
@@ -401,17 +402,18 @@
 
 .changeLanguage {
   position: absolute;
-  top: 1rem;
-  right: 1rem;
+  top: 0;
+  right: 0;
   border: none;
   outline: none;
-  color: $cinza9;
+  height: 100%;
+  width: 100%;
 
   &__icone {
-    height: 4rem;
-    width: 4rem;
-    fill: currentColor;
-
+    height: 100%;
+    width: 100%;
+    transform: scale(0.7);
+    fill: $cinza5;
     transition: all ease 0.3s;
 
     &.visivel {
@@ -424,8 +426,8 @@
       opacity: 0;
     }
   }
+}
 
-  &:hover {
-    color: $corPrimaria;
-  }
+.changeLanguageButton:hover .changeLanguage__icone {
+  fill: $cinza1;
 }

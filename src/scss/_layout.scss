@@ -154,3 +154,22 @@ body {
     width: 90%;
   }
 }
+
+.changeLanguageButton {
+  position: absolute;
+  top: 0;
+  right: 0;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  padding: 0.5rem;
+  height: 5rem;
+  width: 5rem;
+  overflow: hidden;
+  background-color: $cinza2;
+  transition: all ease 0.2s;
+
+  &:hover {
+    background-color: $corPrimaria;
+  }
+}

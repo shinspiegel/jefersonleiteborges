@@ -41,8 +41,8 @@
   ],
   "conhecimentos": [
     { "id": "18", "conhecimento": "Portuguese", "rank": "9", "icone": "portugues", "mensagemToolTip": "Advanced" },
-    { "id": "0", "conhecimento": "Língua inglesa", "rank": "6", "icone": "ingles", "mensagemToolTip": "Intermediate" },
-    { "id": "1", "conhecimento": "Informática básica", "rank": "9", "icone": "microsoft", "mensagemToolTip": "Advanced" },
+    { "id": "0", "conhecimento": "English", "rank": "6", "icone": "ingles", "mensagemToolTip": "Intermediate" },
+    { "id": "1", "conhecimento": "Basic Computer", "rank": "9", "icone": "microsoft", "mensagemToolTip": "Advanced" },
     { "id": "2", "conhecimento": "Windows", "rank": "9", "icone": "windows", "mensagemToolTip": "Advanced" },
     { "id": "3", "conhecimento": "macOS", "rank": "9", "icone": "apple", "mensagemToolTip": "Advanced" },
     { "id": "4", "conhecimento": "Linux", "rank": "5", "icone": "", "mensagemToolTip": "Intermediate" },
