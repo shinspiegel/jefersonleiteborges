@@ -1,14 +1,12 @@
 import React from 'react';
 
-const formacaoAcademica = props => {
-  const title = props.lang === 'BR' ? 'Formação Academica' : 'Academic Formation';
-  const text = props.lang === 'BR' ? 'Curso' : 'Course';
-
-  const listaCursos = props.academica.map(curso => (
+const formacaoAcademica = ({ academica, lang }) => {
+  const listaCursos = academica.map(curso => (
     <div key={curso.id} className="academica__caixaItem">
       <p className="academica__instituicao">{curso.instituicao}</p>
       <p className="academica__curso">
-        {text}: <span className="semiNegrito">{curso.curso}</span>
+        {lang === 'BR' ? 'Curso: ' : 'Course: '}
+        <span className="semiNegrito">{lang === 'BR' ? curso.curso : curso.cursoEN}</span>
       </p>
       <p className="academica__anoConclusao">{curso.anoConclusao}</p>
     </div>
@@ -16,7 +14,7 @@ const formacaoAcademica = props => {
 
   return (
     <div className="academica">
-      <h2 className="titulo--2">{title}</h2>
+      <h2 className="titulo--2">{lang === 'BR' ? 'Formação Academica' : 'Academic Formation'}</h2>
       {listaCursos}
     </div>
   );

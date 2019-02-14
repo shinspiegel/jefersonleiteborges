@@ -63,7 +63,15 @@
   ],
   "experiencia": [
     {
-      "id": "1",
+      "id": "9",
+      "empresa": "DWV Interativa",
+      "cargo": "Art Director, Graphic Designer, Visual Editor, Web Designer",
+      "local": "Itajaí/SC",
+      "entrada": { "m": 8, "a": 2018 },
+      "saida": { "m": 2, "a": 2019 }
+    },
+    {
+      "id": "8",
       "empresa": "To10 Propaganda",
       "cargo": "Art Director, Graphic Designer, Visual Editor, Web Designer",
       "local": "Itajaí/SC",
@@ -71,20 +79,28 @@
       "saida": { "m": 11, "a": 2017 }
     },
     {
-      "id": "2",
+      "id": "7",
       "empresa": "Rockfeller Brasil",
       "cargo": "Editorial and Graphic Designer",
       "local": "Baln. Camboriú/SC",
-      "entrada": { "m": 4, "a": 2015 },
-      "saida": { "m": 11, "a": 2016 }
+      "entrada": { "m": 5, "a": 2015 },
+      "saida": { "m": 10, "a": 2016 }
     },
     {
-      "id": "3",
+      "id": "6",
       "empresa": "Copia e Cia",
       "cargo": "Editorial Designer, Graphic Designer, Visual Editor",
       "local": "Itajaí/SC",
-      "entrada": { "m": 4, "a": 2015 },
-      "saida": { "m": 11, "a": 2016 }
+      "entrada": { "m": 10, "a": 2014 },
+      "saida": { "m": 2, "a": 2015 }
+    },
+    {
+      "id": "5",
+      "empresa": "Grafica 99",
+      "cargo": "Editorial Designer, Graphic Designer, Visual Editor",
+      "local": "Itajaí/SC",
+      "entrada": { "m": 3, "a": 2014 },
+      "saida": { "m": 6, "a": 2014 }
     },
     {
       "id": "4",
@@ -95,23 +111,23 @@
       "saida": { "m": 10, "a": 2013 }
     },
     {
-      "id": "5",
+      "id": "3",
       "empresa": "Detroit",
       "cargo": "Draftsman",
       "local": "Itajaí/SC",
-      "entrada": { "m": 2, "a": 2012 },
+      "entrada": { "m": 3, "a": 2012 },
       "saida": { "m": 2, "a": 2013 }
     },
     {
-      "id": "6",
+      "id": "2",
       "empresa": "Cajomar",
       "cargo": "Editorial and Graphic Designer",
       "local": "Itajaí/SC",
-      "entrada": { "m": 4, "a": 2006 },
-      "saida": { "m": 2, "a": 2008 }
+      "entrada": { "m": 7, "a": 2008 },
+      "saida": { "m": 2, "a": 2012 }
     },
     {
-      "id": "7",
+      "id": "1",
       "empresa": "Infocenter",
       "cargo": "Computing Instructor",
       "local": "Itajaí/SC",

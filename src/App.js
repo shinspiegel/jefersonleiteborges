@@ -22,11 +22,11 @@ class App extends Component {
   handleLanguage() {
     if (this.state.language === 'BR') {
       this.setState({ language: 'EN' });
-      this.setState({ info: { ...jefersonEN } });
+      //this.setState({ info: { ...jefersonEN } });
     }
     if (this.state.language === 'EN') {
       this.setState({ language: 'BR' });
-      this.setState({ info: { ...jefersonPT } });
+      //this.setState({ info: { ...jefersonPT } });
     }
   }
 

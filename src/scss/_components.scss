@@ -30,6 +30,8 @@
     color: $cinza1;
     background-color: $corPrimaria;
 
+    white-space: nowrap;
+
     transition: transform ease 0.2s;
   }
   @media (any-hover) {
@@ -73,6 +75,9 @@
   padding-left: 0.5rem;
 
   margin-right: -5rem;
+  @include responsivo(lg) {
+    margin-right: 0rem;
+  }
 
   &:not(:last-child) {
     margin-bottom: 1rem;
@@ -104,6 +109,10 @@
     margin-right: 1.5rem;
     fill: $cinza4;
     transition: all ease 0.2s;
+
+    @include responsivo(sm) {
+      display: none;
+    }
   }
 
   &:hover &__iconeSVG {
@@ -128,6 +137,10 @@
     transform: scaleX(0);
     transform-origin: right;
     transition: all ease-out 0.1s 0.3s;
+
+    @include responsivo(md) {
+      display: none;
+    }
   }
 
   @media (any-hover: hover) {
@@ -325,6 +338,10 @@
         margin-right: 1rem;
       }
     }
+
+    @include responsivo(sm) {
+      font-size: 2rem;
+    }
   }
 
   @media (any-hover) {
@@ -347,6 +364,10 @@
 
     transition: inherit;
 
+    @include responsivo(sm) {
+      font-size: 2.5rem;
+    }
+
     &::after {
       content: '';
       background-color: transparent;
@@ -365,6 +386,10 @@
       transform: translateY(-0.5rem);
       font-weight: 700;
       font-size: 1.8rem;
+
+      @include responsivo(sm) {
+        font-size: 2.5rem;
+      }
     }
   }
 
@@ -390,6 +415,10 @@
       & * {
         margin-right: 1rem;
       }
+    }
+
+    @include responsivo(sm) {
+      font-size: 1.8rem;
     }
   }
 

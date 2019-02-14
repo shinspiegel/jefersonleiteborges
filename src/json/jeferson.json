@@ -3,8 +3,10 @@
     "name": "Jeferson Leite Borges",
     "nascimento": { "d": 14, "m": 4, "a": 1987 },
     "estadoCivil": "soltiero",
+    "estadoCivilEn": "single",
     "cpf": "058.787.189.01",
-    "sexo": "masculino"
+    "sexo": "masculino",
+    "sexoEn": "male"
   },
   "otherInfo": {
     "filiacao": {
@@ -35,83 +37,270 @@
     }
   },
   "formacao": [
-    { "id": 0, "instituicao": "Universidade do Vale do Itajaí", "curso": "Design Industrial", "anoConclusao": "2013" },
-    { "id": 1, "instituicao": "Colégio e Curso Radical", "curso": "Ensino Médio", "anoConclusao": "2007" },
-    { "id": 2, "instituicao": "Escola Básica João Duarte", "curso": "Ensino Fundamental", "anoConclusao": "2003" }
+    {
+      "id": 0,
+      "instituicao": "Universidade do Vale do Itajaí",
+      "curso": "Design Industrial",
+      "cursoEN": "Industrial Design",
+      "anoConclusao": "2013"
+    },
+    {
+      "id": 1,
+      "instituicao": "Colégio e Curso Radical",
+      "curso": "Ensino Médio",
+      "cursoEN": "High School",
+      "anoConclusao": "2007"
+    },
+    {
+      "id": 2,
+      "instituicao": "Escola Básica João Duarte",
+      "curso": "Ensino Fundamental",
+      "cursoEN": "Elementary and Middle School",
+      "anoConclusao": "2003"
+    }
   ],
   "conhecimentos": [
-    { "id": "0", "conhecimento": "Língua inglesa", "rank": "6", "icone": "ingles", "mensagemToolTip": "Intermediario" },
-    { "id": "1", "conhecimento": "Informática básica", "rank": "9", "icone": "microsoft", "mensagemToolTip": "Avançado" },
-    { "id": "2", "conhecimento": "Windows", "rank": "9", "icone": "windows", "mensagemToolTip": "Avançado" },
-    { "id": "3", "conhecimento": "macOS", "rank": "9", "icone": "apple", "mensagemToolTip": "Avançado" },
-    { "id": "4", "conhecimento": "Linux", "rank": "5", "icone": "linux", "mensagemToolTip": "Intermediario" },
-    { "id": "5", "conhecimento": "AutoCad", "rank": "8", "icone": "autocad", "mensagemToolTip": "Intermediário" },
-    { "id": "6", "conhecimento": "Solid Works", "rank": "6", "icone": "solidworks", "mensagemToolTip": "Intermediário" },
-    { "id": "7", "conhecimento": "Fusion 360", "rank": "7", "icone": "fusion360", "mensagemToolTip": "Intermediário" },
-    { "id": "8", "conhecimento": "Adobe Illustrator", "rank": "9", "icone": "illustrator", "mensagemToolTip": "Avançado" },
-    { "id": "9", "conhecimento": "Adobe Photoshop", "rank": "10", "icone": "photoshop", "mensagemToolTip": "Avançado" },
-    { "id": "10", "conhecimento": "Abode InDesign", "rank": "7", "icone": "indesign", "mensagemToolTip": "Intermediário" },
-    { "id": "11", "conhecimento": "Adobe Premiere", "rank": "5", "icone": "premiere", "mensagemToolTip": "Básico" },
-    { "id": "12", "conhecimento": "Adobe After Effects", "rank": "4", "icone": "aftereffects", "mensagemToolTip": "Báscio" },
-    { "id": "13", "conhecimento": "Corel Draw", "rank": "7", "icone": "corelpau", "mensagemToolTip": "Avançado" },
-    { "id": "14", "conhecimento": "HTML 5", "rank": "7", "icone": "html5", "mensagemToolTip": "Estudando" },
-    { "id": "15", "conhecimento": "CSS 3", "rank": "5", "icone": "css3", "mensagemToolTip": "Estudando" },
-    { "id": "16", "conhecimento": "JavaScript", "rank": "4", "icone": "javascript", "mensagemToolTip": "Estudando" },
-    { "id": "17", "conhecimento": "GIT", "rank": "5", "icone": "github", "mensagemToolTip": "Estudando" }
+    {
+      "id": "0",
+      "conhecimento": "Língua inglesa",
+      "conhecimentoEn": "English",
+      "rank": "6",
+      "icone": "ingles",
+      "mensagemToolTip": "Intermediario",
+      "mensagemToolTipEn": "Intermediate"
+    },
+    {
+      "id": "1",
+      "conhecimento": "Informática básica",
+      "conhecimentoEn": "Basic Computing",
+      "rank": "9",
+      "icone": "microsoft",
+      "mensagemToolTip": "Avançado",
+      "mensagemToolTipEn": "Advanced"
+    },
+    {
+      "id": "2",
+      "conhecimento": "Windows",
+      "conhecimentoEn": "Windows",
+      "rank": "9",
+      "icone": "windows",
+      "mensagemToolTip": "Avançado",
+      "mensagemToolTipEn": "Advanced"
+    },
+    {
+      "id": "3",
+      "conhecimento": "macOS",
+      "conhecimentoEn": "macOS",
+      "rank": "9",
+      "icone": "apple",
+      "mensagemToolTip": "Avançado",
+      "mensagemToolTipEn": "Advanced"
+    },
+    {
+      "id": "4",
+      "conhecimento": "Linux",
+      "conhecimentoEn": "Linux",
+      "rank": "5",
+      "icone": "linux",
+      "mensagemToolTip": "Intermediario",
+      "mensagemToolTipEn": "Intermediate"
+    },
+    {
+      "id": "5",
+      "conhecimento": "AutoCad",
+      "conhecimentoEn": "AutoCad",
+      "rank": "8",
+      "icone": "autocad",
+      "mensagemToolTip": "Intermediário",
+      "mensagemToolTipEn": "Intermediate"
+    },
+    {
+      "id": "6",
+      "conhecimento": "Solid Works",
+      "conhecimentoEn": "Solid Works",
+      "rank": "6",
+      "icone": "solidworks",
+      "mensagemToolTip": "Intermediário",
+      "mensagemToolTipEn": "Intermediate"
+    },
+    {
+      "id": "7",
+      "conhecimento": "Fusion 360",
+      "conhecimentoEn": "Fusion 360",
+      "rank": "7",
+      "icone": "fusion360",
+      "mensagemToolTip": "Intermediário",
+      "mensagemToolTipEn": "Intermediate"
+    },
+    {
+      "id": "8",
+      "conhecimento": "Adobe Illustrator",
+      "conhecimentoEn": "Adobe Illustrator",
+      "rank": "9",
+      "icone": "illustrator",
+      "mensagemToolTip": "Avançado",
+      "mensagemToolTipEn": "Advanced"
+    },
+    {
+      "id": "9",
+      "conhecimento": "Adobe Photoshop",
+      "conhecimentoEn": "Adobe Photoshop",
+      "rank": "10",
+      "icone": "photoshop",
+      "mensagemToolTip": "Avançado",
+      "mensagemToolTipEn": "Advanced"
+    },
+    {
+      "id": "10",
+      "conhecimento": "Abode InDesign",
+      "conhecimentoEn": "Abode InDesign",
+      "rank": "7",
+      "icone": "indesign",
+      "mensagemToolTip": "Intermediário",
+      "mensagemToolTipEn": "Intermediate"
+    },
+    {
+      "id": "11",
+      "conhecimento": "Adobe Premiere",
+      "conhecimentoEn": "Adobe Premiere",
+      "rank": "5",
+      "icone": "premiere",
+      "mensagemToolTip": "Básico",
+      "mensagemToolTipEn": "Basic"
+    },
+    {
+      "id": "12",
+      "conhecimento": "Adobe After Effects",
+      "conhecimentoEn": "Adobe After Effects",
+      "rank": "4",
+      "icone": "aftereffects",
+      "mensagemToolTip": "Báscio",
+      "mensagemToolTipEn": "Basic"
+    },
+    {
+      "id": "13",
+      "conhecimento": "Corel Draw",
+      "conhecimentoEn": "Corel Draw",
+      "rank": "7",
+      "icone": "corelpau",
+      "mensagemToolTip": "Avançado",
+      "mensagemToolTipEn": "Advanced"
+    },
+    {
+      "id": "14",
+      "conhecimento": "HTML 5",
+      "conhecimentoEn": "HTML 5",
+      "rank": "7",
+      "icone": "html5",
+      "mensagemToolTip": "Estudando",
+      "mensagemToolTipEn": "Studying"
+    },
+    {
+      "id": "15",
+      "conhecimento": "CSS 3",
+      "conhecimentoEn": "CSS 3",
+      "rank": "5",
+      "icone": "css3",
+      "mensagemToolTip": "Estudando",
+      "mensagemToolTipEn": "Studying"
+    },
+    {
+      "id": "16",
+      "conhecimento": "JavaScript",
+      "conhecimentoEn": "JavaScript",
+      "rank": "4",
+      "icone": "javascript",
+      "mensagemToolTip": "Estudando",
+      "mensagemToolTipEn": "Studying"
+    },
+    {
+      "id": "17",
+      "conhecimento": "GIT",
+      "conhecimentoEn": "GIT",
+      "rank": "5",
+      "icone": "github",
+      "mensagemToolTip": "Estudando",
+      "mensagemToolTipEn": "Studying"
+    }
   ],
   "experiencia": [
     {
-      "id": "1",
+      "id": "9",
+      "empresa": "DWV Interativa",
+      "cargo": "Editor de Imagens, Web Designer, Mídias Sociais, Desenvolvedor React",
+      "cargoEn": "Image Editor, Web Designer, Social Midia, React Developer",
+      "local": "Itajaí/SC",
+      "entrada": { "m": 8, "a": 2018 },
+      "saida": { "m": 2, "a": 2019 }
+    },
+    {
+      "id": "8",
       "empresa": "To10 Propaganda",
-      "cargo": "Diretor de Criação, Designer Gráfico, Editor Visual, Web Designer",
+      "cargo": "Diretor de Arte, Designer Grádico, Editor Visual, Web Designer",
+      "cargoEn": "Art Director, Graphic Designer, Visual Editor, Web Designer",
       "local": "Itajaí/SC",
       "entrada": { "m": 11, "a": 2016 },
       "saida": { "m": 11, "a": 2017 }
     },
     {
-      "id": "2",
+      "id": "7",
       "empresa": "Rockfeller Brasil",
-      "cargo": "Diagramador e Designer Gráfico",
+      "cargo": "Editor e Designer Gráfico",
+      "cargoEn": "Editorial and Graphic Designer",
       "local": "Baln. Camboriú/SC",
-      "entrada": { "m": 4, "a": 2015 },
-      "saida": { "m": 11, "a": 2016 }
+      "entrada": { "m": 5, "a": 2015 },
+      "saida": { "m": 10, "a": 2016 }
     },
     {
-      "id": "3",
+      "id": "6",
       "empresa": "Copia e Cia",
-      "cargo": "Arte Finalista, Diagramador e Editor, Designer Gráfico",
+      "cargo": "Editor, Designer Grádico e Arte Finalista",
+      "cargoEn": "Editorial Designer, Graphic Designer, Visual Editor",
       "local": "Itajaí/SC",
-      "entrada": { "m": 4, "a": 2015 },
-      "saida": { "m": 11, "a": 2016 }
+      "entrada": { "m": 10, "a": 2014 },
+      "saida": { "m": 2, "a": 2015 }
+    },
+    {
+      "id": "5",
+      "empresa": "Grafica 99",
+      "cargo": "Arte Finalista, Designer Grádico",
+      "cargoEn": "Editorial Designer, Graphic Designer, Visual Editor",
+      "local": "Itajaí/SC",
+      "entrada": { "m": 3, "a": 2014 },
+      "saida": { "m": 6, "a": 2014 }
     },
     {
       "id": "4",
       "empresa": "PJ Laser",
-      "cargo": "Designer Industrial, Web Designer, Designer Gráfico",
+      "cargo": "Designer Industrial, Designer Gráfico e Web Designer",
+      "cargoEn": "Industrial Desginer, Graphic Designer, Web Designer",
       "local": "Itajaí/SC",
       "entrada": { "m": 3, "a": 2013 },
       "saida": { "m": 10, "a": 2013 }
     },
     {
-      "id": "5",
+      "id": "3",
       "empresa": "Detroit",
-      "cargo": "Projetista e Desenhista",
+      "cargo": "Desenhista e Projetista",
+      "cargoEn": "Draftsman",
       "local": "Itajaí/SC",
-      "entrada": { "m": 2, "a": 2012 },
+      "entrada": { "m": 3, "a": 2012 },
       "saida": { "m": 2, "a": 2013 }
     },
     {
-      "id": "6",
+      "id": "2",
       "empresa": "Cajomar",
-      "cargo": "Arte Finalista, Diagramador e Editor, Designer Gráfico",
+      "cargo": "Editor e Desginer Gráfico",
+      "cargoEn": "Editorial and Graphic Designer",
       "local": "Itajaí/SC",
-      "entrada": { "m": 4, "a": 2006 },
-      "saida": { "m": 2, "a": 2008 }
+      "entrada": { "m": 7, "a": 2008 },
+      "saida": { "m": 2, "a": 2012 }
     },
     {
-      "id": "7",
+      "id": "1",
       "empresa": "Infocenter",
       "cargo": "Instrutor de Informática",
+      "cargoEn": "Computing Instructor",
       "local": "Itajaí/SC",
       "entrada": { "m": 6, "a": 2005 },
       "saida": { "m": 4, "a": 2006 }

@@ -1,31 +1,30 @@
 import React from 'react';
 import ToolTip from '../components/smallComps/ToolTip';
 
-const infoBasico = props => {
-  const idadeAtual = new Date().getFullYear() - props.info.nascimento.a;
-  const info = props.lang === 'BR' ? ['Nascimento', 'Sexo', 'CPF', 'Estado Civil'] : ['Birth', 'Gender', 'ID', 'Marital Status'];
+const infoBasico = ({lang, info}) => {
+  const idadeAtual = new Date().getFullYear() - info.nascimento.a;
 
   return (
     <section className="infoBasico">
       <div className="paragrafo">
-        {info[0]}:&nbsp;
+        {lang === 'BR' ? 'Nascimento: ' : 'Birth: '}
         <ToolTip textoInterno={idadeAtual}>
           <span className="negrito">
-            {props.info.nascimento.d}/{props.info.nascimento.m}/{props.info.nascimento.a}
+            {info.nascimento.d}/{info.nascimento.m}/{info.nascimento.a}
           </span>
         </ToolTip>
       </div>
       <p className="paragrafo">
-        {info[1]}:&nbsp;
-        <span className="negrito">{props.info.sexo}</span>
+        {lang === 'BR' ? 'Sexo: ' : 'Gender: '}
+        <span className="negrito">{lang === 'BR' ? info.sexo : info.sexoEn}</span>
       </p>
       <div className="paragrafo">
-        {info[2]}:&nbsp;
-        <span className="negrito">{props.info.cpf}</span>
+        {lang === 'BR' ? 'CPF: ' : 'Brazil ID: '}
+        <span className="negrito">{info.cpf}</span>
       </div>
       <div className="paragrafo">
-        {info[3]}:&nbsp;
-        <span className="negrito">{props.info.estadoCivil}</span>
+        {lang === 'BR' ? 'Estado Civil ': 'Marital Status: '}
+        <span className="negrito">{lang === 'BR' ? info.estadoCivil : info.estadoCivilEn}</span>
       </div>
     </section>
   );
