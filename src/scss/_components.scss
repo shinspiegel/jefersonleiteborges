@@ -280,6 +280,23 @@
     font-size: 2rem;
     line-height: 1;
     align-self: start;
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: -1rem;
+      left: 0;
+      width: 0%;
+      height: 100%;
+      border-bottom: 2px solid $cinza3;
+      transition: all ease 0.2s 0.1s;
+    }
+  }
+
+  @media (any-hover: hover) {
+    &__item:hover &__link::after {
+      width: 100%;
+    }
   }
 }
 
