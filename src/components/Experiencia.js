@@ -35,7 +35,16 @@ const experiencia = props => {
     return lista;
   }
 
-  return <div className="listaExperiencia">{listarExperiencia(props.experiencia)}</div>;
+  return (
+    <>
+      <div className="listaExperiencia">
+      <h2 class="titulo--2 textoCentro">
+      {props.lang === 'BR' ? 'Experiência Profissional' : ''}
+      </h2>
+      {listarExperiencia(props.experiencia)}
+      </div>
+    </>
+  );
 };
 
 export default experiencia;

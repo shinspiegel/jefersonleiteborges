@@ -1,0 +1,281 @@
+@media print {
+  %widthNboder {
+    width: 100%;
+    border-bottom: 1px solid black;
+  }
+
+  %reset {
+    background-color: white;
+    padding: 0;
+    margin: 0;
+    font-size: 14pt;
+    line-height: 1.25;
+    color: black;
+  }
+
+  %infoContato {
+    margin-top: 3pt;
+    padding-bottom: 3pt;
+    font-size: 11pt;
+  }
+
+  %withNtextLeft {
+    width: 100%;
+    text-align: left;
+  }
+
+  body {
+    @extend %reset;
+  }
+
+  .noPrint {
+    display: none;
+  }
+
+  .titulo--1 {
+    @extend %reset;
+    font-size: 18pt;
+    text-align: center;
+    margin-bottom: 7pt;
+  }
+
+  .titulo--2 {
+    @extend %reset;
+    font-size: 14pt;
+    text-align: center;
+    margin-top: 5pt;
+    margin-bottom: 5pt;
+  }
+
+  .conteudo {
+    @extend %reset;
+    padding: 10pt;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .cabecalho {
+    @extend %widthNboder;
+  }
+
+  .infoBasico {
+    @extend %widthNboder;
+    @extend %reset;
+    @extend %infoContato;
+
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .academica {
+    @extend %widthNboder;
+    @extend %reset;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    h2 {
+      grid-column: 1 / span 3;
+    }
+
+    &__caixaItem {
+      text-align: left;
+
+      &:not(:last-child) {
+        margin-right: 3pt;
+        border-right: 1px solid black;
+      }
+    }
+
+    &__instituicao {
+      @extend %reset;
+      font-size: 10pt;
+    }
+    &__curso {
+      @extend %reset;
+      font-size: 9pt;
+    }
+    &__anoConclusao {
+      @extend %reset;
+      font-size: 8pt;
+    }
+  }
+
+  .conhecimentos {
+    @extend %widthNboder;
+    @extend %reset;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    h2 {
+      grid-column: 1 / span 3;
+    }
+  }
+
+  .conhecimento {
+    @extend %reset;
+    display: flex;
+    align-items: center;
+
+    &__iconeSVG {
+      height: 25pt;
+      width: 25pt;
+      fill: black;
+    }
+
+    &__descricao {
+      &:last-child {
+        line-height: 0.9;
+      }
+    }
+
+    &__nome {
+      font-size: 10pt;
+    }
+
+    &__estrela {
+      @extend %reset;
+      height: 8pt;
+      width: 8pt;
+
+      &--starFull {
+        fill: black;
+      }
+      &--starHalf {
+        fill: #333;
+      }
+      &--starEmpty {
+        fill: #666;
+      }
+    }
+
+    &__detalhe {
+      display: none;
+    }
+  }
+
+  .contato {
+    @extend %widthNboder;
+    @extend %reset;
+    @extend %infoContato;
+
+    h2 {
+      display: none;
+    }
+
+    .toolTip {
+      display: none;
+    }
+
+    &__listaTexto {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &__item {
+    }
+  }
+
+  .listaExperiencia {
+    @extend %widthNboder;
+    @extend %reset;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 10pt;
+
+    h2 {
+      grid-column: 1 / span 2;
+    }
+  }
+
+  .experiencia {
+    @extend %reset;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    color: black;
+    
+    &:last-child {
+      margin-bottom: 10pt;
+    }
+
+    &__tempoAtuacao {
+      @extend %withNtextLeft;
+      @extend %reset;
+      color: inherit;
+      display: flex;
+      font-size: 8pt;
+    }
+
+    &__cargo {
+      @extend %withNtextLeft;
+      @extend %reset;
+      color: inherit;
+      text-transform: capitalize;
+      display: flex;
+      font-size: 11pt;
+    }
+
+    &__empresa {
+      @extend %withNtextLeft;
+      @extend %reset;
+      color: inherit;
+      display: flex;
+      font-size: 10pt;
+    }
+  }
+
+  .portfolio {
+    @extend %withNtextLeft;
+    @extend %reset;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10pt;
+
+    &__item {
+      @extend %reset;
+    }
+
+    &__svg {
+      @extend %reset;
+      margin-left: 10pt;
+
+      .svg__portfolio {
+        @extend %reset;
+        width: 25pt;
+        height: 25pt;
+      }
+    }
+
+    &__texto {
+      @extend %reset;
+      font-size: 12pt;
+    }
+    &__link {
+      @extend %reset;
+      font-size: 10pt;
+    }
+  }
+
+  .cabecalho {
+    order: 0;
+  }
+  .infoBasico {
+    order: 0;
+  }
+  .academica {
+    order: 1;
+  }
+  .conhecimentos {
+    order: 1;
+  }
+  .contato {
+    order: 0;
+  }
+  .listaExperiencia {
+    order: 1;
+  }
+  .portfolio {
+    order: 1;
+  }
+}
