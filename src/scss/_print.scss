@@ -49,9 +49,9 @@
 
   .conteudo {
     @extend %reset;
-    padding: 10pt;
     display: flex;
     flex-direction: column;
+    box-shadow: none;
   }
 
   .cabecalho {
