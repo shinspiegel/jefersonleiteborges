@@ -21,7 +21,7 @@ const experiencia = props => {
               </span>
             </div>
           </div>
-          <div className="experiencia__cargo">{exp.cargo}</div>
+          <div className="experiencia__cargo">{props.lang === 'BR' ? exp.cargo : exp.cargoEn}</div>
           <div className="experiencia__empresa">
             <div>{exp.empresa}</div>
             <div>
