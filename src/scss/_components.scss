@@ -75,6 +75,7 @@
   padding-left: 0.5rem;
 
   margin-right: -5rem;
+  
   @include responsivo(lg) {
     margin-right: 0rem;
   }

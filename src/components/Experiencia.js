@@ -38,7 +38,7 @@ const experiencia = props => {
   return (
     <>
       <div className="listaExperiencia">
-      <h2 class="titulo--2 textoCentro">
+      <h2 class="titulo--2 textoCentro margemBottomExtra">
       {props.lang === 'BR' ? 'Experiência Profissional' : ''}
       </h2>
       {listarExperiencia(props.experiencia)}
