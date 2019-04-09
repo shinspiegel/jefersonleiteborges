@@ -29,7 +29,7 @@
       "gmaps": "https://goo.gl/maps/8r4trcLZy6u"
     },
     "contato": {
-      "telefone": "+55 (47) 991.511.061",
+      "telefone": "+55 (47) 991.521.061",
       "email": "shin.jef@gmail.com",
       "facebook": "jeferson.leiteborges",
       "instagram": "shinspiegel",
@@ -152,8 +152,8 @@
     },
     {
       "id": "10",
-      "conhecimento": "Abode InDesign",
-      "conhecimentoEn": "Abode InDesign",
+      "conhecimento": "Adobe InDesign",
+      "conhecimentoEn": "Adobe InDesign",
       "rank": "7",
       "icone": "indesign",
       "mensagemToolTip": "Intermediário",
