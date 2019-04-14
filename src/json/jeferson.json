@@ -199,7 +199,7 @@
       "id": "15",
       "conhecimento": "CSS 3",
       "conhecimentoEn": "CSS 3",
-      "rank": "5",
+      "rank": "6",
       "icone": "css3",
       "mensagemToolTip": "Estudando",
       "mensagemToolTipEn": "Studying"
@@ -208,16 +208,34 @@
       "id": "16",
       "conhecimento": "JavaScript",
       "conhecimentoEn": "JavaScript",
-      "rank": "4",
+      "rank": "5",
       "icone": "javascript",
       "mensagemToolTip": "Estudando",
       "mensagemToolTipEn": "Studying"
     },
     {
       "id": "17",
+      "conhecimento": "Reactjs",
+      "conhecimentoEn": "Reactjs",
+      "rank": "4",
+      "icone": "react",
+      "mensagemToolTip": "Estudando",
+      "mensagemToolTipEn": "Studying"
+    },
+    {
+      "id": "18",
+      "conhecimento": "Wordpress",
+      "conhecimentoEn": "Wordpress",
+      "rank": "3",
+      "icone": "wordpress",
+      "mensagemToolTip": "Estudando",
+      "mensagemToolTipEn": "Studying"
+    },
+    {
+      "id": "19",
       "conhecimento": "GIT",
       "conhecimentoEn": "GIT",
-      "rank": "5",
+      "rank": "6",
       "icone": "github",
       "mensagemToolTip": "Estudando",
       "mensagemToolTipEn": "Studying"
