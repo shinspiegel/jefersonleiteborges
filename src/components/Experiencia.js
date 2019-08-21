@@ -3,22 +3,20 @@ import React from 'react';
 const experiencia = props => {
   const text1 = props.lang === 'BR' ? 'Inicio' : 'Start';
   const text2 = props.lang === 'BR' ? 'até' : 'until';
+  const text3 = props.lang === 'BR' ? 'atual' : 'now';
 
   function listarExperiencia(items) {
     let lista = [];
 
     items.map(exp => {
-      lista.push(
+      return lista.push(
         <div key={exp.id} className="experiencia">
           <div className="experiencia__tempoAtuacao">
             <div>
               {text1}: {exp.entrada.m}/{exp.entrada.a}
             </div>
             <div>
-              {text2}{' '}
-              <span className="negrito">
-                {exp.saida.m}/{exp.saida.a}
-              </span>
+              {text2} <span className="negrito">{exp.saida.m ? `${exp.saida.m}/${exp.saida.a}` : text3}</span>
             </div>
           </div>
           <div className="experiencia__cargo">{props.lang === 'BR' ? exp.cargo : exp.cargoEn}</div>
@@ -38,10 +36,8 @@ const experiencia = props => {
   return (
     <>
       <div className="listaExperiencia">
-      <h2 class="titulo--2 textoCentro margemBottomExtra">
-      {props.lang === 'BR' ? 'Experiência Profissional' : ''}
-      </h2>
-      {listarExperiencia(props.experiencia)}
+        <h2 class="titulo--2 textoCentro margemBottomExtra">{props.lang === 'BR' ? 'Experiência Profissional' : ''}</h2>
+        {listarExperiencia(props.experiencia)}
       </div>
     </>
   );

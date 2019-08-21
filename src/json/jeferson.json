@@ -243,6 +243,15 @@
   ],
   "experiencia": [
     {
+      "id": "10",
+      "empresa": "Beto Carrero World",
+      "cargo": "Editor de Imagens, Web Designer, Desenvolvedor React",
+      "cargoEn": "Image Editor, Web Designer, React Developer",
+      "local": "Itajaí/SC",
+      "entrada": { "m": 5, "a": 2019 },
+      "saida": {}
+    },
+    {
       "id": "9",
       "empresa": "DWV Interativa",
       "cargo": "Editor de Imagens, Web Designer, Mídias Sociais, Desenvolvedor React",
