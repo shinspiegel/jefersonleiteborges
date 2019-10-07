@@ -245,11 +245,19 @@
     {
       "id": "10",
       "empresa": "Beto Carrero World",
+<<<<<<< HEAD
       "cargo": "Designer Gráfico, Web Designer, Desenvolvedor React",
       "cargoEn": "Graphic Designer, Web Designer, React Developer",
       "local": "Penha/SC",
       "entrada": { "m": 5, "a": 2019 },
       "saida": { "m": 10, "a": 2019 }
+=======
+      "cargo": "Editor de Imagens, Web Designer, Desenvolvedor React",
+      "cargoEn": "Image Editor, Web Designer, React Developer",
+      "local": "Itajaí/SC",
+      "entrada": { "m": 5, "a": 2019 },
+      "saida": {}
+>>>>>>> cd6c8245db10e5a7600c5bb83a8161eb91b23517
     },
     {
       "id": "9",
@@ -263,7 +271,7 @@
     {
       "id": "8",
       "empresa": "To10 Propaganda",
-      "cargo": "Diretor de Arte, Designer Grádico, Editor Visual, Web Designer",
+      "cargo": "Diretor de Arte, Designer Gráfico, Editor Visual, Web Designer",
       "cargoEn": "Art Director, Graphic Designer, Visual Editor, Web Designer",
       "local": "Itajaí/SC",
       "entrada": { "m": 11, "a": 2016 },
@@ -281,7 +289,7 @@
     {
       "id": "6",
       "empresa": "Copia e Cia",
-      "cargo": "Editor, Designer Grádico e Arte Finalista",
+      "cargo": "Editor, Designer Gráfico e Arte Finalista",
       "cargoEn": "Editorial Designer, Graphic Designer, Visual Editor",
       "local": "Itajaí/SC",
       "entrada": { "m": 10, "a": 2014 },
@@ -290,7 +298,7 @@
     {
       "id": "5",
       "empresa": "Grafica 99",
-      "cargo": "Arte Finalista, Designer Grádico",
+      "cargo": "Arte Finalista, Designer Gráfico",
       "cargoEn": "Editorial Designer, Graphic Designer, Visual Editor",
       "local": "Itajaí/SC",
       "entrada": { "m": 3, "a": 2014 },

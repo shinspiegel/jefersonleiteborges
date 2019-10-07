@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 
 import jefersonPT from './json/jeferson.json';
-import jefersonEN from './json/jeferson_ingles.json';
 
 import Nome from './components/Nome';
 import Foto from './components/Foto';
@@ -39,7 +38,11 @@ class App extends Component {
         <InfoBasico lang={this.state.language} info={this.state.info.basicInfo} />
         <Formacao lang={this.state.language} academica={this.state.info.formacao} />
         <Conhecimentos lang={this.state.language} conhecimentos={this.state.info.conhecimentos} />
-        <Contato lang={this.state.language} contato={this.state.info.otherInfo.contato} endereco={this.state.info.otherInfo.endereco} />
+        <Contato
+          lang={this.state.language}
+          contato={this.state.info.otherInfo.contato}
+          endereco={this.state.info.otherInfo.endereco}
+        />
         <Experiencia lang={this.state.language} experiencia={this.state.info.experiencia} />
         <Portfolio lang={this.state.language} portfolio={this.state.info.otherInfo.portfolio} />
       </div>
