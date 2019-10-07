@@ -100,7 +100,7 @@
       "id": "4",
       "conhecimento": "Linux",
       "conhecimentoEn": "Linux",
-      "rank": "5",
+      "rank": "7",
       "icone": "linux",
       "mensagemToolTip": "Intermediario",
       "mensagemToolTipEn": "Intermediate"
@@ -127,7 +127,7 @@
       "id": "7",
       "conhecimento": "Fusion 360",
       "conhecimentoEn": "Fusion 360",
-      "rank": "7",
+      "rank": "6",
       "icone": "fusion360",
       "mensagemToolTip": "Intermediário",
       "mensagemToolTipEn": "Intermediate"
@@ -163,7 +163,7 @@
       "id": "11",
       "conhecimento": "Adobe Premiere",
       "conhecimentoEn": "Adobe Premiere",
-      "rank": "5",
+      "rank": "4",
       "icone": "premiere",
       "mensagemToolTip": "Básico",
       "mensagemToolTipEn": "Basic"
@@ -172,7 +172,7 @@
       "id": "12",
       "conhecimento": "Adobe After Effects",
       "conhecimentoEn": "Adobe After Effects",
-      "rank": "4",
+      "rank": "3",
       "icone": "aftereffects",
       "mensagemToolTip": "Báscio",
       "mensagemToolTipEn": "Basic"
@@ -208,7 +208,7 @@
       "id": "16",
       "conhecimento": "JavaScript",
       "conhecimentoEn": "JavaScript",
-      "rank": "5",
+      "rank": "7",
       "icone": "javascript",
       "mensagemToolTip": "Estudando",
       "mensagemToolTipEn": "Studying"
@@ -217,7 +217,7 @@
       "id": "17",
       "conhecimento": "Reactjs",
       "conhecimentoEn": "Reactjs",
-      "rank": "4",
+      "rank": "6",
       "icone": "react",
       "mensagemToolTip": "Estudando",
       "mensagemToolTipEn": "Studying"
@@ -226,7 +226,7 @@
       "id": "18",
       "conhecimento": "Wordpress",
       "conhecimentoEn": "Wordpress",
-      "rank": "3",
+      "rank": "2",
       "icone": "wordpress",
       "mensagemToolTip": "Estudando",
       "mensagemToolTipEn": "Studying"
@@ -235,13 +235,22 @@
       "id": "19",
       "conhecimento": "GIT",
       "conhecimentoEn": "GIT",
-      "rank": "6",
+      "rank": "5",
       "icone": "github",
       "mensagemToolTip": "Estudando",
       "mensagemToolTipEn": "Studying"
     }
   ],
   "experiencia": [
+    {
+      "id": "10",
+      "empresa": "Beto Carrero World",
+      "cargo": "Designer Gráfico, Web Designer, Desenvolvedor React",
+      "cargoEn": "Graphic Designer, Web Designer, React Developer",
+      "local": "Penha/SC",
+      "entrada": { "m": 5, "a": 2019 },
+      "saida": { "m": 10, "a": 2019 }
+    },
     {
       "id": "9",
       "empresa": "DWV Interativa",
