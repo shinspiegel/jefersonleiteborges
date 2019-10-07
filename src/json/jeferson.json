@@ -245,19 +245,11 @@
     {
       "id": "10",
       "empresa": "Beto Carrero World",
-<<<<<<< HEAD
       "cargo": "Designer Gráfico, Web Designer, Desenvolvedor React",
       "cargoEn": "Graphic Designer, Web Designer, React Developer",
       "local": "Penha/SC",
       "entrada": { "m": 5, "a": 2019 },
       "saida": { "m": 10, "a": 2019 }
-=======
-      "cargo": "Editor de Imagens, Web Designer, Desenvolvedor React",
-      "cargoEn": "Image Editor, Web Designer, React Developer",
-      "local": "Itajaí/SC",
-      "entrada": { "m": 5, "a": 2019 },
-      "saida": {}
->>>>>>> cd6c8245db10e5a7600c5bb83a8161eb91b23517
     },
     {
       "id": "9",
