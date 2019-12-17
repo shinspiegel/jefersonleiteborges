@@ -14,7 +14,7 @@ import ChangeLanguage from './components/ChangeLanguage.js';
 
 class App extends Component {
   state = {
-    language: 'BR',
+    language: 'EN',
     info: { ...jefersonPT },
   };
 

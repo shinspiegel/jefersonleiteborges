@@ -9,15 +9,8 @@
     "sexoEn": "male"
   },
   "otherInfo": {
-    "filiacao": {
-      "pai": "Antenor Borges",
-      "mae": "Maria José Leite"
-    },
-    "portfolio": {
-      "behance": "jefersonleite",
-      "tumblr": "jefersonleite",
-      "github": "shinspiegel"
-    },
+    "filiacao": { "pai": "Antenor Borges", "mae": "Maria José Leite" },
+    "portfolio": { "behance": "jefersonleite", "tumblr": "jefersonleite", "github": "shinspiegel" },
     "endereco": {
       "rua": "Rua Vereador Claudino José Pacheco",
       "numero": "173",
@@ -39,20 +32,27 @@
   "formacao": [
     {
       "id": 0,
+      "instituicao": "IGTI",
+      "curso": "MBA em Front-end",
+      "cursoEN": "MBA Front-end Dev",
+      "anoConclusao": "in Progress"
+    },
+    {
+      "id": 1,
       "instituicao": "Universidade do Vale do Itajaí",
       "curso": "Design Industrial",
       "cursoEN": "Industrial Design",
       "anoConclusao": "2013"
     },
     {
-      "id": 1,
+      "id": 2,
       "instituicao": "Colégio e Curso Radical",
       "curso": "Ensino Médio",
       "cursoEN": "High School",
       "anoConclusao": "2007"
     },
     {
-      "id": 2,
+      "id": 3,
       "instituicao": "Escola Básica João Duarte",
       "curso": "Ensino Fundamental",
       "cursoEN": "Elementary and Middle School",
@@ -64,7 +64,7 @@
       "id": "0",
       "conhecimento": "Língua inglesa",
       "conhecimentoEn": "English",
-      "rank": "6",
+      "rank": "7",
       "icone": "ingles",
       "mensagemToolTip": "Intermediario",
       "mensagemToolTipEn": "Intermediate"
@@ -72,7 +72,7 @@
     {
       "id": "1",
       "conhecimento": "Informática básica",
-      "conhecimentoEn": "Basic Computing",
+      "conhecimentoEn": "Microsoft Office",
       "rank": "9",
       "icone": "microsoft",
       "mensagemToolTip": "Avançado",
@@ -91,7 +91,7 @@
       "id": "3",
       "conhecimento": "macOS",
       "conhecimentoEn": "macOS",
-      "rank": "9",
+      "rank": "8",
       "icone": "apple",
       "mensagemToolTip": "Avançado",
       "mensagemToolTipEn": "Advanced"
@@ -100,36 +100,63 @@
       "id": "4",
       "conhecimento": "Linux",
       "conhecimentoEn": "Linux",
-      "rank": "7",
+      "rank": "8",
       "icone": "linux",
       "mensagemToolTip": "Intermediario",
       "mensagemToolTipEn": "Intermediate"
     },
     {
-      "id": "5",
-      "conhecimento": "AutoCad",
-      "conhecimentoEn": "AutoCad",
+      "id": "14",
+      "conhecimento": "HTML 5",
+      "conhecimentoEn": "HTML 5",
       "rank": "8",
-      "icone": "autocad",
-      "mensagemToolTip": "Intermediário",
+      "icone": "html5",
+      "mensagemToolTip": "Estudando",
+      "mensagemToolTipEn": "Studying"
+    },
+    {
+      "id": "15",
+      "conhecimento": "CSS 3",
+      "conhecimentoEn": "CSS 3",
+      "rank": "7",
+      "icone": "css3",
+      "mensagemToolTip": "Intermediario",
       "mensagemToolTipEn": "Intermediate"
     },
     {
-      "id": "6",
-      "conhecimento": "Solid Works",
-      "conhecimentoEn": "Solid Works",
-      "rank": "6",
-      "icone": "solidworks",
-      "mensagemToolTip": "Intermediário",
+      "id": "16",
+      "conhecimento": "JavaScript",
+      "conhecimentoEn": "JavaScript",
+      "rank": "8",
+      "icone": "javascript",
+      "mensagemToolTip": "Intermediario",
       "mensagemToolTipEn": "Intermediate"
     },
     {
-      "id": "7",
-      "conhecimento": "Fusion 360",
-      "conhecimentoEn": "Fusion 360",
+      "id": "17",
+      "conhecimento": "Reactjs",
+      "conhecimentoEn": "Reactjs",
+      "rank": "7",
+      "icone": "react",
+      "mensagemToolTip": "Intermediario",
+      "mensagemToolTipEn": "Intermediate"
+    },
+    {
+      "id": "18",
+      "conhecimento": "Wordpress",
+      "conhecimentoEn": "Wordpress",
+      "rank": "1",
+      "icone": "wordpress",
+      "mensagemToolTip": "Estudando",
+      "mensagemToolTipEn": "Studying"
+    },
+    {
+      "id": "19",
+      "conhecimento": "GIT",
+      "conhecimentoEn": "GIT",
       "rank": "6",
-      "icone": "fusion360",
-      "mensagemToolTip": "Intermediário",
+      "icone": "github",
+      "mensagemToolTip": "Intermediario",
       "mensagemToolTipEn": "Intermediate"
     },
     {
@@ -163,7 +190,7 @@
       "id": "11",
       "conhecimento": "Adobe Premiere",
       "conhecimentoEn": "Adobe Premiere",
-      "rank": "4",
+      "rank": "5",
       "icone": "premiere",
       "mensagemToolTip": "Básico",
       "mensagemToolTipEn": "Basic"
@@ -187,58 +214,31 @@
       "mensagemToolTipEn": "Advanced"
     },
     {
-      "id": "14",
-      "conhecimento": "HTML 5",
-      "conhecimentoEn": "HTML 5",
+      "id": "5",
+      "conhecimento": "AutoCad",
+      "conhecimentoEn": "AutoCad",
       "rank": "7",
-      "icone": "html5",
-      "mensagemToolTip": "Estudando",
-      "mensagemToolTipEn": "Studying"
+      "icone": "autocad",
+      "mensagemToolTip": "Intermediário",
+      "mensagemToolTipEn": "Intermediate"
     },
     {
-      "id": "15",
-      "conhecimento": "CSS 3",
-      "conhecimentoEn": "CSS 3",
+      "id": "6",
+      "conhecimento": "Solid Works",
+      "conhecimentoEn": "Solid Works",
+      "rank": "4",
+      "icone": "solidworks",
+      "mensagemToolTip": "Intermediário",
+      "mensagemToolTipEn": "Intermediate"
+    },
+    {
+      "id": "7",
+      "conhecimento": "Fusion 360",
+      "conhecimentoEn": "Fusion 360",
       "rank": "6",
-      "icone": "css3",
-      "mensagemToolTip": "Estudando",
-      "mensagemToolTipEn": "Studying"
-    },
-    {
-      "id": "16",
-      "conhecimento": "JavaScript",
-      "conhecimentoEn": "JavaScript",
-      "rank": "7",
-      "icone": "javascript",
-      "mensagemToolTip": "Estudando",
-      "mensagemToolTipEn": "Studying"
-    },
-    {
-      "id": "17",
-      "conhecimento": "Reactjs",
-      "conhecimentoEn": "Reactjs",
-      "rank": "6",
-      "icone": "react",
-      "mensagemToolTip": "Estudando",
-      "mensagemToolTipEn": "Studying"
-    },
-    {
-      "id": "18",
-      "conhecimento": "Wordpress",
-      "conhecimentoEn": "Wordpress",
-      "rank": "2",
-      "icone": "wordpress",
-      "mensagemToolTip": "Estudando",
-      "mensagemToolTipEn": "Studying"
-    },
-    {
-      "id": "19",
-      "conhecimento": "GIT",
-      "conhecimentoEn": "GIT",
-      "rank": "5",
-      "icone": "github",
-      "mensagemToolTip": "Estudando",
-      "mensagemToolTipEn": "Studying"
+      "icone": "fusion360",
+      "mensagemToolTip": "Intermediário",
+      "mensagemToolTipEn": "Intermediate"
     }
   ],
   "experiencia": [
