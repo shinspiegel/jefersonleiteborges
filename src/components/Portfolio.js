@@ -8,13 +8,13 @@ const portfolio = props => {
 
   return (
     <div className="portfolio">
-      <PortfolioItem link={'www.behance.net/' + props.portfolio.behance} svgId="behance">
+      <PortfolioItem link={'https://www.behance.net/' + props.portfolio.behance} svgId="behance">
         {behance}
       </PortfolioItem>
-      <PortfolioItem link={'' + props.portfolio.tumblr + '.tumblr.com'} svgId="tumblr">
+      <PortfolioItem link={'https://' + props.portfolio.tumblr + '.tumblr.com'} svgId="tumblr">
         {tumblr}
       </PortfolioItem>
-      <PortfolioItem link={'github.com/' + props.portfolio.github} svgId="github">
+      <PortfolioItem link={'https://github.com/' + props.portfolio.github} svgId="github">
         {codes}
       </PortfolioItem>
     </div>
