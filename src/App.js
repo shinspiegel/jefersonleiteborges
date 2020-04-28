@@ -5,7 +5,7 @@ const Home = () => (
   <>
     <h1>
       Hi, I'm
-      <strong> Jef</strong>, this is a under-construction site.
+      <strong> Jef</strong>, this is under-construction site.
       <br />
       <br />
       <span>🚧</span>
