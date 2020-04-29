@@ -1,6 +1,7 @@
 body {
   background-color: #6b0555;
-  display: grid;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
@@ -13,5 +14,11 @@ h1 {
 }
 
 span {
+  margin-top: 14px;
   font-size: 56px;
+}
+
+small {
+  margin-top: 24px;
+  color: white;
 }
