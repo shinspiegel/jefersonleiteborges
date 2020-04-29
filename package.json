@@ -13,7 +13,7 @@
     "dev": "rm -rf ./dist; parcel -p 5050 watch src/index.html --https --cert .certs/cert.pem --key .certs/key.pem",
     "dev:http": "parcel -p 5050 watch src/index.html",
     "build": "parcel build src/index.html --out-dir build",
-    "deploy": "aws s3 rm s3://jeferson.me --recursive; aws s3 sync build/ s3://jeferson.me --acl public-read",
+    "deploy": "aws s3 rm s3://cdn.jeferson.me --recursive; aws s3 sync build/ s3://cdn.jeferson.me --acl public-read",
     "test": "jest",
     "doc": "jsdoc -c ./docs/jsdoc.json --readme ./readme.md"
   },

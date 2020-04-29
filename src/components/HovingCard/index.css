@@ -1,0 +1,25 @@
+.hovingCard {
+  width: 90%;
+  max-width: 750px;
+  min-height: 200px;
+  margin: 0 auto;
+  margin-top: -48px;
+  padding: 12px;
+
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  background-color: var(--white);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2), 0 8px 16px rgba(0, 0, 0, 0.15),
+    0 24px 48px rgba(0, 0, 0, 0.1);
+}
+
+.visible {
+  transition: ease 0.3s opacity;
+
+  opacity: 1;
+}
+.invisible {
+  transition: ease 0.1s opacity;
+
+  opacity: 0;
+}
