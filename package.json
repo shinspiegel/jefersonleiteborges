@@ -13,12 +13,9 @@
     "dev": "rm -rf ./dist; parcel -p 5050 watch src/index.html --https --cert .certs/cert.pem --key .certs/key.pem",
     "dev:http": "parcel -p 5050 watch src/index.html",
     "build": "parcel build src/index.html --out-dir build",
+    "deploy": "aws s3 rm s3://jeferson.me --recursive; aws s3 sync build/ s3://jeferson.me --acl public-read",
     "test": "jest",
-    "doc": "jsdoc -c ./docs/.jsdoc.json --readme ./readme.md",
-    "workspace:clean": "rm -rf .cache dist node_modules; yarn",
-    "release": "standard-version",
-    "release:minor": "standard-version --release-as minor",
-    "release:major": "standard-version --release-as major"
+    "doc": "jsdoc -c ./docs/jsdoc.json --readme ./readme.md"
   },
   "husky": {
     "hooks": {
@@ -29,11 +26,6 @@
     "extends": [
       "@commitlint/config-conventional"
     ]
-  },
-  "standard-version": {
-    "scripts": {
-      "postchangelog": "replace 'https://github.com/shinspiegel/pos-graduacao-frontend/issues/' 'https://ora.pm/project/196922/kanban/task/' CHANGELOG.md"
-    }
   },
   "jest": {
     "moduleNameMapper": {
@@ -136,9 +128,7 @@
     "minami": "^1.2.3",
     "parcel-bundler": "^1.12.4",
     "prettier": "^2.0.4",
-    "pretty-quick": "^2.0.1",
-    "replace": "^1.1.5",
-    "standard-version": "^7.1.0"
+    "pretty-quick": "^2.0.1"
   },
   "dependencies": {
     "dotenv": "^8.2.0",
