@@ -10,7 +10,7 @@
   },
   "scripts": {
     "sassW": "node-sass src/scss/main.scss src/style.css -w",
-    "deploy": "aws s3 rm s3://jeferson.me --recursive; aws s3 sync build/ s3://jeferson.me --acl public-read",
+    "deploy": "aws s3 rm s3://cdn.jeferson.me --recursive; aws s3 sync build/ s3://cdn.jeferson.me --acl public-read",
     "start": "PORT=21032 react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
