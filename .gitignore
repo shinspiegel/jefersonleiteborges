@@ -5,6 +5,5 @@ node_modules
 build
 dist
 dist
-docs/*
+docs
 
-!docs/jsdoc.json
