@@ -1,8 +1,6 @@
 import React, { useEffect } from 'react';
 import useAction from '../context/useActions';
 
-import heroBackground from '../assets/hero.jpg';
-
 import Hero from '../components/Hero';
 import PersonalInfo from '../components/PersonalInfo';
 import HovingCard from '../components/HovingCard';
@@ -29,7 +27,7 @@ const Main = () => {
   } = state;
 
   const heroConfig = { imageSource: images.hero, name, greeting };
-  const pesonalInfoConfig = { imageSource: images.hero, name, about, socialMedia };
+  const pesonalInfoConfig = { imageSource: images.hoving, name, about, socialMedia };
 
   useEffect(() => {
     fetch('https://dev.to/api/articles?username=shinspiegel')
@@ -71,7 +69,7 @@ const Main = () => {
         </Article>
       </SectionWrapper>
 
-      <SectionBreak url={heroBackground} />
+      <SectionBreak url={images.background.default} />
 
       {posts.length > 0 ? (
         <SectionWrapper title='Blog Posts' subtitle='I like to talk about this'>

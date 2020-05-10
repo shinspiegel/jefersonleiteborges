@@ -10,9 +10,3 @@ ReactDOM.render(
   </ContextProvider>,
   document.getElementById('root'),
 );
-
-if (process.env.SERVICE_WORKER === 'true') {
-  if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('/service-worker.js');
-  }
-}

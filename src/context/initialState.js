@@ -1,4 +1,25 @@
-import heroBackground from '../assets/hero.jpg';
+import hero1 from '../assets/hero_1.jpg';
+import hero1w360 from '../assets/hero_1_360.jpg';
+import hero1w898 from '../assets/hero_1_898.jpg';
+import hero1w1297 from '../assets/hero_1_1297.jpg';
+import hero1w1616 from '../assets/hero_1_1616.jpg';
+import hero1w1920 from '../assets/hero_1_1920.jpg';
+
+import hero2 from '../assets/hero_2.jpg';
+import hero2w200 from '../assets/hero_2_200.jpg';
+import hero2w536 from '../assets/hero_2_536.jpg';
+import hero2w773 from '../assets/hero_2_773.jpg';
+import hero2w975 from '../assets/hero_2_975.jpg';
+import hero2w1366 from '../assets/hero_2_1366.jpg';
+
+import background1 from '../assets/background_1.png';
+import background1w360 from '../assets/background_1_360.png';
+import background1w405 from '../assets/background_1_405.png';
+import background1w445 from '../assets/background_1_445.png';
+import background1w481 from '../assets/background_1_481.png';
+import background1w579 from '../assets/background_1_579.png';
+import background1w647 from '../assets/background_1_647.png';
+import background1w1200 from '../assets/background_1_1200.png';
 
 const InitialState = {
   name: 'Jeferson Leite Borges',
@@ -6,13 +27,42 @@ const InitialState = {
 
   greeting: 'Hello, I AM',
   images: {
-    hero: { default: heroBackground, 200: heroBackground },
+    hero: {
+      default: hero1,
+      360: hero1w360,
+      898: hero1w898,
+      1297: hero1w1297,
+      1616: hero1w1616,
+      1920: hero1w1920,
+    },
+    hoving: {
+      default: hero2,
+      200: hero2w200,
+      536: hero2w536,
+      773: hero2w773,
+      975: hero2w975,
+      1366: hero2w1366,
+    },
+    background: {
+      default: background1,
+      360: background1w360,
+      405: background1w405,
+      445: background1w445,
+      481: background1w481,
+      579: background1w579,
+      647: background1w647,
+      1200: background1w1200,
+    },
   },
   socialMedia: [
-    { isHidden: false, icon: 'Instagram', link: 'https://www.instagram.com' },
-    { isHidden: false, icon: 'Twitter', link: 'https://www.Twitter.com' },
-    { isHidden: false, icon: 'Linkedin', link: 'https://www.Linkedin.com' },
-    { isHidden: false, icon: 'Behance', link: 'https://www.Behance.com' },
+    { isHidden: false, icon: 'Instagram', link: 'https://www.instagram.com/shinspiegel' },
+    { isHidden: false, icon: 'Twitter', link: 'https://www.twitter.com/shinspiegel' },
+    {
+      isHidden: false,
+      icon: 'Linkedin',
+      link: 'https://www.linkedin.com/in/jeferson-leite-borges-9a4bb832/',
+    },
+    { isHidden: false, icon: 'Behance', link: 'https://www.behance.net/jefersonleite' },
   ],
   workExperience: [
     {
