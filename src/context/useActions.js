@@ -11,15 +11,15 @@ const actions = () => {
     return;
   };
 
-  const increase = (payload) => {
-    dispatch({ type: redux.increase, payload });
+  const updatePosts = (payload) => {
+    dispatch({ type: redux.setPosts, payload });
     return;
   };
 
   return {
     state,
     consoleTest,
-    increase,
+    updatePosts,
   };
 };
 

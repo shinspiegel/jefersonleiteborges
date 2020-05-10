@@ -1,184 +1,85 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import useAction from '../context/useActions';
-import Hero from '../components/hero';
 
 import heroBackground from '../assets/hero.jpg';
+
+import Hero from '../components/Hero';
+import PersonalInfo from '../components/PersonalInfo';
 import HovingCard from '../components/HovingCard';
+import SectionWrapper from '../components/SectionWrapper';
+import Article from '../components/ArticleWrapper';
+import DateCard from '../components/DateCard';
+import BarsCard from '../components/BarsCard';
+import SectionBreak from '../components/SectionBreak';
+import BlogPost from '../components/BlogCard';
 
-/**
- * This is the basic docs for this component
- */
 const Main = () => {
-  const { state, consoleTest, increase } = useAction();
-  const { count } = state;
+  const { state, updatePosts } = useAction();
+  const {
+    name,
+    greeting,
+    images,
+    about,
+    socialMedia,
+    workExperience,
+    education,
+    designSkills,
+    codingSkills,
+    posts,
+  } = state;
 
-  const heroConfig = {
-    imageSource: { default: heroBackground },
-    name: 'Jeferson Leite Borges',
-    greeting: 'Hello, I AM',
-  };
+  const heroConfig = { imageSource: images.hero, name, greeting };
+  const pesonalInfoConfig = { imageSource: images.hero, name, about, socialMedia };
+
+  useEffect(() => {
+    fetch('https://dev.to/api/articles?username=shinspiegel')
+      .then((res) => res.json())
+      .then((res) => updatePosts(res));
+  }, []);
+
+  console.log(posts);
 
   return (
     <>
       <Hero {...heroConfig} />
-      <HovingCard>Hoving</HovingCard>
-      <div>This is a hero cover wiht my name</div>
-      <div>This is a card with a personal infomation</div>
-      <div>
-        This is my professional xp, education degree, design skills and coding skills in cards
-      </div>
-      <div>Call to action</div>
-      <div>Blog posts</div>
+      <HovingCard>
+        <PersonalInfo {...pesonalInfoConfig} />
+      </HovingCard>
+      <SectionWrapper title='My expertises' subtitle='My resume'>
+        <Article title='My Experience'>
+          {workExperience
+            .filter((item) => !item.isHidden)
+            .map((work, index) => (
+              <DateCard key={index} {...work} />
+            ))}
+        </Article>
 
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
+        <Article title='My Education'>
+          {education
+            .filter((item) => !item.isHidden)
+            .map((education, index) => (
+              <DateCard key={index} {...education} />
+            ))}
+        </Article>
 
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
+        <Article title='Design Skills'>
+          <BarsCard barsList={designSkills} />
+        </Article>
 
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
+        <Article title='Coding Skills'>
+          <BarsCard barsList={codingSkills} />
+        </Article>
+      </SectionWrapper>
 
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
+      <SectionBreak url={heroBackground} />
 
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
+      {posts.length > 0 ? (
+        <SectionWrapper title='Blog Posts' subtitle='I like to talk about this'>
+          {posts.map((post) => (
+            <BlogPost key={post.id} {...post} />
+          ))}
+        </SectionWrapper>
+      ) : null}
     </>
   );
 };

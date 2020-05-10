@@ -1,6 +1,6 @@
 export const reducerCases = {
   test: 'TEST',
-  increase: 'INCREASE',
+  setPosts: 'SET_POSTS',
 };
 
 const Reducer = (state, action) => {
@@ -9,10 +9,10 @@ const Reducer = (state, action) => {
       console.log('reducer test');
       return state;
 
-    case reducerCases.increase:
+    case reducerCases.setPosts:
       return {
         ...state,
-        count: state.count + action.payload,
+        posts: action.payload,
       };
 
     default:
