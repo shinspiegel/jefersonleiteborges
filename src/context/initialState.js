@@ -55,10 +55,10 @@ const InitialState = {
     { title: 'CAD Software', listNames: ['AutoCAD', 'Fusion 360', 'SolidWorks', 'Meshmixer'] },
   ],
   codingSkills: [
-    { title: 'OS Systems', listNames: ['macOS', 'Linux Ubuntu', 'Linux Mint', 'Linux Manjaro'] },
-    { title: 'Frontend', listNames: ['HTML5', 'CSS3', 'Vanilla JS', 'SASS', 'React.js', 'Vue.js'] },
-    { title: 'Backend', listNames: [ 'Typescript', 'Javascript', 'Node.js', 'Deno.land', 'Express.js', 'Koa.js', 'REST API', ], },
-    { title: 'Testing', listNames: ['TDD', 'Unit Testing', '', 'Jest.js'] },
+    { title: 'Operating System', listNames: ['macOS', 'Linux Ubuntu', 'Linux Mint', 'Linux Manjaro'] },
+    { title: 'Frontend',         listNames: ['HTML5', 'CSS3', 'Vanilla JS', 'SASS', 'React.js', 'Vue.js'] },
+    { title: 'Backend',          listNames: [ 'Typescript', 'Javascript', 'Node.js', 'Deno.land', 'Express.js', 'Koa.js', 'REST API', ], },
+    { title: 'Testing',          listNames: ['TDD', 'Unit Testing', '', 'Jest.js'] },
   ],
   posts: [],
 };
