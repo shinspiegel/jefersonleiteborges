@@ -55,7 +55,7 @@
     max-width: 950px;
     margin: 48px auto 24px;
 
-    grid-template-columns: repeat(var(--columns), 1fr);
+    grid-template-columns: repeat(var(--columns), minmax(0, 1fr));
   }
 
   .section small,

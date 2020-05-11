@@ -55,14 +55,16 @@ const InitialState = {
     },
   },
   socialMedia: [
-    { isHidden: false, icon: 'Instagram', link: 'https://www.instagram.com/shinspiegel' },
-    { isHidden: false, icon: 'Twitter', link: 'https://www.twitter.com/shinspiegel' },
+    { isHidden: false, icon: 'Github', link: 'https://www.github.com/shinspiegel' },
+    { isHidden: false, icon: 'Gitlab', link: 'https://www.gitlab.com/shinspiegel' },
     {
       isHidden: false,
       icon: 'Linkedin',
       link: 'https://www.linkedin.com/in/jeferson-leite-borges-9a4bb832/',
     },
+    { isHidden: false, icon: 'Twitter', link: 'https://www.twitter.com/shinspiegel' },
     { isHidden: false, icon: 'Behance', link: 'https://www.behance.net/jefersonleite' },
+    { isHidden: false, icon: 'Instagram', link: 'https://www.instagram.com/shinspiegel' },
   ],
   workExperience: [
     {
@@ -72,7 +74,7 @@ const InitialState = {
       quitYear: 'Present',
       company: 'Tentaculo.digital',
       description:
-        'Development of web applications using React.js as well backend with serverless functions in a Node.js environment.',
+        'Development of web applications using React.js as well as backend with serverless functions in a Node.js environment.',
     },
     {
       isHidden: false,
@@ -90,7 +92,7 @@ const InitialState = {
       quitYear: 'Feb 2019',
       company: 'DWV Interativa',
       description:
-        'Design and code of simple pure HTML5, CSS3 and vanilla Javascript, with style cohesion for each customer brand. Design of social media and seasonal brands.',
+        'Design and coding of simple pure HTML5, CSS3 and vanilla Javascript, with style cohesion for each customer brand. Design of social media and seasonal brands.',
     },
     {
       isHidden: false,
@@ -132,22 +134,28 @@ const InitialState = {
     },
   ],
   designSkills: [
-    { isHidden: false, skill: 'Adobe Photoshop', value: 90 },
-    { isHidden: false, skill: 'Adobe Illustrator', value: 80 },
-    { isHidden: false, skill: 'Adobe InDesign', value: 70 },
-    { isHidden: false, skill: 'AutoCAD', value: 60 },
+    {
+      title: 'Abode Software',
+      listNames: ['Photoshop', 'Illustrator', 'InDesign', 'Premiere', 'After Effect'],
+    },
+    { title: 'CAD Software', listNames: ['AutoCAD', 'Fusion 360', 'SolidWorks', 'Meshmixer'] },
   ],
   codingSkills: [
-    { isHidden: false, skill: 'Javascript', value: 90 },
-    { isHidden: false, skill: 'HTML5', value: 95 },
-    { isHidden: false, skill: 'CSS3', value: 85 },
-    { isHidden: false, skill: 'Sass', value: 70 },
-    { isHidden: false, skill: 'React.js', value: 80 },
-    { isHidden: false, skill: 'Unit testing', value: 75 },
-    { isHidden: false, skill: 'Jest', value: 60 },
-    { isHidden: false, skill: 'Node.js', value: 80 },
-    { isHidden: false, skill: 'REST API', value: 80 },
-    { isHidden: false, skill: 'TDD', value: 50 },
+    { title: 'OS Systems', listNames: ['macOS', 'Linux Ubuntu', 'Linux Mint', 'Linux Manjaro'] },
+    { title: 'Frontend', listNames: ['HTML5', 'CSS3', 'Vanilla JS', 'SASS', 'React.js', 'Vue.js'] },
+    {
+      title: 'Backend',
+      listNames: [
+        'Typescript',
+        'Javascript',
+        'Node.js',
+        'Deno.land',
+        'Express.js',
+        'Koa.js',
+        'REST API',
+      ],
+    },
+    { title: 'Testing', listNames: ['TDD', 'Unit Testing', '', 'Jest.js'] },
   ],
   posts: [],
 };

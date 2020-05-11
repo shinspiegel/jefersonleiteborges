@@ -10,6 +10,7 @@ import DateCard from '../components/DateCard';
 import BarsCard from '../components/BarsCard';
 import SectionBreak from '../components/SectionBreak';
 import BlogPost from '../components/BlogCard';
+import SkillsCard from '../components/SkillsCard';
 
 const Main = () => {
   const { state, updatePosts } = useAction();
@@ -61,11 +62,11 @@ const Main = () => {
         </Article>
 
         <Article title='Design Skills'>
-          <BarsCard barsList={designSkills} />
+          <SkillsCard list={designSkills} />
         </Article>
 
         <Article title='Coding Skills'>
-          <BarsCard barsList={codingSkills} />
+          <SkillsCard list={codingSkills} />
         </Article>
       </SectionWrapper>
 

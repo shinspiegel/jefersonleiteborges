@@ -1,4 +1,12 @@
-import { FaFacebookF, FaInstagram, FaTwitter, FaLinkedin, FaBehance } from 'react-icons/fa';
+import {
+  FaFacebookF,
+  FaInstagram,
+  FaTwitter,
+  FaLinkedin,
+  FaBehance,
+  FaGithub,
+  FaGitlab,
+} from 'react-icons/fa';
 
 const getIconComponent = (icon) => {
   if (!icon || typeof icon !== 'string') icon = '';
@@ -15,6 +23,10 @@ const getIconComponent = (icon) => {
       return FaLinkedin;
     case 'behance':
       return FaBehance;
+    case 'github':
+      return FaGithub;
+    case 'gitlab':
+      return FaGitlab;
     default:
       return () => <div />;
   }
