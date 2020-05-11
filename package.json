@@ -12,7 +12,7 @@
   "scripts": {
     "dev": "rm -rf ./dist; parcel -p 5050 watch src/index.html --https --cert .certs/cert.pem --key .certs/key.pem",
     "dev:http": "parcel -p 5050 watch src/index.html",
-    "build": "rm -rf build; parcel build src/index.html --out-dir build",
+    "build": "rm -rf build; parcel build src/index.html --out-dir build --no-source-maps",
     "test": "jest",
     "doc": "jsdoc -c ./jsdoc.json --readme ./readme.md",
     "deploy:master": "yarn build; aws s3 rm s3://cdn.jeferson.me --recursive; aws s3 sync build/ s3://cdn.jeferson.me --acl public-read",
