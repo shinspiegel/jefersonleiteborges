@@ -61,12 +61,12 @@ const Main = () => {
             ))}
         </Article>
 
-        <Article title='Design Skills'>
-          <SkillsCard list={designSkills} />
-        </Article>
-
         <Article title='Coding Skills'>
           <SkillsCard list={codingSkills} />
+        </Article>
+
+        <Article title='Design Skills'>
+          <SkillsCard list={designSkills} />
         </Article>
       </SectionWrapper>
 

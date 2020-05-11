@@ -30,7 +30,7 @@
 }
 
 .skillCard span {
-  color: var(--grey);
+  color: var(--grey-tint);
 }
 
 .skillCard p::after {
