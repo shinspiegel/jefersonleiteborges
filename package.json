@@ -1,31 +1,139 @@
 {
-  "name": "myskills",
-  "version": "0.9.0",
-  "private": true,
-  "dependencies": {
-    "axios": "^0.18.1",
-    "react": "^16.7.0",
-    "react-dom": "^16.7.0",
-    "react-scripts": "^2.1.3"
-  },
+  "name": "un-named",
+  "version": "0.2.0",
+  "description": "Projeto Meu Mercado",
+  "main": "src/index.html",
+  "license": "MIT",
+  "keywords": [],
+  "author": "Jeferson 'Shin' Leite Borges <https://github.com/shinspiegel/>",
+  "browserslist": [
+    "last 1 Chrome version"
+  ],
   "scripts": {
-    "sassW": "node-sass src/scss/main.scss src/style.css -w",
-    "deploy": "aws s3 rm s3://cdn.jeferson.me --recursive; aws s3 sync build/ s3://cdn.jeferson.me --acl public-read",
-    "start": "PORT=21032 react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "dev": "rm -rf ./dist; parcel -p 5050 watch src/index.html --https --cert .certs/cert.pem --key .certs/key.pem",
+    "dev:http": "parcel -p 5050 watch src/index.html",
+    "build": "rm -rf build; parcel build src/index.html --out-dir build --no-source-maps",
+    "test": "jest",
+    "deploy:master": "yarn build; aws s3 rm s3://cdn.jeferson.me --recursive; aws s3 sync build/ s3://cdn.jeferson.me --acl public-read",
+    "deploy:dev": "yarn build; aws s3 rm s3://cdn.dev.jefersom.me --recursive; aws s3 sync build/ s3://cdn.dev.jefersom.me --acl public-read",
+    "clean": "rm -rf .cache .certs build dist docs node_modules"
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "pretty-quick --staged && commitlint -E HUSKY_GIT_PARAMS && yarn test --silent=true"
+    }
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  },
+  "jest": {
+    "moduleNameMapper": {
+      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/assetsTransformer.js",
+      "\\.(css|less)$": "<rootDir>/assetsTransformer.js"
+    }
+  },
+  "babel": {
+    "presets": [
+      [
+        "@babel/preset-env",
+        {
+          "targets": {
+            "node": 12
+          }
+        }
+      ],
+      "@babel/preset-react"
+    ],
+    "plugins": [
+      [
+        "@babel/transform-runtime",
+        {
+          "regenerator": true
+        }
+      ]
+    ]
+  },
+  "prettier": {
+    "printWidth": 100,
+    "singleQuote": true,
+    "jsxSingleQuote": true,
+    "tabWidth": 2,
+    "trailingComma": "all",
+    "semi": true,
+    "useTabs": false,
+    "bracketSpacing": true
   },
   "eslintConfig": {
-    "extends": "react-app"
+    "extends": [
+      "airbnb-base",
+      "prettier",
+      "plugin:react/recommended"
+    ],
+    "plugins": [
+      "react",
+      "prettier",
+      "jest",
+      "promise",
+      "react-hooks"
+    ],
+    "rules": {
+      "prettier/prettier": [
+        "error"
+      ],
+      "quotes": [
+        "error",
+        "double"
+      ],
+      "react-hooks/rules-of-hooks": "error",
+      "react-hooks/exhaustive-deps": "warn",
+      "no-underscore-dangle": [
+        "error",
+        {
+          "allow": [
+            "_id"
+          ]
+        }
+      ]
+    },
+    "env": {
+      "jest/globals": true
+    },
+    "globals": {
+      "fetch": true
+    },
+    "parserOptions": {
+      "ecmaFeatures": {
+        "jsx": true
+      }
+    }
   },
-  "browserslist": [
-    ">0.2%",
-    "not dead",
-    "not ie <= 11",
-    "not op_mini all"
-  ],
   "devDependencies": {
-    "node-sass": "^4.11.0"
+    "@babel/core": "^7.8.3",
+    "@babel/plugin-transform-runtime": "^7.8.3",
+    "@babel/preset-env": "^7.8.3",
+    "@babel/preset-react": "^7.8.3",
+    "@babel/runtime": "^7.8.4",
+    "@commitlint/cli": "^8.3.5",
+    "@commitlint/config-conventional": "^8.3.4",
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.4.0",
+    "@types/jest": "^24.0.25",
+    "babel-jest": "^24.9.0",
+    "eslint": "^6.8.0",
+    "husky": "^4.2.0",
+    "jest": "^24.9.0",
+    "jsdoc": "^3.6.3",
+    "parcel-bundler": "^1.12.4",
+    "prettier": "^2.0.4",
+    "pretty-quick": "^2.0.1"
+  },
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-icons": "^3.10.0",
+    "react-router-dom": "^5.1.2"
   }
 }

@@ -1,5 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Home from './App';
+import { ContextProvider } from './context/context';
 
-ReactDOM.render(<Home />, document.getElementById('root'));
+import Routes from './routes';
+
+ReactDOM.render(
+  <ContextProvider>
+    <Routes />
+  </ContextProvider>,
+  document.getElementById('root'),
+);
