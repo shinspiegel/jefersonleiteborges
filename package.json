@@ -14,9 +14,9 @@
     "dev:http": "parcel -p 5050 watch src/index.html",
     "build": "rm -rf build; parcel build src/index.html --out-dir build --no-source-maps",
     "test": "jest",
-    "doc": "jsdoc -c ./jsdoc.json --readme ./readme.md",
     "deploy:master": "yarn build; aws s3 rm s3://cdn.jeferson.me --recursive; aws s3 sync build/ s3://cdn.jeferson.me --acl public-read",
-    "deploy:dev": "yarn build; aws s3 rm s3://cdn.dev.jefersom.me --recursive; aws s3 sync build/ s3://cdn.dev.jefersom.me --acl public-read"
+    "deploy:dev": "yarn build; aws s3 rm s3://cdn.dev.jefersom.me --recursive; aws s3 sync build/ s3://cdn.dev.jefersom.me --acl public-read",
+    "clean": "rm -rf .cache .certs build dist docs node_modules"
   },
   "husky": {
     "hooks": {
@@ -121,12 +121,10 @@
     "@testing-library/react": "^9.4.0",
     "@types/jest": "^24.0.25",
     "babel-jest": "^24.9.0",
-    "better-docs": "^1.4.7",
     "eslint": "^6.8.0",
     "husky": "^4.2.0",
     "jest": "^24.9.0",
     "jsdoc": "^3.6.3",
-    "minami": "^1.2.3",
     "parcel-bundler": "^1.12.4",
     "prettier": "^2.0.4",
     "pretty-quick": "^2.0.1"
