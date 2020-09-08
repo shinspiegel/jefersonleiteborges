@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import './index.css';
 
 /**
@@ -10,19 +10,21 @@ import './index.css';
  */
 const SkillsCard = ({ list }) => (
   <div className='skillCard'>
-    {list.map(({ title, listNames }) => (
-      <>
-        <h5>{title}</h5>
-        <p>
-          {listNames.map((i) => (
-            <>
-              <span>#</span>
-              {i}{' '}
-            </>
-          ))}
-        </p>
-      </>
-    ))}
+    {list
+      ? list.map(({ title, listNames }, index) => (
+          <Fragment key={title + index}>
+            <h5>{title}</h5>
+            <p>
+              {listNames.map((item, index) => (
+                <Fragment key={item + index}>
+                  <span>#</span>
+                  {item}{' '}
+                </Fragment>
+              ))}
+            </p>
+          </Fragment>
+        ))
+      : null}
   </div>
 );
 

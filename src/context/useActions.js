@@ -1,16 +1,14 @@
 import { useContext } from 'react';
-import AppContext from './context';
+import { AppContext } from './context';
 import { reducerCases as redux } from './reducer';
 
-const actions = () => {
+export const getAction = () => {
   const { state, dispatch } = useContext(AppContext);
 
-  const consoleTest = (payload) => {
-    console.log('actions test');
-    dispatch({ type: redux.test, payload });
-    return;
-  };
-
+  /**
+   * This function will update the posts in the state
+   * @param {object[]} payload This is the dev.to payload array
+   */
   const updatePosts = (payload) => {
     dispatch({ type: redux.setPosts, payload });
     return;
@@ -18,9 +16,15 @@ const actions = () => {
 
   return {
     state,
-    consoleTest,
     updatePosts,
   };
 };
 
-export default actions;
+/**
+ * This function will return the state
+ * @returns {import('./initialState').State}
+ */
+export const getState = () => {
+  const { state } = useContext(AppContext);
+  return state;
+};

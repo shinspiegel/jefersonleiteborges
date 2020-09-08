@@ -1,7 +1,7 @@
 import React from 'react';
 import './index.css';
 
-import getScrollY from '../../utils/getScrollY';
+import getScrollY from '../../functions/getScrollY';
 import Image from '../Image';
 
 /**

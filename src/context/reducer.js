@@ -1,14 +1,14 @@
 export const reducerCases = {
-  test: 'TEST',
   setPosts: 'SET_POSTS',
 };
 
+/**
+ * This is the reducer function
+ * @param {import("./initialState").State} state
+ * @param {*} action
+ */
 const Reducer = (state, action) => {
   switch (action.type) {
-    case reducerCases.test:
-      console.log('reducer test');
-      return state;
-
     case reducerCases.setPosts:
       return {
         ...state,

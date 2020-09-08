@@ -21,6 +21,43 @@ import background1w579 from '../assets/background_1_579.png';
 import background1w647 from '../assets/background_1_647.png';
 import background1w1200 from '../assets/background_1_1200.png';
 
+/**
+ * @typedef {object} State
+ * @property {string} greeting
+ * @property {string} name
+ * @property {string} about
+ * @property {object} images
+ * @property {SocialMedia[]} socialMedia
+ * @property {CardItem[]} workExperience
+ * @property {CardItem[]} education
+ * @property {HashItem[]} designSkills
+ * @property {HashItem[]} codingSkills
+ * @property {object[]} posts
+ */
+
+/**
+ * @typedef {object} SocialMedia
+ * @property {boolean} isHidden
+ * @property {string} icon
+ * @property {string} link
+ */
+
+/**
+ * @typedef {object} CardItem
+ * @property {boolean} isHidden
+ * @property {string} entryYear
+ * @property {string} quitYear
+ * @property {string} title
+ * @property {string} company
+ * @property {string} description
+ */
+
+/**
+ * @typedef {object} HashItem
+ * @property {string} title
+ * @property {string[]} listNames
+ */
+
 const InitialState = {
   greeting: 'Hello, I AM',
   name: 'Jeferson Leite Borges',

@@ -1,11 +1,11 @@
 import React from 'react';
 import './index.css';
 
-import getScroll from '../../utils/getScrollY';
+import getScroll from '../../functions/getScrollY';
 
 /**
- *
- * @param {object} props
+ * This is hoving card that will have a special visibel/invisivel based on the scroll position
+ * @param {object} props This is the react props
  */
 const HovingCard = ({ children }) => {
   const scroll = getScroll();

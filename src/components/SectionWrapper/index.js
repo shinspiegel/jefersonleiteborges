@@ -2,19 +2,15 @@ import React from 'react';
 import './index.css';
 
 /**
- *
- * @param {object} props
- * @param {string} props.title
- * @param {string} props.subtitle
+ * This is a simple wrapper for articles
+ * @param {object} props This is the react props
+ * @param {string} props.title The value for the title in the H4
  */
-const SectionWrapper = ({ title, subtitle, children }) => {
-  return (
-    <section className='section'>
-      <small>{subtitle}</small>
-      <h2>{title}</h2>
-      {children}
-    </section>
-  );
-};
+const SectionWrapper = ({ title, children }) => (
+  <section className='sectionWrapper'>
+    <h4>{title}</h4>
+    {children}
+  </section>
+);
 
 export default SectionWrapper;

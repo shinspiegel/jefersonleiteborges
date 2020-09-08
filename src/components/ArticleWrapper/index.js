@@ -3,14 +3,18 @@ import './index.css';
 
 /**
  *
- * @param {object} props
+ * @param {object} props This is the react props
  * @param {string} props.title
+ * @param {string} props.subtitle
  */
-const ArticleWrapper = ({ title, children }) => (
-  <article className='articleWrapper'>
-    <h4>{title}</h4>
-    {children}
-  </article>
-);
+const ArticleWrapper = ({ title, subtitle, children }) => {
+  return (
+    <article className='articleWrapper'>
+      <small>{subtitle}</small>
+      <h2>{title}</h2>
+      {children}
+    </article>
+  );
+};
 
 export default ArticleWrapper;

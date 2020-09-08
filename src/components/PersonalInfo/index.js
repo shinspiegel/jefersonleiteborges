@@ -2,10 +2,10 @@ import React from 'react';
 import './index.css';
 
 import Image from '../Image';
-import getIconComponent from '../../utils/getIconComponent';
+import getIconComponent from '../../functions/getIconComponent';
 
 /**
- *
+ * This is the personal info component
  * @param {object} props
  * @param {object} props.imageSource
  * @param {string} props.name
@@ -34,6 +34,12 @@ const PersonalInfo = ({ imageSource, name, about, socialMedia }) => {
   );
 };
 
+/**
+ * This is a simple link that wraps a icon
+ * @param {object} props This is react props
+ * @param {object} props.link
+ * @param {import('react').ReactElement} props.Icon This is a react-icon icon component
+ */
 const CustomLink = ({ link, Icon }) => (
   <a href={link} target='_blank' rel='noreferrer noopener'>
     <Icon />

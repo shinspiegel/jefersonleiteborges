@@ -2,8 +2,8 @@ import React from 'react';
 import './index.css';
 
 /**
- *
- * @param {object} props
+ * This is the card to show a item with date information
+ * @param {object} props This is the react props
  * @param {string} props.title
  * @param {string | number} props.entryYear
  * @param {string | number} props.quitYear
