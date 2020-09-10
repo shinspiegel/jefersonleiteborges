@@ -7,7 +7,7 @@ import Image from '../Image';
 /**
  *
  * @param {object} props
- * @param {object} props.imageSource
+ * @param {import('../../context/initialState').Images} props.imageSource
  * @param {string} props.name
  * @param {string} props.greeting
  */

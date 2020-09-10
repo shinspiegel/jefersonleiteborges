@@ -26,7 +26,7 @@ import background1w1200 from '../assets/background_1_1200.png';
  * @property {string} greeting
  * @property {string} name
  * @property {string} about
- * @property {object} images
+ * @property {Images[]} images
  * @property {SocialMedia[]} socialMedia
  * @property {CardItem[]} workExperience
  * @property {CardItem[]} education
@@ -58,16 +58,28 @@ import background1w1200 from '../assets/background_1_1200.png';
  * @property {string[]} listNames
  */
 
+/**
+ * @typedef {object} Images
+ * @property {string} name
+ * @property {import} default
+ * @property {SourceSet[]} sourceSet
+ */
+
+/**
+ * @typedef {object} SourceSet
+ * @property {string|number} size
+ * @property {import} image
+ */
+
 const InitialState = {
   greeting: 'Hello, I AM',
   name: 'Jeferson Leite Borges',
   about: 'Self-taught, with a passion for web development.',
-
-  images: {
-    hero: { default: hero1, 360: hero1w360, 898: hero1w898, 1297: hero1w1297, 1616: hero1w1616, 1920: hero1w1920, },
-    hoving: { default: hero2, 200: hero2w200, 536: hero2w536, 773: hero2w773, 975: hero2w975, 1366: hero2w1366, },
-    background: { default: background1, 360: background1w360, 405: background1w405, 445: background1w445, 481: background1w481, 579: background1w579, 647: background1w647, 1200: background1w1200, },
-  },
+  images: [ 
+    {name: "hero",       default: hero1,       sourceSet: [ {size: "360", image: hero1w360}, {size: "898", image: hero1w898}, {size: "1297", image: hero1w1297}, {size: "1616", image: hero1w1616}, {size: "1920", image: hero1w1920}]},
+    {name: "hoving",     default: hero2,       sourceSet: [ {size: "200", image: hero2w200}, {size: "536", image: hero2w536}, {size: "773", image: hero2w773},   {size: "975", image: hero2w975},   {size: "1366", image: hero2w1366}]},
+    {name: "background", default: background1, sourceSet: [ {size: "360", image: background1w360}, {size: "405", image: background1w405}, {size: "445", image: background1w445}, {size: "481", image: background1w481}, {size: "579", image: background1w579}, {size: "647", image: background1w647}, {size: "1200", image: background1w1200}]},
+  ],
   socialMedia: [
     { isHidden: false, icon: 'Github',    link: 'https://www.github.com/shinspiegel' },
     { isHidden: false, icon: 'Gitlab',    link: 'https://www.gitlab.com/shinspiegel' },
@@ -84,7 +96,8 @@ const InitialState = {
     { isHidden: true,  entryYear: 'Apr 2015', quitYear: 'Nov 2016', title: 'Graphic Designer',              company: 'Rockfeller Franchising', description: 'Design brands for numbers of seasonal events, graphic design for offset and printed media and design social media for wide range of platforms.', },
   ],
   education: [
-    { isHidden: false, title: 'MBA in Frontend Development ', entryYear: '2019', quitYear: '2020', company: 'IGTI',     description: 'Studies with the latest technologies, such as React, Vue and Angular, using agile methods as well as scrum techniques for project development. System architectures as well as advanced concepts in Javascript with the main standards used for web development.', },
+    { isHidden: false, title: 'Software engineering', entryYear: '2020', quitYear: '2024', company: 'UniCesumar',     description: 'This course aims to train professionals able to propose improvements and innovations in the planning, construction, management and maintenance of processes, services and computational products, based on the techniques of Software Engineering: correct, complete, safe, friendly, usable software systems, with quality, easy to maintain and fair cost.', },
+    { isHidden: false, title: 'MBA in Frontend Development', entryYear: '2019', quitYear: '2020', company: 'IGTI',     description: 'Studies with the latest technologies, such as React, Vue and Angular, using agile methods as well as scrum techniques for project development. System architectures as well as advanced concepts in Javascript with the main standards used for web development.', },
     { isHidden: false, title: 'Industrial Design',            entryYear: '2008', quitYear: '2013', company: 'UNIVALI',  description: 'Wide variety of design skills, including (but not limited to), graphic editing, video editing, technical drawing, 3D modeling, ergonomics, semiotics...', },
   ],
   designSkills: [

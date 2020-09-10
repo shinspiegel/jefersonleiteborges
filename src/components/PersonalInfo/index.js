@@ -7,7 +7,7 @@ import getIconComponent from '../../functions/getIconComponent';
 /**
  * This is the personal info component
  * @param {object} props
- * @param {object} props.imageSource
+ * @param {import('../../context/initialState').Images} props.imageSource
  * @param {string} props.name
  * @param {string} props.about
  * @param {object[]} props.socialMedia

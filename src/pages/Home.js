@@ -27,8 +27,8 @@ const Main = () => {
     posts,
   } = state;
 
-  const heroConfig = { imageSource: images.hero, name, greeting };
-  const pesonalInfoConfig = { imageSource: images.hoving, name, about, socialMedia };
+  const heroConfig = { imageSource: images[0], name, greeting };
+  const pesonalInfoConfig = { imageSource: images[1], name, about, socialMedia };
 
   useEffect(() => {
     fetch('https://dev.to/api/articles?username=shinspiegel')
@@ -68,7 +68,7 @@ const Main = () => {
         </Section>
       </ArticleWrapper>
 
-      <ArticleBreak url={images.background.default} />
+      <ArticleBreak url={images[2].default} />
 
       {posts.length > 0 ? (
         <ArticleWrapper title='Blog Posts' subtitle='I like to talk about this'>
