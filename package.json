@@ -2,7 +2,6 @@
   "name": "jeferson-leite-borges",
   "version": "0.2.0",
   "description": "Página pessoal para Jeferson Leite Borges",
-  "main": "src/index.html",
   "license": "MIT",
   "keywords": [],
   "author": "Jeferson 'Shin' Leite Borges <https://github.com/shinspiegel/>",
@@ -11,13 +10,12 @@
     "test": "jest"
   },
   "devDependencies": {
-    "@babel/plugin-proposal-class-properties": "^7.12.1",
-    "@babel/plugin-transform-runtime": "^7.12.1",
-    "@babel/preset-env": "^7.12.7",
-    "@babel/preset-react": "^7.12.7",
+    "@testing-library/dom": "^7.28.1",
     "@testing-library/jest-dom": "^5.11.6",
     "@testing-library/react": "^11.2.2",
-    "jest": "^26.6.3"
+    "babel-jest": "^26.6.3",
+    "jest": "^26.6.3",
+    "jest-dom": "^4.0.0"
   },
   "dependencies": {
     "dotenv": "^8.2.0",
