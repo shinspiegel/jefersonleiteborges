@@ -26,6 +26,6 @@ describe('components/ArticleWrapper', () => {
     expect(article.children.length).toBe(3);
     expect(title.innerHTML).toBe(config.title);
     expect(subtitle.innerHTML).toBe(config.subtitle);
-    expect(children).toBeInTheDOM();
+    expect(children).toBeInTheDocument();
   });
 });

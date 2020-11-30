@@ -1,0 +1,34 @@
+name: Repository Unit Test
+
+on:
+  pull_request:
+  push:
+    branches:
+      - master
+      - dev
+
+jobs:
+  test:
+    name: Run tests
+    runs-on: ubuntu-latest
+
+    env:
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+
+      - name: Install nodejs
+        uses: actions/setup-node@v1
+        with:
+          node-version: 12.x
+
+      - name: Install package.json
+        run: yarn
+
+      - name: Test Repository
+        run: yarn test --silent=true
+        env:
+          SERVICE_WORKER: false
