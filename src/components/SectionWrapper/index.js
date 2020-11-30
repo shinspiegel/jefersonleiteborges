@@ -1,5 +1,5 @@
 import React from 'react';
-import './index.css';
+import styles from './index.module.css';
 
 /**
  * This is a simple wrapper for articles

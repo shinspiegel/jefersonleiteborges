@@ -1,48 +1,20 @@
 {
   "name": "jeferson-leite-borges",
-  "version": "0.1.3",
+  "version": "0.2.0",
   "description": "Página pessoal para Jeferson Leite Borges",
   "main": "src/index.html",
   "license": "MIT",
   "keywords": [],
   "author": "Jeferson 'Shin' Leite Borges <https://github.com/shinspiegel/>",
-  "browserslist": [
-    "last 1 Chrome version"
-  ],
   "scripts": {
-    "dev": "rm -rf ./dist; parcel -p 5050 watch src/index.html --https --cert .certs/cert.pem --key .certs/key.pem",
-    "dev:http": "parcel -p 5050 watch src/index.html",
-    "build": "rm -rf build; parcel build src/index.html --out-dir build --no-source-maps",
-    "test": "jest",
-    "deploy:master": "yarn build; aws s3 rm s3://cdn.jeferson.me --recursive; aws s3 sync build/ s3://cdn.jeferson.me --acl public-read",
-    "deploy:dev": "yarn build; aws s3 rm s3://cdn.dev.jeferson.me --recursive; aws s3 sync build/ s3://cdn.dev.jeferson.me --acl public-read",
-    "clean": "rm -rf .cache .certs build dist docs node_modules"
+    "dev": "next dev"
   },
-  "devDependencies": {
-    "@babel/core": "^7.8.3",
-    "@babel/plugin-transform-runtime": "^7.8.3",
-    "@babel/preset-env": "^7.8.3",
-    "@babel/preset-react": "^7.8.3",
-    "@babel/runtime": "^7.8.4",
-    "@commitlint/cli": "^8.3.5",
-    "@commitlint/config-conventional": "^8.3.4",
-    "@testing-library/jest-dom": "^4.2.4",
-    "@testing-library/react": "^9.4.0",
-    "@types/jest": "^24.0.25",
-    "babel-jest": "^24.9.0",
-    "eslint": "^6.8.0",
-    "husky": "^4.2.0",
-    "jest": "^24.9.0",
-    "jsdoc": "^3.6.3",
-    "parcel-bundler": "^1.12.4",
-    "prettier": "^2.0.4",
-    "pretty-quick": "^2.0.1"
-  },
+  "devDependencies": {},
   "dependencies": {
     "dotenv": "^8.2.0",
-    "react": "^16.12.0",
-    "react-dom": "^16.12.0",
-    "react-icons": "^3.10.0",
-    "react-router-dom": "^5.1.2"
+    "next": "^10.0.3",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-icons": "^4.1.0"
   }
 }

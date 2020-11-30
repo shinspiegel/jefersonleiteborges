@@ -1,5 +1,5 @@
 import React from 'react';
-import './index.css';
+import styles from './index.module.css';
 
 /**
  * This will create a blog card post that will redirect to a dev.to blog post

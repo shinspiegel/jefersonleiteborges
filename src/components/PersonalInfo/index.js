@@ -1,5 +1,5 @@
 import React from 'react';
-import './index.css';
+import styles from './index.module.css';
 
 import Image from '../Image';
 import getIconComponent from '../../functions/getIconComponent';
@@ -17,7 +17,7 @@ import getIconComponent from '../../functions/getIconComponent';
 const PersonalInfo = ({ imageSource, name, about, socialMedia }) => {
   return (
     <div className='personalInfo'>
-      <Image imageSource={imageSource} alt={name} />
+      <Image source={imageSource} alt={name} />
 
       <h2>About me</h2>
       <p>{about}</p>

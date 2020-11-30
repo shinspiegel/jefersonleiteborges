@@ -1,5 +1,0 @@
-{
-  "hooks": {
-    "commit-msg": "pretty-quick --staged && commitlint -E HUSKY_GIT_PARAMS && yarn test --silent=true"
-  }
-}

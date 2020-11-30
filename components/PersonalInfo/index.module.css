@@ -1,0 +1,84 @@
+.personalInfo {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+
+  height: 100%;
+
+  color: var(--text);
+}
+
+.personalInfo img {
+  display: none;
+}
+
+.personalInfo h2 {
+  text-align: center;
+  letter-spacing: 2px;
+  font-weight: 200;
+  font-size: 28px;
+}
+
+.personalInfo p {
+  text-align: center;
+  letter-spacing: 3px;
+
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.personalInfo > div {
+  font-size: 22px;
+}
+
+.personalInfo > div > *:not(:last-child) {
+  margin-right: 20px;
+}
+
+.personalInfo > div a {
+  color: var(--text);
+}
+
+.personalInfo > div a:hover {
+  color: var(--color);
+}
+
+@media screen and (min-width: 768px) {
+  .personalInfo {
+    padding: 0px 16px;
+
+    display: grid;
+    gap: 24px;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+
+  .personalInfo img {
+    grid-row: span 3;
+    --imageSize: 200px;
+    display: block;
+    border: 1px solid #eee;
+
+    height: var(--imageSize);
+    width: var(--imageSize);
+    border-radius: var(--imageSize);
+    object-fit: cover;
+    object-position: top;
+  }
+
+  .personalInfo h2 {
+    text-align: left;
+    font-size: 32px;
+  }
+
+  .personalInfo p {
+    letter-spacing: 3px;
+    text-align: left;
+    font-size: 20px;
+  }
+
+  .personalInfo > div a {
+    font-size: 28px;
+  }
+}

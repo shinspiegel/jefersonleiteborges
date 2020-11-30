@@ -1,5 +1,5 @@
 import React from 'react';
-import './index.css';
+import styles from './index.module.css';
 
 import getScrollY from '../../functions/getScrollY';
 import Image from '../Image';
@@ -16,7 +16,7 @@ const Hero = ({ imageSource, name, greeting }) => {
 
   return (
     <section className='hero' style={{ '--scroll': scroll }}>
-      <Image imageSource={imageSource} alt={name} />
+      <Image source={imageSource} alt={name} />
       <h3>{greeting}</h3>
       <h1>{name}</h1>
     </section>
