@@ -7,6 +7,7 @@ import {
   FaGithub,
   FaGitlab,
 } from 'react-icons/fa';
+import { MdEmail } from 'react-icons/md';
 
 const getIconComponent = (icon) => {
   if (!icon || typeof icon !== 'string') icon = '';
@@ -27,6 +28,8 @@ const getIconComponent = (icon) => {
       return FaGithub;
     case 'gitlab':
       return FaGitlab;
+    case 'email':
+      return MdEmail;
     default:
       return () => <div />;
   }

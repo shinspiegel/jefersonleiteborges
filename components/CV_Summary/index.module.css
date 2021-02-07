@@ -1,0 +1,15 @@
+.CV_Summary {
+  color: black;
+  font-size: 10pt;
+  margin-bottom: 8mm;
+}
+
+.CV_Summary h2 {
+  font-size: 16pt;
+  font-weight: bold;
+  margin-bottom: 2mm;
+}
+
+.CV_Summary p {
+  font-size: 12pt;
+}

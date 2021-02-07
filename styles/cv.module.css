@@ -1,0 +1,15 @@
+.curriculum {
+  --innerMargin: 5mm;
+  width: calc(210mm - var(--innerMargin));
+  height: calc(297mm - var(--innerMargin));
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: 70mm auto;
+  gap: 5mm;
+}
+
+.curriculum h2 {
+  font-size: 14pt;
+  font-weight: bold;
+}
