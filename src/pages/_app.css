@@ -1,6 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 :root {
+  --grey-100: #eeeeee;
+  --grey-300: #cccccc;
+  --grey-500: #808080;
+  --grey-700: #525252;
+  --grey-900: #292929;
+
   /* Color */
   --primary: #f13b0d;
   --primary-shade: #b30f0a;

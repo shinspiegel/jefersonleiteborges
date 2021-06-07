@@ -69,7 +69,7 @@
       "isHidden": false,
       "entryYear": "Nov 2019",
       "quitYear": "Jan 2021",
-      "title": "Javascript Developer",
+      "title": "Web Developer",
       "company": "Tentaculo.digital",
       "description": "Development of web applications using React.js as well as backend with serverless functions in a Node.js environment.",
       "markdownText": "**Team Lead** \n- Managing team activities \n- Support on human resources for hiring \n- Scrum master and scrum rites advocate \n \n**Java Software Engineer** \n- Java developer (REST Api with Javax) \n- Java developer (REST Api with Quarkus) \n \n**Worked on Netflix - EstacaoN** \n- Created the architecture structure for the project \n- Developed the backend using NodeJS (ES6+) with Serverless Framework \n- Code the base endpoints and database connections and validations (using Mongo) \n- Help the team to deploy, test and connect the frontend (React) with the backend \n \n**React Developer** \n- Development of web application using React.js \n- Development of backend micro-services in nodejs/serverless \n- Creating components for web applications"

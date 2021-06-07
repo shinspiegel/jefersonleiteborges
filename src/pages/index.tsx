@@ -6,9 +6,10 @@ import HoverCard from '../components/HoverCard';
 import getState from '../context/initialState';
 import useActions from '../context/useActions';
 import AboutMe from '../components/AboutMe';
+import WorkExperience from '../components/WorkExperience';
 
 const Home: React.FC = () => {
-  const { basicInfo, socialMedia } = getState();
+  const { basicInfo, socialMedia, workExperience } = getState();
   const actions = useActions();
 
   useEffect(() => {
@@ -35,7 +36,7 @@ const Home: React.FC = () => {
         </HoverCard>
       </Article>
       <Article title='My Resume' subTitle="What I've done so far">
-        Cards here!
+        <WorkExperience list={workExperience} />
       </Article>
     </main>
   );

@@ -7,6 +7,8 @@ export enum ActionTypes {
   setPosts = 'SET_POST',
   setBasicInfo = 'SET_BASIC_INFO',
   setSocialMedia = 'SET_SOCIAL_MEDIA',
+  setWorkExperience = 'SET_WORK_EXPERIENCE',
+  setEducation = 'SET_EDUCATION',
 }
 
 export const reducer: Reducer<State, dispatchAction> = (
@@ -30,6 +32,18 @@ export const reducer: Reducer<State, dispatchAction> = (
       return {
         ...state,
         socialMedia: payload,
+      };
+
+    case ActionTypes.setWorkExperience:
+      return {
+        ...state,
+        workExperience: payload,
+      };
+
+    case ActionTypes.setEducation:
+      return {
+        ...state,
+        education: payload,
       };
 
     default:

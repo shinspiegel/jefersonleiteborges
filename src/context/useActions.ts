@@ -25,6 +25,20 @@ export const useActions = () => {
           payload: data.socialMedia,
         });
       }
+
+      if (data.workExperience) {
+        dispatch({
+          type: ActionTypes.setWorkExperience,
+          payload: data.workExperience,
+        });
+      }
+
+      if(data.education) {
+        dispatch({
+          type: ActionTypes.setEducation,
+          payload: data.education
+        })
+      }
     },
   };
 };
