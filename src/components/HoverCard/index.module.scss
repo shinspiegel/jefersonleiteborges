@@ -1,0 +1,24 @@
+.container {
+  padding: 2rem;
+
+  animation: appear 1s ease-in 0s both;
+  animation-play-state: paused;
+
+  border-radius: 4px;
+  background: var(--white, white);
+  box-shadow: var(--shadow);
+}
+
+@keyframes appear {
+  from {
+    transform: translateY(-1rem);
+
+    opacity: 0.01;
+  }
+
+  to {
+    transform: translateY(0rem);
+
+    opacity: 1;
+  }
+}

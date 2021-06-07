@@ -1,0 +1,21 @@
+{
+  "destiny": {
+    "component": "src/components",
+    "pages": "src/pages",
+    "context": "src/context"
+  },
+  "source": {
+    "component": ".components",
+    "pages": ".components"
+  },
+  "components": [
+    "index.tsx",
+    "index.module.scss",
+    "index.test.tsx"
+  ],
+  "pages": [
+    "index.tsx",
+    "index.module.scss",
+    "index.test.tsx"
+  ]
+}

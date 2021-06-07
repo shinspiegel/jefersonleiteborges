@@ -1,0 +1,104 @@
+.container {
+  display: grid;
+  justify-content: center;
+
+  gap: 2rem;
+  grid-template-areas: 'logo' 'title' 'text';
+  grid-template-columns: auto;
+  grid-template-rows: auto auto auto;
+  justify-items: center;
+
+  @media screen and (min-width: 450px) {
+    justify-content: left;
+
+    gap: 2rem;
+    grid-template-areas: 'logo title' 'logo text';
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    justify-items: left;
+  }
+
+  @media screen and (min-width: 450px) {
+    gap: 3rem;
+    grid-template-areas: 'logo title' 'logo text' 'logo description';
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    justify-items: left;
+  }
+}
+
+.image {
+  width: 100%;
+  height: 25rem;
+
+  transition: all ease 0.3s;
+
+  border-radius: 4px;
+
+  object-fit: cover;
+  object-position: center top;
+  grid-area: logo;
+
+  @media screen and (min-width: 450px) {
+    width: 15rem;
+    height: 15rem;
+
+    border-radius: 99rem;
+  }
+
+  @media screen and (min-width: 1000px) {
+    width: 25rem;
+    height: 25rem;
+  }
+}
+
+.title {
+  font-size: 3rem;
+
+  grid-area: title;
+  align-self: flex-end;
+
+  @media screen and (min-width: 1000px) {
+    font-size: 3.5rem;
+  }
+}
+
+.text {
+  text-align: center;
+  align-self: flex-start;
+  font-size: 2rem;
+
+  grid-area: text;
+
+  @media screen and (min-width: 450px) {
+    text-align: left;
+  }
+
+  @media screen and (min-width: 1000px) {
+    font-size: 2.5rem;
+  }
+}
+
+.description {
+  grid-area: description;
+  display: none;
+  font-size: 2.2rem;
+
+  @media screen and (min-width: 1000px) {
+    display: initial;
+  }
+}
+
+.mediaHolder {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+
+  > a {
+    color: var(--primary, black);
+
+    &:hover {
+      color: var(--primary-shade, black);
+    }
+  }
+}

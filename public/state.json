@@ -1,26 +1,59 @@
 {
-  "greeting": "Hello, I AM",
-  "name": "Jeferson Leite Borges",
-  "city": "Itajaí (SC) - Brazil",
-  "about": "Self-taught, with a passion for web development.",
-  "description": "Over a decade of experience with design and a quarter of a decade as a web developer. Delving into the web using the latest React technologies such as Hooks and ContextAPI.",
-  "images": [],
+  "basicInfo": {
+    "greeting": "Hello, I am",
+    "heroImage": "/hero_1.jpg",
+    "profileImage": "./hero_2.jpg",
+    "name": "Jeferson Leite Borges",
+    "city": "Itajaí (SC) - Brazil",
+    "about": "Self-taught, with a passion for web development.",
+    "description": "Over a decade of experience with design and a quarter of a decade as a web developer. Delving into the web using the latest React technologies such as Hooks and ContextAPI."
+  },
   "languages": [
-    { "name": "English", "skill": "Professional" },
-    { "name": "Portuguese", "skill": "Native" }
+    {
+      "name": "English",
+      "skill": "Professional"
+    },
+    {
+      "name": "Portuguese",
+      "skill": "Native"
+    }
   ],
   "socialMedia": [
-    { "isHidden": false, "icon": "Email", "link": "mailto:shin.jef@gmail.com" },
-    { "isHidden": false, "icon": "Github", "link": "https://www.github.com/shinspiegel" },
-    { "isHidden": false, "icon": "Gitlab", "link": "https://www.gitlab.com/shinspiegel" },
+    {
+      "isHidden": false,
+      "icon": "Email",
+      "link": "mailto:shin.jef@gmail.com"
+    },
+    {
+      "isHidden": false,
+      "icon": "Github",
+      "link": "https://www.github.com/shinspiegel"
+    },
+    {
+      "isHidden": false,
+      "icon": "Gitlab",
+      "link": "https://www.gitlab.com/shinspiegel"
+    },
     {
       "isHidden": false,
       "icon": "Linkedin",
       "link": "https://www.linkedin.com/in/jeferson-leite-borges-9a4bb832/"
     },
-    { "isHidden": false, "icon": "Twitter", "link": "https://www.twitter.com/shinspiegel" },
-    { "isHidden": false, "icon": "Behance", "link": "https://www.behance.net/jefersonleite" },
-    { "isHidden": false, "icon": "Instagram", "link": "https://www.instagram.com/shinspiegel" }
+    {
+      "isHidden": false,
+      "icon": "Twitter",
+      "link": "https://www.twitter.com/shinspiegel"
+    },
+    {
+      "isHidden": false,
+      "icon": "Behance",
+      "link": "https://www.behance.net/jefersonleite"
+    },
+    {
+      "isHidden": false,
+      "icon": "Instagram",
+      "link": "https://www.instagram.com/shinspiegel"
+    }
   ],
   "workExperience": [
     {
@@ -154,7 +187,10 @@
       "title": "Adobe Software",
       "listNames": ["Photoshop", "Illustrator", "InDesign", "Premiere", "After Effect"]
     },
-    { "title": "CAD Software", "listNames": ["AutoCAD", "Fusion 360", "SolidWorks", "Meshmixer"] }
+    {
+      "title": "CAD Software",
+      "listNames": ["AutoCAD", "Fusion 360", "SolidWorks", "Meshmixer"]
+    }
   ],
   "codingSkills": [
     {
@@ -177,6 +213,9 @@
         "REST API"
       ]
     },
-    { "title": "Testing", "listNames": ["TDD", "Unit Testing", "Jest.js"] }
+    {
+      "title": "Testing",
+      "listNames": ["TDD", "Unit Testing", "Jest.js"]
+    }
   ]
 }

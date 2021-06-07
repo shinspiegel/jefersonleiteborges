@@ -1,0 +1,132 @@
+.container {
+  --offset: 10rem;
+
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+
+  height: calc(100vh + var(--offset));
+
+  margin-bottom: calc(var(--offset) * -1);
+
+  clip-path: polygon(
+    0% 0%,
+    0% 100%,
+    100% calc(100% - calc(var(--offset) / 2)),
+    100% 0%
+  );
+
+  .title {
+    animation: titleAnim 1.5s ease-in 0.5s both,
+      borderBottom 2s ease-out 2s both;
+    text-align: center;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+
+    color: var(--white, #fff);
+    border-bottom: 1px solid var(--white, white);
+
+    font-size: 2rem;
+    font-weight: 100;
+
+    @media screen and (min-width: 450px) {
+      font-size: 5rem;
+    }
+  }
+
+  .subType {
+    margin-bottom: 1rem;
+
+    animation: subTitleAnim 2s ease-in 0s both;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+    color: var(--white, white);
+
+    font-size: 1.8rem;
+    font-weight: 100;
+
+    @media screen and (min-width: 450px) {
+      font-size: 2.5rem;
+    }
+  }
+
+  @keyframes titleAnim {
+    from {
+      transform: translateY(2rem);
+
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0rem);
+
+      opacity: 1;
+    }
+  }
+
+  @keyframes borderBottom {
+    from {
+      border-color: transparent;
+    }
+    to {
+      border-color: var(--white, white);
+    }
+  }
+
+  @keyframes subTitleAnim {
+    from {
+      transform: translateY(-2rem);
+
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0rem);
+
+      opacity: 1;
+    }
+  }
+
+  .image {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    animation: imageAnim 1s ease-in 0.8s both;
+
+    filter: grayscale(100%);
+    mix-blend-mode: multiply;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  @keyframes imageAnim {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 0.2;
+    }
+  }
+
+  .cover {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background: var(--primary, red);
+    background: linear-gradient(
+      30deg,
+      var(--primary-shade),
+      var(--primary-tint)
+    );
+  }
+}
