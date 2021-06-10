@@ -1,9 +1,9 @@
 import {render} from '@testing-library/react'
-import WorkExperience from './index'
+import GridContainer from './index'
 
-describe('components/WorkExperience', () => {
+describe('components/GridContainer', () => {
     test('should render the components without any props', () => {
-        const {container} = render(<WorkExperience />)
+        const {container} = render(<GridContainer />)
         expect(container.childNodes.length).toBeGreaterThan(0)
     })
 })

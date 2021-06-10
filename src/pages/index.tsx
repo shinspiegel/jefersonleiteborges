@@ -6,10 +6,11 @@ import HoverCard from '../components/HoverCard';
 import getState from '../context/initialState';
 import useActions from '../context/useActions';
 import AboutMe from '../components/AboutMe';
-import WorkExperience from '../components/WorkExperience';
+import EntriesGroup from '../components/EntriesGroup';
+import GridContainer from '../components/GridContainer';
 
 const Home: React.FC = () => {
-  const { basicInfo, socialMedia, workExperience } = getState();
+  const { basicInfo, socialMedia, workExperience, education } = getState();
   const actions = useActions();
 
   useEffect(() => {
@@ -36,7 +37,10 @@ const Home: React.FC = () => {
         </HoverCard>
       </Article>
       <Article title='My Resume' subTitle="What I've done so far">
-        <WorkExperience list={workExperience} />
+        <GridContainer>
+          <EntriesGroup title='Professional Experience' list={workExperience} />
+          <EntriesGroup title='Education' list={education} />
+        </GridContainer>
       </Article>
     </main>
   );
