@@ -3,10 +3,11 @@
 
   margin-bottom: 2rem;
 
+  transition: all ease 1s;
+
   border-radius: 4px;
   background: var(--white, white);
   box-shadow: var(--shadow);
-  transition: all ease 1s;
 
   &.selected {
     .title {
@@ -29,8 +30,8 @@
 }
 
 .chevron {
-  transform: rotate(0deg);
   transition: all ease 0.2s;
+  transform: rotate(0deg);
 }
 
 .title {
@@ -71,23 +72,27 @@
 }
 
 .company {
+  margin-bottom: 2rem;
+
   color: var(--grey-500, #aaa);
 
   font-size: 1.4rem;
-  margin-bottom: 2rem;
 }
 
 .description {
-  font-size: 1.6rem;
   color: var(--grey-700, #333);
+
+  font-size: 1.6rem;
 }
 
 .markdown {
   padding: 1rem;
+
   color: var(--grey-700, #333);
 
   ul {
     margin-left: 2rem;
+
     list-style: disc;
   }
 }

@@ -8,9 +8,10 @@
   --grey-900: #292929;
 
   /* Color */
-  --primary: #f13b0d;
-  --primary-shade: #b30f0a;
-  --primary-tint: #f17b37;
+  
+  --primary: #ec16c9;
+  --primary-shade: #b40672;
+  --primary-tint: #e891f0;
 
   /* Fonts */
   --font-title: 'Raleway', Arial, Helvetica, sans-serif;
