@@ -9,6 +9,7 @@ import AboutMe from '../components/AboutMe';
 import EntriesGroup from '../components/EntriesGroup';
 import GridContainer from '../components/GridContainer';
 import SkillGroup from '../components/SkillGroup';
+import Spacer from '../components/Spacer';
 
 const Home: React.FC = () => {
   const {
@@ -57,6 +58,7 @@ const Home: React.FC = () => {
           <SkillGroup title='Design Skills' list={designSkills} />
         </GridContainer>
       </Article>
+      <Spacer image={'/background_1.png'} />
     </main>
   );
 };
