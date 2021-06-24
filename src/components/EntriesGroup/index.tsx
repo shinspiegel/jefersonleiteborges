@@ -18,7 +18,7 @@ const EntriesGroup: React.FC<EntriesGroupProps> = ({
 }) => {
   const [selected, setSelected] = useState('');
 
-  const clickHandler = (id) => {
+  const clickHandler = (id): void => {
     if (id === selected) return setSelected('');
     setSelected(id);
   };

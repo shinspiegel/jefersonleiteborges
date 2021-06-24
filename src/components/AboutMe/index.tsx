@@ -19,7 +19,7 @@ const AboutMe: React.FC<AboutMeProps> = ({
   socialMedia = [],
 }) => (
   <div className={styles.container}>
-    <img className={styles.image} src={image} />
+    <img className={styles.image} src={image} alt={text} />
     <h2 className={styles.title}>{title}</h2>
     <p className={styles.text}>{text}</p>
     <p className={styles.description}>{description}</p>
@@ -31,6 +31,7 @@ const AboutMe: React.FC<AboutMeProps> = ({
             key={social.link}
             href={social.link}
             target='_blank'
+            rel='noreferrer'
             referrerPolicy='no-referrer'
           >
             <Icon icon={social.icon} />

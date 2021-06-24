@@ -14,10 +14,11 @@ export interface EntryItemProps {
 const EntryItem: React.FC<EntryItemProps> = ({
   tabIndex = 0,
   entry = {},
+  // eslint-disable-next-line @typescript-eslint/no-empty-function
   onClick = () => {},
   isSelected = false,
 }) => {
-  const clickHandler = () => {
+  const clickHandler = (): void => {
     onClick(entry.company);
   };
 
