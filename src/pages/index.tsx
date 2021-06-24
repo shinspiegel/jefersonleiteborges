@@ -10,6 +10,7 @@ import EntriesGroup from '../components/EntriesGroup';
 import GridContainer from '../components/GridContainer';
 import SkillGroup from '../components/SkillGroup';
 import Spacer from '../components/Spacer';
+import PostsGroup from '../components/PostsGroup';
 
 const Home: React.FC = () => {
   const {
@@ -19,6 +20,7 @@ const Home: React.FC = () => {
     education,
     codingSkills,
     designSkills,
+    posts,
   } = getState();
   const actions = useActions();
 
@@ -59,6 +61,9 @@ const Home: React.FC = () => {
         </GridContainer>
       </Article>
       <Spacer image={'/background_1.png'} />
+      <Article title='My Blog Posts' subTitle='What I like to talk'>
+        <PostsGroup posts={posts} />
+      </Article>
     </main>
   );
 };
