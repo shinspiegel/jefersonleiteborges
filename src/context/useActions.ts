@@ -11,6 +11,7 @@ export const useActions = () => {
       const data = await fetch(url).then((res) => res.json());
       dispatch({ type: ActionTypes.setPosts, payload: data });
     },
+
     getStateFromStaticJson: async () => {
       const url = '/state.json';
       const data = await fetch(url).then((res) => res.json());

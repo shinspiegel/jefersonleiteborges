@@ -1,6 +1,4 @@
 import React, { useState } from 'react';
-import { HiOutlineChevronRight } from 'react-icons/hi';
-import Markdown from 'react-markdown';
 import { Entry } from '../../context/initialState';
 import EntryItem from '../EntryItem';
 import styles from './index.module.scss';
@@ -8,7 +6,7 @@ import styles from './index.module.scss';
 export interface EntriesGroupProps {
   list: Entry[];
   title?: string;
-  groupIndex: number;
+  groupIndex?: number;
 }
 
 const EntriesGroup: React.FC<EntriesGroupProps> = ({

@@ -52,4 +52,9 @@
     max-width: 90rem;
     margin: 0 auto;
   }
+
+  @media screen and (min-width: 1400px) {
+    max-width: 130rem;
+    margin: 0 auto;
+  }
 }
