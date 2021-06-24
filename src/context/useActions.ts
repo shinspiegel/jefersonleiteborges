@@ -34,11 +34,25 @@ export const useActions = () => {
         });
       }
 
-      if(data.education) {
+      if (data.education) {
         dispatch({
           type: ActionTypes.setEducation,
-          payload: data.education
-        })
+          payload: data.education,
+        });
+      }
+
+      if (data.designSkills) {
+        dispatch({
+          type: ActionTypes.setDesignSkills,
+          payload: data.designSkills,
+        });
+      }
+
+      if (data.codingSkills) {
+        dispatch({
+          type: ActionTypes.setCodingSkills,
+          payload: data.codingSkills,
+        });
       }
     },
   };

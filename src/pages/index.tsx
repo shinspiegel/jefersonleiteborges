@@ -8,9 +8,10 @@ import useActions from '../context/useActions';
 import AboutMe from '../components/AboutMe';
 import EntriesGroup from '../components/EntriesGroup';
 import GridContainer from '../components/GridContainer';
+import SkillGroup from '../components/SkillGroup';
 
 const Home: React.FC = () => {
-  const { basicInfo, socialMedia, workExperience, education } = getState();
+  const { basicInfo, socialMedia, workExperience, education, codingSkills, designSkills } = getState();
   const actions = useActions();
 
   useEffect(() => {
@@ -45,6 +46,8 @@ const Home: React.FC = () => {
             groupIndex={10}
           />
           <EntriesGroup title='Education' list={education} groupIndex={11} />
+          <SkillGroup title="Coding Skills" list={codingSkills} />
+          <SkillGroup title="Design Skills" list={designSkills} />
         </GridContainer>
       </Article>
     </main>
