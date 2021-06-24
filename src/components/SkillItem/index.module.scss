@@ -1,0 +1,48 @@
+.listItem {
+  overflow: hidden;
+
+  margin-bottom: 2rem;
+
+  border-radius: 4px;
+  background: var(--grey-100, #ddd);
+  box-shadow: var(--shadow);
+}
+
+.title {
+  position: relative;
+
+  padding: 1rem;
+
+  transition: color ease-in-out 0.3s;
+
+  color: var(--primary, black);
+
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+.innerList {
+  display: flex;
+  flex-wrap: wrap;
+
+  padding: 1rem;
+
+  list-style: none;
+
+  & > li {
+    margin-right: 3rem;
+    margin-bottom: 1rem;
+
+    color: var(--grey-700, #444);
+
+    font-size: 1.6rem;
+
+    &::before {
+      content: '# ';
+
+      color: var(--grey-200, #444);
+
+      font-size: 1.4rem;
+    }
+  }
+}

@@ -28,7 +28,11 @@ jobs:
       - name: Install package.json
         run: yarn
 
+      - name: TS Type-Check
+        run: yarn type-check
+
+      - name: Run Lint
+        run: yarn lint
+
       - name: Test Repository
         run: yarn test --silent=true
-        env:
-          SERVICE_WORKER: false
