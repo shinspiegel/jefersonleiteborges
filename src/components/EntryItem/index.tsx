@@ -18,12 +18,18 @@ const EntryItem: React.FC<EntryItemProps> = ({
   isSelected = false,
 }) => {
   const clickHandler = () => {
-    if (onClick) onClick(entry.company);
+    onClick(entry.company);
   };
 
   return (
     <li className={`${styles.listItem} ${isSelected ? styles.selected : ''}`}>
-      <div onClick={clickHandler} onKeyDown={clickHandler} role='button' tabIndex={tabIndex}>
+      <div
+        onClick={clickHandler}
+        onKeyDown={clickHandler}
+        onFocus={clickHandler}
+        role='button'
+        tabIndex={tabIndex}
+      >
         <div className={styles.title}>
           <p>
             <HiOutlineChevronRight className={styles.chevron} /> {entry.title}
