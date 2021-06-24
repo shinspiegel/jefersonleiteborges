@@ -8,7 +8,12 @@ module.exports = {
     '\\.(css|less|scss|sass)$': '<rootDir>/.test/cssStub.js',
   },
   collectCoverage: true,
-  collectCoverageFrom: ['src/**/*.{js,jsx,ts,tsx}', '!<rootDir>/node_modules/'],
+  collectCoverageFrom: [
+    'src/**/*.{js,jsx,ts,tsx}', 
+    '!src/context/*.{js,jsx,ts,tsx}', 
+    '!src/pages/*.{js,jsx,ts,tsx}', 
+    '!<rootDir>/node_modules/'
+  ],
   coverageThreshold: {
     global: {
       lines: 80,
