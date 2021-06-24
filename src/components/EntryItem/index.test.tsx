@@ -1,4 +1,4 @@
-import { render } from '@testing-library/react';
+import { fireEvent, render } from '@testing-library/react';
 import { Entry } from '../../context/initialState';
 import EntryItem from './index';
 
@@ -31,5 +31,26 @@ describe('components/EntryItem', () => {
     expect(title).toBeInTheDocument();
     expect(description).toBeInTheDocument();
     expect(markdownText).toBeInTheDocument();
+  });
+
+  test('should be able to click even without a function', () => {
+    const { getByRole } = render(<EntryItem entry={entry} />);
+
+    expect(() => {
+      const button = getByRole('button');
+      fireEvent.click(button);
+    }).not.toThrow();
+  });
+
+  test('should run the click function', () => {
+    const clickFunction = jest.fn();
+
+    const { getByRole } = render(
+      <EntryItem entry={entry} onClick={clickFunction} />,
+    );
+
+    const button = getByRole('button');
+    fireEvent.click(button);
+    expect(clickFunction).toBeCalledWith('Company');
   });
 });
