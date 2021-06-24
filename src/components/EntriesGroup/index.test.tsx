@@ -1,4 +1,4 @@
-import { render, fireEvent } from '@testing-library/react';
+import { render, fireEvent, act } from '@testing-library/react';
 import { Entry } from '../../context/initialState';
 import EntriesGroup from './index';
 
@@ -35,14 +35,5 @@ describe('components/WorkExperience', () => {
     const listItems = getAllByRole('listitem');
 
     expect(listItems.length).toBe(4);
-  });
-
-  test('should add a second class after the click on the first item', () => {
-    const { getAllByRole } = render(<EntriesGroup list={entries} />);
-    const listItems = getAllByRole('listitem');
-
-    expect(listItems[0].className).toBe('undefined ');
-    fireEvent.click(listItems[0]);
-    expect(listItems[0].className).toBe('undefined undefined');
   });
 });

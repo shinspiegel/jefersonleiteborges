@@ -16,6 +16,7 @@ const Home: React.FC = () => {
   useEffect(() => {
     actions.getPosts();
     actions.getStateFromStaticJson();
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (
@@ -38,8 +39,12 @@ const Home: React.FC = () => {
       </Article>
       <Article title='My Resume' subTitle="What I've done so far">
         <GridContainer>
-          <EntriesGroup title='Professional Experience' list={workExperience} />
-          <EntriesGroup title='Education' list={education} />
+          <EntriesGroup
+            title='Professional Experience'
+            list={workExperience}
+            groupIndex={10}
+          />
+          <EntriesGroup title='Education' list={education} groupIndex={11} />
         </GridContainer>
       </Article>
     </main>

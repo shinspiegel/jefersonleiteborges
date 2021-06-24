@@ -8,9 +8,14 @@ import styles from './index.module.scss';
 export interface EntriesGroupProps {
   list: Entry[];
   title?: string;
+  groupIndex: number;
 }
 
-const EntriesGroup: React.FC<EntriesGroupProps> = ({ list = [], title }) => {
+const EntriesGroup: React.FC<EntriesGroupProps> = ({
+  list = [],
+  title,
+  groupIndex = 0,
+}) => {
   const [selected, setSelected] = useState('');
 
   const clickHandler = (id) => {
@@ -28,6 +33,7 @@ const EntriesGroup: React.FC<EntriesGroupProps> = ({ list = [], title }) => {
             <EntryItem
               key={entry.company}
               entry={entry}
+              tabIndex={groupIndex}
               isSelected={selected === entry.company}
               onClick={clickHandler}
             />
