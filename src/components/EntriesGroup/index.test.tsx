@@ -36,4 +36,17 @@ describe('components/WorkExperience', () => {
 
     expect(listItems.length).toBe(4);
   });
+
+  test('should add new class after clicked, and remove if clicked again', () => {
+    const { getAllByRole } = render(<EntriesGroup list={entries} />);
+    const listItems = getAllByRole('listitem');
+
+    const first = listItems[0];
+
+    expect(first.className).toBe('undefined ');
+    fireEvent.click(first.firstChild);
+    expect(first.className).toBe('undefined undefined');
+    fireEvent.click(first.firstChild);
+    expect(first.className).toBe('undefined ');
+  });
 });
