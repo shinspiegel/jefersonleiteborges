@@ -53,4 +53,16 @@ describe('components/EntryItem', () => {
     fireEvent.click(button);
     expect(clickFunction).toBeCalledWith('Company');
   });
+
+  test('should run the keydown when "enter" is pressed function', () => {
+    const clickFunction = jest.fn();
+
+    const { getByRole } = render(
+      <EntryItem entry={entry} onClick={clickFunction} />,
+    );
+
+    const button = getByRole('button');
+    fireEvent.keyDown(button, { key: 'Enter', code: 'Enter' });
+    expect(clickFunction).toBeCalledWith('Company');
+  });
 });

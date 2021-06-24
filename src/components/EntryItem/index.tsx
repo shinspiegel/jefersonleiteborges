@@ -22,12 +22,15 @@ const EntryItem: React.FC<EntryItemProps> = ({
     onClick(entry.company);
   };
 
+  const keydownHandler = (e: React.KeyboardEvent<HTMLDivElement>): void => {
+    if (e.key == 'Enter') clickHandler();
+  };
+
   return (
     <li className={`${styles.listItem} ${isSelected ? styles.selected : ''}`}>
       <div
         onClick={clickHandler}
-        onKeyDown={clickHandler}
-        onFocus={clickHandler}
+        onKeyDown={keydownHandler}
         role='button'
         tabIndex={tabIndex}
       >

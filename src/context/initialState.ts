@@ -56,8 +56,8 @@ export type State = {
   socialMedia: SocialMedia[];
   workExperience: Entry[];
   education: Entry[];
+  codingSkills: Skill[];
   designSkills: Skill[];
-  codingSkills: [];
 };
 
 export const initialState: State = {
