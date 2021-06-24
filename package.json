@@ -7,7 +7,7 @@
   "author": "Jeferson 'Shin' Leite Borges <https://github.com/shinspiegel/>",
   "scripts": {
     "dev": "next dev",
-    "test": "jest --watch --coverage",
+    "test": "jest --watchAll --coverage --no-cache ",
     "type-check": "tsc --project tsconfig.json --pretty --noEmit",
     "lint": "eslint --ext js,jsx,ts,tsx --fix"
   },
