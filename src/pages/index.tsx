@@ -11,13 +11,20 @@ import GridContainer from '../components/GridContainer';
 import SkillGroup from '../components/SkillGroup';
 
 const Home: React.FC = () => {
-  const { basicInfo, socialMedia, workExperience, education, codingSkills, designSkills } = getState();
+  const {
+    basicInfo,
+    socialMedia,
+    workExperience,
+    education,
+    codingSkills,
+    designSkills,
+  } = getState();
   const actions = useActions();
 
   useEffect(() => {
     actions.getPosts();
     actions.getStateFromStaticJson();
-  // eslint-disable-next-line react-hooks/exhaustive-deps
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (
@@ -46,8 +53,8 @@ const Home: React.FC = () => {
             groupIndex={10}
           />
           <EntriesGroup title='Education' list={education} groupIndex={11} />
-          <SkillGroup title="Coding Skills" list={codingSkills} />
-          <SkillGroup title="Design Skills" list={designSkills} />
+          <SkillGroup title='Coding Skills' list={codingSkills} />
+          <SkillGroup title='Design Skills' list={designSkills} />
         </GridContainer>
       </Article>
     </main>
